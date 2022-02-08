@@ -6,7 +6,7 @@
   <link href="http://cikian.github.io/atom.xml" rel="self"/>
   
   <link href="http://cikian.github.io/"/>
-  <updated>2022-02-07T19:36:12.768Z</updated>
+  <updated>2022-02-08T18:12:03.154Z</updated>
   <id>http://cikian.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Linux命令</title>
+    <title>Linux命令 （更新中）</title>
     <link href="http://cikian.github.io/2022/02/08/linux-ming-ling/"/>
     <id>http://cikian.github.io/2022/02/08/linux-ming-ling/</id>
     <published>2022-02-07T16:47:10.000Z</published>
-    <updated>2022-02-07T19:36:12.768Z</updated>
+    <updated>2022-02-08T18:12:03.154Z</updated>
     
     
       
@@ -34,6 +34,12 @@
     
     
     
+    <category term="笔记" scheme="http://cikian.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Linux" scheme="http://cikian.github.io/tags/Linux/"/>
+    
+    <category term="命令" scheme="http://cikian.github.io/tags/%E5%91%BD%E4%BB%A4/"/>
     
   </entry>
   
@@ -42,7 +48,7 @@
     <link href="http://cikian.github.io/2022/02/06/markdown-yu-fa/"/>
     <id>http://cikian.github.io/2022/02/06/markdown-yu-fa/</id>
     <published>2022-02-06T13:01:25.000Z</published>
-    <updated>2022-02-06T14:12:22.111Z</updated>
+    <updated>2022-02-08T18:02:47.686Z</updated>
     
     
       
@@ -60,33 +66,7 @@
     
     <category term="MarkDown" scheme="http://cikian.github.io/tags/MarkDown/"/>
     
-    <category term="笔记" scheme="http://cikian.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>第一篇博客</title>
-    <link href="http://cikian.github.io/2022/02/06/di-yi-pian-bo-ke/"/>
-    <id>http://cikian.github.io/2022/02/06/di-yi-pian-bo-ke/</id>
-    <published>2022-02-05T20:16:34.000Z</published>
-    <updated>2022-02-05T20:21:24.953Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;#测试文章&lt;br&gt;测试文字&lt;/p&gt;
-</summary>
-        
-      
-    
-    
-    
-    <category term="测试" scheme="http://cikian.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
-    
-    
-    <category term="html" scheme="http://cikian.github.io/tags/html/"/>
+    <category term="语法" scheme="http://cikian.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
@@ -94,8 +74,8 @@
     <title>Hello World</title>
     <link href="http://cikian.github.io/2022/02/06/hello-world/"/>
     <id>http://cikian.github.io/2022/02/06/hello-world/</id>
-    <published>2022-02-05T17:40:51.915Z</published>
-    <updated>2022-02-05T17:40:51.915Z</updated>
+    <published>2022-02-06T13:00:25.000Z</published>
+    <updated>2022-02-08T18:05:56.647Z</updated>
     
     
       

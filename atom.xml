@@ -6,7 +6,7 @@
   <link href="http://cikian.github.io/atom.xml" rel="self"/>
   
   <link href="http://cikian.github.io/"/>
-  <updated>2022-02-12T17:49:04.259Z</updated>
+  <updated>2022-02-12T18:51:27.407Z</updated>
   <id>http://cikian.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript—作用域</title>
+    <link href="http://cikian.github.io/2022/02/13/javascript-zuo-yong-yu/"/>
+    <id>http://cikian.github.io/2022/02/13/javascript-zuo-yong-yu/</id>
+    <published>2022-02-12T17:50:19.000Z</published>
+    <updated>2022-02-12T18:51:27.407Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;JavaScript—作用域&quot;&gt;&lt;a href=&quot;#JavaScript—作用域&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="http://cikian.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="JavaScript" scheme="http://cikian.github.io/categories/%E7%AC%94%E8%AE%B0/JavaScript/"/>
+    
+    
+    <category term="JavaScript" scheme="http://cikian.github.io/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScript—函数</title>

@@ -6,7 +6,7 @@
   <link href="http://cikian.github.io/atom.xml" rel="self"/>
   
   <link href="http://cikian.github.io/"/>
-  <updated>2022-02-10T17:01:16.314Z</updated>
+  <updated>2022-02-12T17:49:04.259Z</updated>
   <id>http://cikian.github.io/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>JavaScript-数组</title>
+    <title>JavaScript—函数</title>
+    <link href="http://cikian.github.io/2022/02/13/javascript-han-shu/"/>
+    <id>http://cikian.github.io/2022/02/13/javascript-han-shu/</id>
+    <published>2022-02-12T17:47:36.000Z</published>
+    <updated>2022-02-12T17:49:04.259Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;JavaScript—函数&quot;&gt;&lt;a href=&quot;#JavaScript—函数&quot; class=&quot;headerlink&quot; title=&quot;JavaScript—函数&quot;&gt;&lt;/a&gt;JavaScript—函数&lt;/h1&gt;&lt;h2 id=&quot;一、函数的概念&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="http://cikian.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="JavaScript" scheme="http://cikian.github.io/categories/%E7%AC%94%E8%AE%B0/JavaScript/"/>
+    
+    
+    <category term="JavaScript" scheme="http://cikian.github.io/tags/JavaScript/"/>
+    
+    <category term="函数" scheme="http://cikian.github.io/tags/%E5%87%BD%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript—数组</title>
     <link href="http://cikian.github.io/2022/02/11/javascript-shu-zu/"/>
     <id>http://cikian.github.io/2022/02/11/javascript-shu-zu/</id>
     <published>2022-02-10T16:50:28.000Z</published>
-    <updated>2022-02-10T17:01:16.314Z</updated>
+    <updated>2022-02-12T17:39:26.697Z</updated>
     
     
       

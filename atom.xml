@@ -6,7 +6,7 @@
   <link href="http://cikian.github.io/atom.xml" rel="self"/>
   
   <link href="http://cikian.github.io/"/>
-  <updated>2022-02-12T18:51:27.407Z</updated>
+  <updated>2022-02-18T17:56:19.479Z</updated>
   <id>http://cikian.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript—动画</title>
+    <link href="http://cikian.github.io/2022/02/15/javascript-dong-hua/"/>
+    <id>http://cikian.github.io/2022/02/15/javascript-dong-hua/</id>
+    <published>2022-02-15T07:12:07.000Z</published>
+    <updated>2022-02-18T17:56:19.479Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;JavaScript—动画&quot;&gt;&lt;a href=&quot;#JavaScript—动画&quot; class=&quot;headerlink&quot; title=&quot;JavaScript—动画&quot;&gt;&lt;/a&gt;JavaScript—动画&lt;/h1&gt;&lt;h2 id=&quot;一、动画原理&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="http://cikian.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="JavaScript" scheme="http://cikian.github.io/categories/%E7%AC%94%E8%AE%B0/JavaScript/"/>
+    
+    
+    <category term="JavaScript" scheme="http://cikian.github.io/tags/JavaScript/"/>
+    
+    <category term="动画" scheme="http://cikian.github.io/tags/%E5%8A%A8%E7%94%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScript—作用域</title>

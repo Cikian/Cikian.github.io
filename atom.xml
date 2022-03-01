@@ -6,7 +6,7 @@
   <link href="http://cikian.github.io/atom.xml" rel="self"/>
   
   <link href="http://cikian.github.io/"/>
-  <updated>2022-02-18T17:56:19.479Z</updated>
+  <updated>2022-03-01T12:38:30.982Z</updated>
   <id>http://cikian.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JDK配置环境变量+eclipse安装使用</title>
+    <link href="http://cikian.github.io/2022/03/01/jdk-pei-zhi-huan-jing-bian-liang-eclipse-an-zhuang-shi-yong/"/>
+    <id>http://cikian.github.io/2022/03/01/jdk-pei-zhi-huan-jing-bian-liang-eclipse-an-zhuang-shi-yong/</id>
+    <published>2022-03-01T11:05:35.000Z</published>
+    <updated>2022-03-01T12:38:30.982Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、下载JDK&quot;&gt;&lt;a href=&quot;#一、下载JDK&quot; class=&quot;headerlink&quot; title=&quot;一、下载JDK&quot;&gt;&lt;/a&gt;一、下载JDK&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;访问Oracle官网下载最新版JDK&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="教程" scheme="http://cikian.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="JDK" scheme="http://cikian.github.io/tags/JDK/"/>
+    
+    <category term="配置" scheme="http://cikian.github.io/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScript—动画</title>

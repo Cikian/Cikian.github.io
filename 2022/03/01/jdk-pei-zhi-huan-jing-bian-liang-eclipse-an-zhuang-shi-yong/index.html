@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="JavaScript—动画, CiKian">
-    <meta name="description" content="JavaScript中的动画知识整理">
+    <meta name="keywords" content="JDK配置环境变量+eclipse安装使用, CiKian">
+    <meta name="description" content="本文详细解释了JDK的下载、配置与eclipse的安装">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>JavaScript—动画 | CiKian</title>
+    <title>JDK配置环境变量+eclipse安装使用 | CiKian</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -323,12 +323,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('http://img.cikian.cn/2022-3-1/20.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">JavaScript—动画</h1>
+                    <h1 class="description center-align post-title">JDK配置环境变量+eclipse安装使用</h1>
                 </div>
             </div>
         </div>
@@ -444,12 +444,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/JavaScript/">
-                                <span class="chip bg-color">JavaScript</span>
+                            <a href="/tags/JDK/">
+                                <span class="chip bg-color">JDK</span>
                             </a>
                         
-                            <a href="/tags/%E5%8A%A8%E7%94%BB/">
-                                <span class="chip bg-color">动画</span>
+                            <a href="/tags/%E9%85%8D%E7%BD%AE/">
+                                <span class="chip bg-color">配置</span>
                             </a>
                         
                     </div>
@@ -460,12 +460,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
-                                笔记
-                            </a>
-                        
-                            <a href="/categories/%E7%AC%94%E8%AE%B0/JavaScript/" class="post-category">
-                                JavaScript
+                            <a href="/categories/%E6%95%99%E7%A8%8B/" class="post-category">
+                                教程
                             </a>
                         
                     </div>
@@ -477,21 +473,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-02-15
+                    2022-03-01
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-02-19
+                    2022-03-01
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    558
+                    524
                 </div>
                 
 
@@ -513,91 +509,66 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="JavaScript—动画"><a href="#JavaScript—动画" class="headerlink" title="JavaScript—动画"></a>JavaScript—动画</h1><h2 id="一、动画原理"><a href="#一、动画原理" class="headerlink" title="一、动画原理"></a>一、动画原理</h2><p>通过定时器setInterval不断移动盒子位置。</p>
-<p>步骤：</p>
-<ol>
-<li>获得盒子当前位置；</li>
-<li>让盒子在当前位置加上1个移动距离；</li>
-<li>利用定时器不断重复这个操作；</li>
-<li>结束定时器。</li>
+                <h2 id="一、下载JDK"><a href="#一、下载JDK" class="headerlink" title="一、下载JDK"></a>一、下载JDK</h2><ol>
+<li>访问Oracle官网下载最新版JDK<a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/downloads/">Java Downloads | Oracle</a>，也可<a target="_blank" rel="noopener" href="http://download.cikian.cn/exe/jdk-17_windows-x64_bin.exe">点击此处</a>下载（在我自己服务器，绝对安全，放心）</li>
 </ol>
-<p>注意：元素需要加定位。</p>
-<p>例：</p>
-<p>HTML代码：</p>
-<pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
-        
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>move<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-            
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>js/js.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
-</code></pre>
-<p>CSS代码：</p>
-<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.move</span></span><span class="token punctuation">{</span>
-    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-    <span class="token property">background-color</span><span class="token punctuation">:</span> pink<span class="token punctuation">;</span>
-    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
-    <span class="token property">left</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-</code></pre>
-<p>JS代码：</p>
-<pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> div <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.move'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment" spellcheck="true">//获取需要移动的元素</span>
-<span class="token keyword">var</span> timer <span class="token operator">=</span> <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>            <span class="token comment" spellcheck="true">//新建一个定时器</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>div<span class="token punctuation">.</span>offsetLeft <span class="token operator">>=</span> <span class="token number">400</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>                <span class="token comment" spellcheck="true">//停止定时器的条件：移动距离大于等于400px时停止</span>
-        <span class="token function">clearInterval</span><span class="token punctuation">(</span>timer<span class="token punctuation">)</span><span class="token punctuation">;</span>                    <span class="token comment" spellcheck="true">//停止定时器</span>
-    <span class="token punctuation">}</span><span class="token punctuation">;</span>
-    div<span class="token punctuation">.</span>style<span class="token punctuation">.</span>left <span class="token operator">=</span> div<span class="token punctuation">.</span>offsetLeft <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token string">'px'</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//定时器执行的操作：每1毫秒移动一个像素</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
-</code></pre>
-<h2 id="二、简单动画函数封装"><a href="#二、简单动画函数封装" class="headerlink" title="二、简单动画函数封装"></a>二、简单动画函数封装</h2><p>注意函数需要传递的2个参数：<strong>动画对象</strong>和<strong>移动的距离</strong>。</p>
-<pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">animate</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span>target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">var</span> timer <span class="token operator">=</span> <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>obj<span class="token punctuation">.</span>offsetLeft <span class="token operator">>=</span> target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token function">clearInterval</span><span class="token punctuation">(</span>timer<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span><span class="token punctuation">;</span>
-        obj<span class="token punctuation">.</span>style<span class="token punctuation">.</span>left <span class="token operator">=</span> obj<span class="token punctuation">.</span>offsetLeft <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token string">'px'</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">;</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> div <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.move'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//获取元素</span>
-<span class="token function">animate</span><span class="token punctuation">(</span>div<span class="token punctuation">,</span><span class="token number">300</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                            <span class="token comment" spellcheck="true">//调用函数</span>
-</code></pre>
-<h2 id="三、给不同元素记录不同定时器"><a href="#三、给不同元素记录不同定时器" class="headerlink" title="三、给不同元素记录不同定时器"></a>三、给不同元素记录不同定时器</h2><pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">animate</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span>target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token function">clearInterval</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>timer<span class="token punctuation">)</span><span class="token punctuation">;</span>                <span class="token comment" spellcheck="true">//一个元素同时只能存在一个定时器</span>
-    obj<span class="token punctuation">.</span>timer <span class="token operator">=</span> <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token comment" spellcheck="true">//给不同元素添加定时器</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>obj<span class="token punctuation">.</span>offsetLeft <span class="token operator">>=</span> target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token function">clearInterval</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>timer<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span><span class="token punctuation">;</span>
-        obj<span class="token punctuation">.</span>style<span class="token punctuation">.</span>left <span class="token operator">=</span> obj<span class="token punctuation">.</span>offsetLeft <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token string">'px'</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">;</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-</code></pre>
-<h2 id="四、缓动效果原理"><a href="#四、缓动效果原理" class="headerlink" title="四、缓动效果原理"></a>四、缓动效果原理</h2><p>缓动动画就是让元素运动速度有所变化，如常见的“慢慢停下来”。</p>
-<p>思路：</p>
-<ol>
-<li>让盒子每次移动的距离变小，速度就会慢下来；</li>
-<li>核心算法：（目标值 - 现在的位置）&#x2F; 10  作为每次移动的距离步长；</li>
+<p><img src="http://img.cikian.cn/2022-3-1/jdk01.png" alt="jdk01"></p>
+<p>以Windows系统举例，选择Windows下的第二个（第一个为压缩包，第二个为安装程序，第三个是Windows Installee的数据包）。</p>
+<ol start="2">
+<li>打开下载好的安装包。</li>
 </ol>
-<pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">animate</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span>target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token function">clearInterval</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>timer<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    obj<span class="token punctuation">.</span>timer <span class="token operator">=</span> <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">var</span> step <span class="token operator">=</span> <span class="token punctuation">(</span>target <span class="token operator">-</span> obj<span class="token punctuation">.</span>offsetLeft<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">10</span><span class="token punctuation">;</span>
-        step <span class="token operator">=</span> step <span class="token operator">></span> <span class="token number">0</span> <span class="token operator">?</span> Math<span class="token punctuation">.</span><span class="token function">ceil</span><span class="token punctuation">(</span>step<span class="token punctuation">)</span> <span class="token punctuation">:</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>step<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>obj<span class="token punctuation">.</span>offsetLeft <span class="token operator">==</span> target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token function">clearInterval</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>timer<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span><span class="token punctuation">;</span>
-        obj<span class="token punctuation">.</span>style<span class="token punctuation">.</span>left <span class="token operator">=</span> obj<span class="token punctuation">.</span>offsetLeft <span class="token operator">+</span> step <span class="token operator">+</span> <span class="token string">'px'</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">;</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-</code></pre>
-<h2 id="五、动画函数添加回调函数"><a href="#五、动画函数添加回调函数" class="headerlink" title="五、动画函数添加回调函数"></a>五、动画函数添加回调函数</h2><p><strong>回调函数原理：</strong>函数可以作为一个参数。将这个函数作为参数传到另一个函数里面，当那个函数执行完之后，再执行传进去的这个函数，这个过程叫做<strong>回调</strong>。</p>
-<p>回调函数写的位置：定时器结束位置。</p>
+<p><img src="http://img.cikian.cn/2022-3-1/jdk02.png" alt="jdk01"></p>
+<p>点击下一步。</p>
+<p><img src="http://img.cikian.cn/2022-3-1/jdk03.png" alt="jdk01"></p>
+<p>选择一个安装位置。</p>
+<p>推荐在C盘意外的盘符给java一个单独的文件夹，这里演示的安装位置为F:\XX\java\jdk-17.0.2\</p>
+<p><img src="http://img.cikian.cn/2022-3-1/jdk04.png" alt="jdk01"></p>
+<p>点击确定，等待安装。</p>
+<p><img src="http://img.cikian.cn/2022-3-1/jdk05.png" alt="jdk01"></p>
+<h2 id="二、配置环境变量"><a href="#二、配置环境变量" class="headerlink" title="二、配置环境变量"></a>二、配置环境变量</h2><p><strong>以win10系统为例</strong></p>
+<ol>
+<li>右键“此电脑”，点击属性，在弹出的窗口点击“高级系统设置”</li>
+</ol>
+<p><img src="http://img.cikian.cn/2022-3-1/path01.png" alt="jdk01"></p>
+<p>在弹出的窗口点击“环境变量”。</p>
+<ol start="2">
+<li><p>点击系统变量中的“新建”</p>
+<p><img src="http://img.cikian.cn/2022-3-1/path02.png" alt="jdk01"></p>
+</li>
+<li><p>变量名输入“java_home”,变量值处点击“浏览目录”，选择到jdk安装的文件夹（显示版本号的文件夹，当然，这是在你没有改文件夹名称的情况下）</p>
+</li>
+</ol>
+<p><img src="http://img.cikian.cn/2022-3-1/path03.png" alt="jdk01"></p>
+<ol start="4">
+<li>选中系统变量中的path，点击“编辑”</li>
+</ol>
+<p><img src="http://img.cikian.cn/2022-3-1/path04.png" alt="jdk01"></p>
+<ol start="5">
+<li>在弹出的窗口中点击“新建”，再点击“浏览”，选择到安装jdk文件夹下的“bin”文件夹，全部窗口点击“确定”，推出</li>
+</ol>
+<p><img src="http://img.cikian.cn/2022-3-1/path05.png" alt="jdk01"></p>
+<p>此时，jdk已经安装好并且已经配置好了环境变量。</p>
+<h2 id="三、安装eclipse"><a href="#三、安装eclipse" class="headerlink" title="三、安装eclipse"></a>三、安装eclipse</h2><ol>
+<li>访问eclipse官网<a target="_blank" rel="noopener" href="https://www.eclipse.org/downloads/">Eclipse Downloads | The Eclipse Foundation</a>下载eclipse，国内访问速度比较慢，也可<a target="_blank" rel="noopener" href="http://download.cikian.cn/exe/eclipse-inst-jre-win64.exe">点击此处</a>下载（在我自己服务器，绝对安全，放心）</li>
+<li>下载完成后，点击第一项“Eclipse IDE for Java Developers”</li>
+</ol>
+<p><img src="http://img.cikian.cn/2022-3-1/ep01.png" alt="jdk01"></p>
+<ol start="3">
+<li>选择安装目录（第二个路径），第一个路径为JDK的安装文件夹，正常情况下默认就是正确的，不需要更改，选择好安装路径后点击“INSTALL”</li>
+</ol>
+<p><img src="http://img.cikian.cn/2022-3-1/ep02.png" alt="jdk01"></p>
+<ol start="4">
+<li>接下来会弹出一个窗口，点击同意（Accept Now）即可</li>
+</ol>
+<p><img src="http://img.cikian.cn/2022-3-1/ep03.png" alt="jdk01"></p>
+<ol start="5">
+<li>由于安装过程会下载软件需要的文件，所以国内安装过程比较漫长，耐心等待即可，安装完成之后点击绿色按钮即可运行eclipse</li>
+</ol>
+<p><img src="http://img.cikian.cn/2022-3-1/ep04.png" alt="jdk01"></p>
+<ol start="6">
+<li>运行后，欢迎页面关掉即可，eclipse安装成功！</li>
+</ol>
+<p><img src="http://img.cikian.cn/2022-3-1/ep05.png" alt="jdk01"></p>
 
                 
             </div>
@@ -624,7 +595,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://cikian.github.io/2022/02/15/javascript-dong-hua/">http://cikian.github.io/2022/02/15/javascript-dong-hua/</a>
+                    <a href="http://cikian.github.io/2022/03/01/jdk-pei-zhi-huan-jing-bian-liang-eclipse-an-zhuang-shi-yong/">http://cikian.github.io/2022/03/01/jdk-pei-zhi-huan-jing-bian-liang-eclipse-an-zhuang-shi-yong/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -662,12 +633,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/JavaScript/">
-                                    <span class="chip bg-color">JavaScript</span>
+                                <a href="/tags/JDK/">
+                                    <span class="chip bg-color">JDK</span>
                                 </a>
                             
-                                <a href="/tags/%E5%8A%A8%E7%94%BB/">
-                                    <span class="chip bg-color">动画</span>
+                                <a href="/tags/%E9%85%8D%E7%BD%AE/">
+                                    <span class="chip bg-color">配置</span>
                                 </a>
                             
                         </div>
@@ -833,9 +804,9 @@
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'http://cikian.github.io/2022/02/15/javascript-dong-hua/';
-        this.page.identifier = '/2022/02/15/javascript-dong-hua/';
-        this.page.title = 'JavaScript—动画';
+        this.page.url = 'http://cikian.github.io/2022/03/01/jdk-pei-zhi-huan-jing-bian-liang-eclipse-an-zhuang-shi-yong/';
+        this.page.identifier = '/2022/03/01/jdk-pei-zhi-huan-jing-bian-liang-eclipse-an-zhuang-shi-yong/';
+        this.page.title = 'JDK配置环境变量+eclipse安装使用';
     };
     let disqus_shortname = '';
 
@@ -1078,9 +1049,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2022/03/01/jdk-pei-zhi-huan-jing-bian-liang-eclipse-an-zhuang-shi-yong/">
                     <div class="card-image">
@@ -1097,9 +1069,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-01
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-01
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1112,6 +1084,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1134,24 +1107,24 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/02/13/javascript-zuo-yong-yu/">
+                <a href="/2022/02/15/javascript-dong-hua/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="JavaScript—作用域">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="JavaScript—动画">
                         
-                        <span class="card-title">JavaScript—作用域</span>
+                        <span class="card-title">JavaScript—动画</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            JavaScript中的作用域知识整理
+                            JavaScript中的动画知识整理
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-13
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-15
                             </span>
                         <span class="publish-author">
                             
@@ -1174,6 +1147,10 @@
                     
                     <a href="/tags/JavaScript/">
                         <span class="chip bg-color">JavaScript</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8A%A8%E7%94%BB/">
+                        <span class="chip bg-color">动画</span>
                     </a>
                     
                 </div>

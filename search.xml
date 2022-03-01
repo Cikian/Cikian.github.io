@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>JDK配置环境变量+eclipse安装使用</title>
+      <link href="/2022/03/01/jdk-pei-zhi-huan-jing-bian-liang-eclipse-an-zhuang-shi-yong/"/>
+      <url>/2022/03/01/jdk-pei-zhi-huan-jing-bian-liang-eclipse-an-zhuang-shi-yong/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、下载JDK"><a href="#一、下载JDK" class="headerlink" title="一、下载JDK"></a>一、下载JDK</h2><ol><li>访问Oracle官网下载最新版JDK<a href="https://www.oracle.com/java/technologies/downloads/">Java Downloads | Oracle</a>，也可<a href="http://download.cikian.cn/exe/jdk-17_windows-x64_bin.exe">点击此处</a>下载（在我自己服务器，绝对安全，放心）</li></ol><p><img src="http://img.cikian.cn/2022-3-1/jdk01.png" alt="jdk01"></p><p>以Windows系统举例，选择Windows下的第二个（第一个为压缩包，第二个为安装程序，第三个是Windows Installee的数据包）。</p><ol start="2"><li>打开下载好的安装包。</li></ol><p><img src="http://img.cikian.cn/2022-3-1/jdk02.png" alt="jdk01"></p><p>点击下一步。</p><p><img src="http://img.cikian.cn/2022-3-1/jdk03.png" alt="jdk01"></p><p>选择一个安装位置。</p><p>推荐在C盘意外的盘符给java一个单独的文件夹，这里演示的安装位置为F:\XX\java\jdk-17.0.2\</p><p><img src="http://img.cikian.cn/2022-3-1/jdk04.png" alt="jdk01"></p><p>点击确定，等待安装。</p><p><img src="http://img.cikian.cn/2022-3-1/jdk05.png" alt="jdk01"></p><h2 id="二、配置环境变量"><a href="#二、配置环境变量" class="headerlink" title="二、配置环境变量"></a>二、配置环境变量</h2><p><strong>以win10系统为例</strong></p><ol><li>右键“此电脑”，点击属性，在弹出的窗口点击“高级系统设置”</li></ol><p><img src="http://img.cikian.cn/2022-3-1/path01.png" alt="jdk01"></p><p>在弹出的窗口点击“环境变量”。</p><ol start="2"><li><p>点击系统变量中的“新建”</p><p><img src="http://img.cikian.cn/2022-3-1/path02.png" alt="jdk01"></p></li><li><p>变量名输入“java_home”,变量值处点击“浏览目录”，选择到jdk安装的文件夹（显示版本号的文件夹，当然，这是在你没有改文件夹名称的情况下）</p></li></ol><p><img src="http://img.cikian.cn/2022-3-1/path03.png" alt="jdk01"></p><ol start="4"><li>选中系统变量中的path，点击“编辑”</li></ol><p><img src="http://img.cikian.cn/2022-3-1/path04.png" alt="jdk01"></p><ol start="5"><li>在弹出的窗口中点击“新建”，再点击“浏览”，选择到安装jdk文件夹下的“bin”文件夹，全部窗口点击“确定”，推出</li></ol><p><img src="http://img.cikian.cn/2022-3-1/path05.png" alt="jdk01"></p><p>此时，jdk已经安装好并且已经配置好了环境变量。</p><h2 id="三、安装eclipse"><a href="#三、安装eclipse" class="headerlink" title="三、安装eclipse"></a>三、安装eclipse</h2><ol><li>访问eclipse官网<a href="https://www.eclipse.org/downloads/">Eclipse Downloads | The Eclipse Foundation</a>下载eclipse，国内访问速度比较慢，也可<a href="http://download.cikian.cn/exe/eclipse-inst-jre-win64.exe">点击此处</a>下载（在我自己服务器，绝对安全，放心）</li><li>下载完成后，点击第一项“Eclipse IDE for Java Developers”</li></ol><p><img src="http://img.cikian.cn/2022-3-1/ep01.png" alt="jdk01"></p><ol start="3"><li>选择安装目录（第二个路径），第一个路径为JDK的安装文件夹，正常情况下默认就是正确的，不需要更改，选择好安装路径后点击“INSTALL”</li></ol><p><img src="http://img.cikian.cn/2022-3-1/ep02.png" alt="jdk01"></p><ol start="4"><li>接下来会弹出一个窗口，点击同意（Accept Now）即可</li></ol><p><img src="http://img.cikian.cn/2022-3-1/ep03.png" alt="jdk01"></p><ol start="5"><li>由于安装过程会下载软件需要的文件，所以国内安装过程比较漫长，耐心等待即可，安装完成之后点击绿色按钮即可运行eclipse</li></ol><p><img src="http://img.cikian.cn/2022-3-1/ep04.png" alt="jdk01"></p><ol start="6"><li>运行后，欢迎页面关掉即可，eclipse安装成功！</li></ol><p><img src="http://img.cikian.cn/2022-3-1/ep05.png" alt="jdk01"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JDK </tag>
+            
+            <tag> 配置 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaScript—动画</title>
       <link href="/2022/02/15/javascript-dong-hua/"/>
       <url>/2022/02/15/javascript-dong-hua/</url>

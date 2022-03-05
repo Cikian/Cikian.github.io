@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>MySQL—图形化界面工具DataGrip</title>
+      <link href="/2022/03/06/mysql-tu-xing-hua-jie-mian-gong-ju-datagrip/"/>
+      <url>/2022/03/06/mysql-tu-xing-hua-jie-mian-gong-ju-datagrip/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、下载"><a href="#一、下载" class="headerlink" title="一、下载"></a>一、下载</h2><p>由于DataGrip为收费软件，但是可以试用30天，<a href="https://www.jetbrains.com/datagrip/">DataGrip官网</a></p><h2 id="二、安装"><a href="#二、安装" class="headerlink" title="二、安装"></a>二、安装</h2><p>打开安装包，点击next后选择安装位置</p><p><img src="https://img.cikian.cn/blog-img/20220305231057.png"></p><p>然后点击next→install，等待安装</p><p>启动软件后，如图选择</p><p><img src="https://img.cikian.cn/blog-img/20220305231609.png"></p><h2 id="三、使用"><a href="#三、使用" class="headerlink" title="三、使用"></a>三、使用</h2><p>点击New Project，输入名称，点击OK</p><p><img src="C:\Users\iyibo\AppData\Roaming\Typora\typora-user-images\image-20220305231805725.png" alt="image-20220305231805725"></p><p>然后点击弹出窗口左上角的+号 →Data Source→MySQL</p><p><img src="C:\Users\iyibo\AppData\Roaming\Typora\typora-user-images\image-20220305232111754.png" alt="image-20220305232111754"></p><p>在之后的弹出窗口中，只需输入用户名和密码就好，如果在下方图片的下方红框处有<strong>download</strong>字样，需要下载（驱动程序），若没有或者下载完成之后，点击Test Connection</p><p><img src="https://img.cikian.cn/blog-img/20220306001723.png"></p><p>测试之后，只要显示succeeded，便是成功</p><p><img src="https://img.cikian.cn/blog-img/20220306002054.png"></p><p>然后点击apply，再点击ok</p><p><img src="https://img.cikian.cn/blog-img/20220306002154.png"></p><h2 id="三、简单使用（创建数据库，创建表）"><a href="#三、简单使用（创建数据库，创建表）" class="headerlink" title="三、简单使用（创建数据库，创建表）"></a>三、简单使用（创建数据库，创建表）</h2><ol><li><p>创建数据库</p><p>右键单击，选择new→schema</p><p><img src="https://img.cikian.cn/blog-img/20220306002447.png"></p></li><li><p>输入名称，点击ok</p><p><img src="https://img.cikian.cn/blog-img/20220306002631.png"></p></li><li><p>创建表</p><p>新建完数据库后，可以在左侧看到，右键→new→table</p><p><img src="https://img.cikian.cn/blog-img/20220306002755.png"></p><p>在之后的弹出窗口中点击加号，即可添加字段，输入名称，数据类型，注释等，点击execute</p><p><img src="https://img.cikian.cn/blog-img/20220306003302.png"></p></li></ol><p>Data Grip的基本使用到此介绍结束，进阶的使用教程，可参见百度、B站等。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+          <category> MySQL </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MySQL—概述</title>
+      <link href="/2022/03/05/mysql-an-zhuang-ji-qi-dong/"/>
+      <url>/2022/03/05/mysql-an-zhuang-ji-qi-dong/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、下载安装"><a href="#一、下载安装" class="headerlink" title="一、下载安装"></a>一、下载安装</h2><ol><li>下载地址（官方）：<a href="https://dev.mysql.com/downloads/installer/">MySQL Installer</a></li></ol><p><img src="https://img.cikian.cn/blog-img/20220305154711.png"></p><p>点击下载按钮，如果提示登录，就在登录按钮下方点击<strong>No thanks, just start my download.</strong></p><ol start="2"><li>安装</li></ol><p><img src="https://img.cikian.cn/blog-img/20220305155150.png"></p><p>打开下载好的安装文件后，点击next，出现yes或者no选择yes</p><p>直到这一步，选择Execute，这一步需要等待一段时间</p><p><img src="https://img.cikian.cn/blog-img/20220305155449.png"></p><p>全部安装完成之后，全部点击next，直到出现下面的步骤</p><p><img src="https://img.cikian.cn/blog-img/20220305160537.png"></p><p>在图中红框部分输入密码以及重复密码</p><p>然后全部点击next或者Execute</p><p>出现finish时点击，之后点击cancle→yes</p><h2 id="二、启动与停止"><a href="#二、启动与停止" class="headerlink" title="二、启动与停止"></a>二、启动与停止</h2><ol><li>打开系统服务，找到MySQL服务，启动或者停止</li><li>在命令行输入<code>net start mysql80</code>启动，输入<code>net stop mysql80</code>停止</li></ol><h2 id="三、客户端连接"><a href="#三、客户端连接" class="headerlink" title="三、客户端连接"></a>三、客户端连接</h2><ol><li><p>使用MySQL提供的客户端命令行工具</p><p><img src="https://img.cikian.cn/blog-img/20220305161933.png"></p></li></ol><p>打开之后会提示输入密码，就是安装时设置的密码，输入密码之后，出现下图则连接成功</p><p><img src="https://img.cikian.cn/blog-img/20220305163203.png"></p><ol start="2"><li>使用Windows自带命令行（cmd）</li></ol><p>在cmd中输入<code>mysql [-h 127.0.0.1] [-P 3306] -u root -p</code></p><p>中括号中的内容可省略，即默认</p><p><strong>若使用这种方式连接MySQL，若想在任意目录下使用，则必须配置环境变量</strong></p><p>*配置环境变量</p><p>打开系统的环境变量，找打Path→编辑→新建，添加下图红框中的内容，（MySQL默认安装在C盘的Programe Files文件夹下）</p><p><img src="https://img.cikian.cn/blog-img/20220305163902.png"></p><p><strong>到此，MySQL安装成功并可以使用了！</strong></p><h2 id="四、关系型数据库（RDBMS）"><a href="#四、关系型数据库（RDBMS）" class="headerlink" title="四、关系型数据库（RDBMS）"></a>四、关系型数据库（RDBMS）</h2><ol><li><strong>概念：</strong>建立在关系模型基础上，由多张相互连接的二维表组成的数据库。</li></ol><p>具体什么是二维表呢，参见下图</p><p><img src="https://img.cikian.cn/blog-img/20220305164530.png"></p><p>通俗解释，两张表格，相互独立，又可以通过某些关系联系起来。</p><ol start="2"><li><p><strong>特点：</strong></p><ol><li><p>使用表存储数据，格式统一，便于维护</p></li><li><p>使用SQL语言操作，标准统一，使用方便</p></li></ol></li></ol><h2 id="五、数据模型"><a href="#五、数据模型" class="headerlink" title="五、数据模型"></a>五、数据模型</h2><p><img src="https://img.cikian.cn/blog-img/20220305165431.png"></p><p>当我们安装了MySQL时，我们的计算机，便成为了MySQL数据库的服务器，我们使用客户端即可连接<strong>数据库管理系统（DBMS）</strong>，使用数据库管理系统可以创建数据库，也可以通过SQL语句来在指定的数据库中创建表来储存数据，我们可以创建多个数据库，一个数据库也可以创建多张表。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+          <category> MySQL </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JDK配置环境变量+eclipse安装使用</title>
       <link href="/2022/03/01/jdk-pei-zhi-huan-jing-bian-liang-eclipse-an-zhuang-shi-yong/"/>
       <url>/2022/03/01/jdk-pei-zhi-huan-jing-bian-liang-eclipse-an-zhuang-shi-yong/</url>

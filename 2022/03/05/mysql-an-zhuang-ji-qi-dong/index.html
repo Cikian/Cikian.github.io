@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="JDK配置环境变量+eclipse安装使用, CiKian">
-    <meta name="description" content="本文详细解释了JDK的下载、配置与eclipse的安装">
+    <meta name="keywords" content="MySQL—概述, CiKian">
+    <meta name="description" content="MySQL的下载、安装、启动以及介绍">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>JDK配置环境变量+eclipse安装使用 | CiKian</title>
+    <title>MySQL—概述 | CiKian</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -323,12 +323,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://img.cikian.cn/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://img.cikian.cn/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">JDK配置环境变量+eclipse安装使用</h1>
+                    <h1 class="description center-align post-title">MySQL—概述</h1>
                 </div>
             </div>
         </div>
@@ -444,12 +444,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/JDK/">
-                                <span class="chip bg-color">JDK</span>
-                            </a>
-                        
-                            <a href="/tags/%E9%85%8D%E7%BD%AE/">
-                                <span class="chip bg-color">配置</span>
+                            <a href="/tags/MySQL/">
+                                <span class="chip bg-color">MySQL</span>
                             </a>
                         
                     </div>
@@ -460,8 +456,12 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%95%99%E7%A8%8B/" class="post-category">
-                                教程
+                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                笔记
+                            </a>
+                        
+                            <a href="/categories/%E7%AC%94%E8%AE%B0/MySQL/" class="post-category">
+                                MySQL
                             </a>
                         
                     </div>
@@ -473,21 +473,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-03-01
+                    2022-03-05
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-03-04
+                    2022-03-05
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    524
+                    586
                 </div>
                 
 
@@ -509,66 +509,62 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、下载JDK"><a href="#一、下载JDK" class="headerlink" title="一、下载JDK"></a>一、下载JDK</h2><ol>
-<li>访问Oracle官网下载最新版JDK<a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/downloads/">Java Downloads | Oracle</a>，也可<a target="_blank" rel="noopener" href="http://download.cikian.cn/exe/jdk-17_windows-x64_bin.exe">点击此处</a>下载（在我自己服务器，绝对安全，放心）</li>
+                <h2 id="一、下载安装"><a href="#一、下载安装" class="headerlink" title="一、下载安装"></a>一、下载安装</h2><ol>
+<li>下载地址（官方）：<a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/installer/">MySQL Installer</a></li>
 </ol>
-<p><img src="https://img.cikian.cn/blog-img/jdk01.png"></p>
-<p>以Windows系统举例，选择Windows下的第二个（第一个为压缩包，第二个为安装程序，第三个是Windows Installee的数据包）。</p>
+<p><img src="https://img.cikian.cn/blog-img/20220305154711.png"></p>
+<p>点击下载按钮，如果提示登录，就在登录按钮下方点击<strong>No thanks, just start my download.</strong></p>
 <ol start="2">
-<li>打开下载好的安装包。</li>
+<li>安装</li>
 </ol>
-<p><img src="https://img.cikian.cn/blog-img/jdk02.png"></p>
-<p>点击下一步。</p>
-<p><img src="https://img.cikian.cn/blog-img/jdk03.png"></p>
-<p>选择一个安装位置。</p>
-<p>推荐在C盘意外的盘符给java一个单独的文件夹，这里演示的安装位置为F:\XX\java\jdk-17.0.2\</p>
-<p><img src="https://img.cikian.cn/blog-img/jdk04.png"></p>
-<p>点击确定，等待安装。</p>
-<p><img src="https://img.cikian.cn/blog-img/jdk05.png"></p>
-<h2 id="二、配置环境变量"><a href="#二、配置环境变量" class="headerlink" title="二、配置环境变量"></a>二、配置环境变量</h2><p><strong>以win10系统为例</strong></p>
+<p><img src="https://img.cikian.cn/blog-img/20220305155150.png"></p>
+<p>打开下载好的安装文件后，点击next，出现yes或者no选择yes</p>
+<p>直到这一步，选择Execute，这一步需要等待一段时间</p>
+<p><img src="https://img.cikian.cn/blog-img/20220305155449.png"></p>
+<p>全部安装完成之后，全部点击next，直到出现下面的步骤</p>
+<p><img src="https://img.cikian.cn/blog-img/20220305160537.png"></p>
+<p>在图中红框部分输入密码以及重复密码</p>
+<p>然后全部点击next或者Execute</p>
+<p>出现finish时点击，之后点击cancle→yes</p>
+<h2 id="二、启动与停止"><a href="#二、启动与停止" class="headerlink" title="二、启动与停止"></a>二、启动与停止</h2><ol>
+<li>打开系统服务，找到MySQL服务，启动或者停止</li>
+<li>在命令行输入<code>net start mysql80</code>启动，输入<code>net stop mysql80</code>停止</li>
+</ol>
+<h2 id="三、客户端连接"><a href="#三、客户端连接" class="headerlink" title="三、客户端连接"></a>三、客户端连接</h2><ol>
+<li><p>使用MySQL提供的客户端命令行工具</p>
+<p><img src="https://img.cikian.cn/blog-img/20220305161933.png"></p>
+</li>
+</ol>
+<p>打开之后会提示输入密码，就是安装时设置的密码，输入密码之后，出现下图则连接成功</p>
+<p><img src="https://img.cikian.cn/blog-img/20220305163203.png"></p>
+<ol start="2">
+<li>使用Windows自带命令行（cmd）</li>
+</ol>
+<p>在cmd中输入<code>mysql [-h 127.0.0.1] [-P 3306] -u root -p</code></p>
+<p>中括号中的内容可省略，即默认</p>
+<p><strong>若使用这种方式连接MySQL，若想在任意目录下使用，则必须配置环境变量</strong></p>
+<p>*配置环境变量</p>
+<p>打开系统的环境变量，找打Path→编辑→新建，添加下图红框中的内容，（MySQL默认安装在C盘的Programe Files文件夹下）</p>
+<p><img src="https://img.cikian.cn/blog-img/20220305163902.png"></p>
+<p><strong>到此，MySQL安装成功并可以使用了！</strong></p>
+<h2 id="四、关系型数据库（RDBMS）"><a href="#四、关系型数据库（RDBMS）" class="headerlink" title="四、关系型数据库（RDBMS）"></a>四、关系型数据库（RDBMS）</h2><ol>
+<li><strong>概念：</strong>建立在关系模型基础上，由多张相互连接的二维表组成的数据库。</li>
+</ol>
+<p>具体什么是二维表呢，参见下图</p>
+<p><img src="https://img.cikian.cn/blog-img/20220305164530.png"></p>
+<p>通俗解释，两张表格，相互独立，又可以通过某些关系联系起来。</p>
+<ol start="2">
+<li><p><strong>特点：</strong></p>
 <ol>
-<li>右键“此电脑”，点击属性，在弹出的窗口点击“高级系统设置”</li>
-</ol>
-<p><img src="https://img.cikian.cn/blog-img/path01.png"></p>
-<p>在弹出的窗口点击“环境变量”。</p>
-<ol start="2">
-<li><p>点击系统变量中的“新建”</p>
-<p><img src="https://img.cikian.cn/blog-img/path02.png"></p>
+<li><p>使用表存储数据，格式统一，便于维护</p>
 </li>
-<li><p>变量名输入“java_home”,变量值处点击“浏览目录”，选择到jdk安装的文件夹（显示版本号的文件夹，当然，这是在你没有改文件夹名称的情况下）</p>
+<li><p>使用SQL语言操作，标准统一，使用方便</p>
 </li>
 </ol>
-<p><img src="https://img.cikian.cn/blog-img/path03.png"></p>
-<ol start="4">
-<li>选中系统变量中的path，点击“编辑”</li>
+</li>
 </ol>
-<p><img src="https://img.cikian.cn/blog-img/path04.png"></p>
-<ol start="5">
-<li>在弹出的窗口中点击“新建”，再点击“浏览”，选择到安装jdk文件夹下的“bin”文件夹，全部窗口点击“确定”，推出</li>
-</ol>
-<p><img src="https://img.cikian.cn/blog-img/path05.png"></p>
-<p>此时，jdk已经安装好并且已经配置好了环境变量。</p>
-<h2 id="三、安装eclipse"><a href="#三、安装eclipse" class="headerlink" title="三、安装eclipse"></a>三、安装eclipse</h2><ol>
-<li>访问eclipse官网<a target="_blank" rel="noopener" href="https://www.eclipse.org/downloads/">Eclipse Downloads | The Eclipse Foundation</a>下载eclipse，国内访问速度比较慢，也可<a target="_blank" rel="noopener" href="http://download.cikian.cn/exe/eclipse-inst-jre-win64.exe">点击此处</a>下载（在我自己服务器，绝对安全，放心）</li>
-<li>下载完成后，点击第一项“Eclipse IDE for Java Developers”</li>
-</ol>
-<p><img src="https://img.cikian.cn/blog-img/ep01.png"></p>
-<ol start="3">
-<li>选择安装目录（第二个路径），第一个路径为JDK的安装文件夹，正常情况下默认就是正确的，不需要更改，选择好安装路径后点击“INSTALL”</li>
-</ol>
-<p><img src="https://img.cikian.cn/blog-img/ep02.png"></p>
-<ol start="4">
-<li>接下来会弹出一个窗口，点击同意（Accept Now）即可</li>
-</ol>
-<p><img src="https://img.cikian.cn/blog-img/ep03.png"></p>
-<ol start="5">
-<li>由于安装过程会下载软件需要的文件，所以国内安装过程比较漫长，耐心等待即可，安装完成之后点击绿色按钮即可运行eclipse</li>
-</ol>
-<p><img src="https://img.cikian.cn/blog-img/ep04.png"></p>
-<ol start="6">
-<li>运行后，欢迎页面关掉即可，eclipse安装成功！</li>
-</ol>
-<p><img src="http://img.cikian.cn/blog-img/ep05.png"></p>
+<h2 id="五、数据模型"><a href="#五、数据模型" class="headerlink" title="五、数据模型"></a>五、数据模型</h2><p><img src="https://img.cikian.cn/blog-img/20220305165431.png"></p>
+<p>当我们安装了MySQL时，我们的计算机，便成为了MySQL数据库的服务器，我们使用客户端即可连接<strong>数据库管理系统（DBMS）</strong>，使用数据库管理系统可以创建数据库，也可以通过SQL语句来在指定的数据库中创建表来储存数据，我们可以创建多个数据库，一个数据库也可以创建多张表。</p>
 
                 
             </div>
@@ -595,7 +591,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://cikian.github.io/2022/03/01/jdk-pei-zhi-huan-jing-bian-liang-eclipse-an-zhuang-shi-yong/">http://cikian.github.io/2022/03/01/jdk-pei-zhi-huan-jing-bian-liang-eclipse-an-zhuang-shi-yong/</a>
+                    <a href="http://cikian.github.io/2022/03/05/mysql-an-zhuang-ji-qi-dong/">http://cikian.github.io/2022/03/05/mysql-an-zhuang-ji-qi-dong/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -633,12 +629,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/JDK/">
-                                    <span class="chip bg-color">JDK</span>
-                                </a>
-                            
-                                <a href="/tags/%E9%85%8D%E7%BD%AE/">
-                                    <span class="chip bg-color">配置</span>
+                                <a href="/tags/MySQL/">
+                                    <span class="chip bg-color">MySQL</span>
                                 </a>
                             
                         </div>
@@ -804,9 +796,9 @@
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'http://cikian.github.io/2022/03/01/jdk-pei-zhi-huan-jing-bian-liang-eclipse-an-zhuang-shi-yong/';
-        this.page.identifier = '/2022/03/01/jdk-pei-zhi-huan-jing-bian-liang-eclipse-an-zhuang-shi-yong/';
-        this.page.title = 'JDK配置环境变量+eclipse安装使用';
+        this.page.url = 'http://cikian.github.io/2022/03/05/mysql-an-zhuang-ji-qi-dong/';
+        this.page.identifier = '/2022/03/05/mysql-an-zhuang-ji-qi-dong/';
+        this.page.title = 'MySQL—概述';
     };
     let disqus_shortname = '';
 
@@ -1053,33 +1045,33 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/05/mysql-an-zhuang-ji-qi-dong/">
+                <a href="/2022/03/06/mysql-tu-xing-hua-jie-mian-gong-ju-datagrip/">
                     <div class="card-image">
                         
-                        <img src="https://img.cikian.cn/featureimages/7.jpg" class="responsive-img" alt="MySQL—概述">
+                        <img src="https://img.cikian.cn/featureimages/9.jpg" class="responsive-img" alt="MySQL—图形化界面工具DataGrip">
                         
-                        <span class="card-title">MySQL—概述</span>
+                        <span class="card-title">MySQL—图形化界面工具DataGrip</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            MySQL的下载、安装、启动以及介绍
+                            MySQL的图形化界面工具DataGrip
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-05
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-06
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    笔记
+                            <a href="/categories/%E6%95%99%E7%A8%8B/" class="post-category">
+                                    教程
                                 </a>
                             
-                            <a href="/categories/%E7%AC%94%E8%AE%B0/MySQL/" class="post-category">
+                            <a href="/categories/%E6%95%99%E7%A8%8B/MySQL/" class="post-category">
                                     MySQL
                                 </a>
                             
@@ -1105,34 +1097,30 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/02/15/javascript-dong-hua/">
+                <a href="/2022/03/01/jdk-pei-zhi-huan-jing-bian-liang-eclipse-an-zhuang-shi-yong/">
                     <div class="card-image">
                         
-                        <img src="https://img.cikian.cn/featureimages/4.jpg" class="responsive-img" alt="JavaScript—动画">
+                        <img src="https://img.cikian.cn/featureimages/6.jpg" class="responsive-img" alt="JDK配置环境变量+eclipse安装使用">
                         
-                        <span class="card-title">JavaScript—动画</span>
+                        <span class="card-title">JDK配置环境变量+eclipse安装使用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            JavaScript中的动画知识整理
+                            本文详细解释了JDK的下载、配置与eclipse的安装
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-01
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    笔记
-                                </a>
-                            
-                            <a href="/categories/%E7%AC%94%E8%AE%B0/JavaScript/" class="post-category">
-                                    JavaScript
+                            <a href="/categories/%E6%95%99%E7%A8%8B/" class="post-category">
+                                    教程
                                 </a>
                             
                             
@@ -1142,12 +1130,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JavaScript/">
-                        <span class="chip bg-color">JavaScript</span>
+                    <a href="/tags/JDK/">
+                        <span class="chip bg-color">JDK</span>
                     </a>
                     
-                    <a href="/tags/%E5%8A%A8%E7%94%BB/">
-                        <span class="chip bg-color">动画</span>
+                    <a href="/tags/%E9%85%8D%E7%BD%AE/">
+                        <span class="chip bg-color">配置</span>
                     </a>
                     
                 </div>

@@ -6,7 +6,7 @@
   <link href="http://cikian.github.io/atom.xml" rel="self"/>
   
   <link href="http://cikian.github.io/"/>
-  <updated>2022-03-05T16:41:37.385Z</updated>
+  <updated>2022-03-06T10:39:06.644Z</updated>
   <id>http://cikian.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MySQL—SQL语言</title>
+    <link href="http://cikian.github.io/2022/03/06/mysql-sql-yu-yan/"/>
+    <id>http://cikian.github.io/2022/03/06/mysql-sql-yu-yan/</id>
+    <published>2022-03-06T10:50:10.000Z</published>
+    <updated>2022-03-06T10:39:06.644Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、通用语法&quot;&gt;&lt;a href=&quot;#一、通用语法&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="http://cikian.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="MySQL" scheme="http://cikian.github.io/categories/%E7%AC%94%E8%AE%B0/MySQL/"/>
+    
+    
+    <category term="MySQL" scheme="http://cikian.github.io/tags/MySQL/"/>
+    
+  </entry>
   
   <entry>
     <title>MySQL—图形化界面工具DataGrip</title>

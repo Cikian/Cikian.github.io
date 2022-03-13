@@ -6,7 +6,7 @@
   <link href="http://cikian.github.io/atom.xml" rel="self"/>
   
   <link href="http://cikian.github.io/"/>
-  <updated>2022-03-06T10:39:06.644Z</updated>
+  <updated>2022-03-13T14:13:25.459Z</updated>
   <id>http://cikian.github.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>VUE</title>
+    <link href="http://cikian.github.io/2022/03/12/vue-ji-chu/"/>
+    <id>http://cikian.github.io/2022/03/12/vue-ji-chu/</id>
+    <published>2022-03-12T08:00:00.000Z</published>
+    <updated>2022-03-13T14:13:25.459Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;VUE-基础&quot;&gt;&lt;a href=&quot;#VUE-基础&quot; class=&quot;headerlink&quot; title=&quot;VUE 基础&quot;&gt;&lt;/a&gt;VUE 基础&lt;/h1&gt;&lt;h2 id=&quot;一、导入使用&quot;&gt;&lt;a href=&quot;#一、导入使用&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="http://cikian.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Vue" scheme="http://cikian.github.io/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
     <title>MySQL—SQL语言</title>
     <link href="http://cikian.github.io/2022/03/06/mysql-sql-yu-yan/"/>
     <id>http://cikian.github.io/2022/03/06/mysql-sql-yu-yan/</id>
     <published>2022-03-06T10:50:10.000Z</published>
-    <updated>2022-03-06T10:39:06.644Z</updated>
+    <updated>2022-03-12T07:48:38.436Z</updated>
     
     
       
@@ -48,7 +73,7 @@
     <link href="http://cikian.github.io/2022/03/06/mysql-tu-xing-hua-jie-mian-gong-ju-datagrip/"/>
     <id>http://cikian.github.io/2022/03/06/mysql-tu-xing-hua-jie-mian-gong-ju-datagrip/</id>
     <published>2022-03-05T16:40:20.000Z</published>
-    <updated>2022-03-05T16:41:37.385Z</updated>
+    <updated>2022-03-12T07:45:59.788Z</updated>
     
     
       
@@ -75,7 +100,7 @@
     <link href="http://cikian.github.io/2022/03/05/mysql-an-zhuang-ji-qi-dong/"/>
     <id>http://cikian.github.io/2022/03/05/mysql-an-zhuang-ji-qi-dong/</id>
     <published>2022-03-05T07:37:41.000Z</published>
-    <updated>2022-03-05T09:12:10.398Z</updated>
+    <updated>2022-03-12T07:41:20.590Z</updated>
     
     
       
@@ -103,7 +128,7 @@
     <link href="http://cikian.github.io/2022/03/01/jdk-pei-zhi-huan-jing-bian-liang-eclipse-an-zhuang-shi-yong/"/>
     <id>http://cikian.github.io/2022/03/01/jdk-pei-zhi-huan-jing-bian-liang-eclipse-an-zhuang-shi-yong/</id>
     <published>2022-03-01T11:05:35.000Z</published>
-    <updated>2022-03-04T01:59:52.375Z</updated>
+    <updated>2022-03-12T07:54:33.940Z</updated>
     
     
       
@@ -131,7 +156,7 @@
     <link href="http://cikian.github.io/2022/02/15/javascript-dong-hua/"/>
     <id>http://cikian.github.io/2022/02/15/javascript-dong-hua/</id>
     <published>2022-02-15T07:12:07.000Z</published>
-    <updated>2022-03-03T13:19:02.081Z</updated>
+    <updated>2022-03-12T07:36:05.276Z</updated>
     
     
       
@@ -160,7 +185,7 @@
     <link href="http://cikian.github.io/2022/02/13/javascript-zuo-yong-yu/"/>
     <id>http://cikian.github.io/2022/02/13/javascript-zuo-yong-yu/</id>
     <published>2022-02-12T17:50:19.000Z</published>
-    <updated>2022-03-03T13:18:53.749Z</updated>
+    <updated>2022-03-12T07:35:45.773Z</updated>
     
     
       
@@ -187,7 +212,7 @@
     <link href="http://cikian.github.io/2022/02/13/javascript-han-shu/"/>
     <id>http://cikian.github.io/2022/02/13/javascript-han-shu/</id>
     <published>2022-02-12T17:47:36.000Z</published>
-    <updated>2022-03-03T13:18:45.335Z</updated>
+    <updated>2022-03-12T07:35:12.401Z</updated>
     
     
       
@@ -216,7 +241,7 @@
     <link href="http://cikian.github.io/2022/02/11/javascript-shu-zu/"/>
     <id>http://cikian.github.io/2022/02/11/javascript-shu-zu/</id>
     <published>2022-02-10T16:50:28.000Z</published>
-    <updated>2022-03-03T13:18:31.772Z</updated>
+    <updated>2022-03-12T07:34:42.707Z</updated>
     
     
       
@@ -245,7 +270,7 @@
     <link href="http://cikian.github.io/2022/02/10/wang-zhan-fen-xiang/"/>
     <id>http://cikian.github.io/2022/02/10/wang-zhan-fen-xiang/</id>
     <published>2022-02-09T16:07:09.000Z</published>
-    <updated>2022-03-03T13:18:13.764Z</updated>
+    <updated>2022-03-12T07:34:14.522Z</updated>
     
     
       
@@ -276,7 +301,7 @@
     <link href="http://cikian.github.io/2022/02/06/markdown-yu-fa/"/>
     <id>http://cikian.github.io/2022/02/06/markdown-yu-fa/</id>
     <published>2022-02-06T13:01:25.000Z</published>
-    <updated>2022-03-03T13:19:13.669Z</updated>
+    <updated>2022-03-12T07:36:27.086Z</updated>
     
     
       

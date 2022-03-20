@@ -6,7 +6,7 @@
   <link href="http://cikian.github.io/atom.xml" rel="self"/>
   
   <link href="http://cikian.github.io/"/>
-  <updated>2022-03-16T04:42:33.025Z</updated>
+  <updated>2022-03-20T14:08:19.056Z</updated>
   <id>http://cikian.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java语言跨平台原理</title>
+    <link href="http://cikian.github.io/2022/03/20/java-yu-yan-kua-ping-tai-yuan-li/"/>
+    <id>http://cikian.github.io/2022/03/20/java-yu-yan-kua-ping-tai-yuan-li/</id>
+    <published>2022-03-20T14:07:15.000Z</published>
+    <updated>2022-03-20T14:08:19.056Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://s2.loli.net/2022/03/20/igvBVGqbIsQdlOx.png&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;一、平台和跨平台&quot;&gt;&lt;a href=&quot;#一、平台和跨平台&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="http://cikian.github.io/categories/Java/"/>
+    
+    
+    <category term="Java" scheme="http://cikian.github.io/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>Vue基础</title>

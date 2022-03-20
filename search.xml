@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Java语言跨平台原理</title>
+      <link href="/2022/03/20/java-yu-yan-kua-ping-tai-yuan-li/"/>
+      <url>/2022/03/20/java-yu-yan-kua-ping-tai-yuan-li/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://s2.loli.net/2022/03/20/igvBVGqbIsQdlOx.png"></p><h2 id="一、平台和跨平台"><a href="#一、平台和跨平台" class="headerlink" title="一、平台和跨平台"></a>一、平台和跨平台</h2><p>我们这里所说的<strong>“平台”</strong>指的是操作系统，如我们常见的Windows、MacOS、Linux等。</p><p>而<strong>“跨平台”</strong>指的是同样的Java程序可以在所有平台上面运行，<strong>并且运行结果相同</strong>。</p><h2 id="二、跨平台原理"><a href="#二、跨平台原理" class="headerlink" title="二、跨平台原理"></a>二、跨平台原理</h2><p>举个例子：有三个人A,B,C，A只会说并且只听得懂a语言，B只会说并且只听得懂b语言，C只会说并且只听得懂c语言，如果A想和B、C交流，那么他们直接对话是行不通的，因为他们说的话互相都听不懂。那么，如果他们之间一定要交流，此时在他们之间就需要一个“翻译”把他们之间说的话翻译成对方能听懂的话。</p><p>这里面，A、B、C就相当于不同的平台，他们说的话相当于运行的程序，如果没有任何处理，Windows平台的程序是不能直接运行在MacOS或者Linux上的。</p><p>而Java之所以能<strong>“跨平台”</strong>运行，是因为<strong>JVM（Java虚拟机）</strong>的存在，JVM在不同平台间就充当着“翻译”的角色。</p><p>我们只需要针对不同的平台安装不同的JVM，便可在不同的平台运行相同的代码，并且得到相同的结果。</p><h2 id="三、注意"><a href="#三、注意" class="headerlink" title="三、注意"></a>三、注意</h2><ol><li>跨平台运行不是Java程序能在所有的平台上运行，关键是该平台是否能安装相应的虚拟机，也就是能不能找到对应的“翻译”；</li><li>Java源程序经过编译器编译后变成字节码（.class文件，Android 中是 .dex文件），字节码由JVM解释执行，<strong>字节码只面向虚拟机</strong>，虚拟机将每一条要执行的字节码送给解释器，解释器将其翻译成特定机器上的机器码（二进制码），然后在特定的机器上运行。</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Vue基础</title>
       <link href="/2022/03/12/vue-ji-chu/"/>
       <url>/2022/03/12/vue-ji-chu/</url>

@@ -6,7 +6,7 @@
   <link href="http://cikian.github.io/atom.xml" rel="self"/>
   
   <link href="http://cikian.github.io/"/>
-  <updated>2022-03-24T04:52:11.354Z</updated>
+  <updated>2022-03-27T11:41:35.547Z</updated>
   <id>http://cikian.github.io/</id>
   
   <author>
@@ -15,6 +15,91 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java基础方法（更新中）</title>
+    <link href="http://cikian.github.io/2022/03/27/java-ji-chu-fang-fa/"/>
+    <id>http://cikian.github.io/2022/03/27/java-ji-chu-fang-fa/</id>
+    <published>2022-03-27T11:32:06.000Z</published>
+    <updated>2022-03-27T11:41:35.547Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、Scanner&quot;&gt;&lt;a href=&quot;#一、Scanner&quot; class=&quot;headerlink&quot; title=&quot;一、Scanner&quot;&gt;&lt;/a&gt;一、Scanner&lt;/h2&gt;&lt;pre class=&quot; language-java&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="http://cikian.github.io/categories/Java/"/>
+    
+    <category term="教程" scheme="http://cikian.github.io/categories/Java/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="Java" scheme="http://cikian.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IDEA常用快捷键</title>
+    <link href="http://cikian.github.io/2022/03/26/idea-chang-yong-kuai-jie-jian/"/>
+    <id>http://cikian.github.io/2022/03/26/idea-chang-yong-kuai-jie-jian/</id>
+    <published>2022-03-25T16:30:15.000Z</published>
+    <updated>2022-03-27T11:39:25.320Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、内容辅助键&quot;&gt;&lt;a href=&quot;#一、内容辅助键&quot; class=&quot;headerlink&quot; title=&quot;一、内容辅助键&quot;&gt;&lt;/a&gt;一、内容辅助键&lt;/h2&gt;&lt;h3 id=&quot;1-快速生成语句&quot;&gt;&lt;a href=&quot;#1-快速生成语句&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="教程" scheme="http://cikian.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="Java" scheme="http://cikian.github.io/tags/Java/"/>
+    
+    <category term="IDEA" scheme="http://cikian.github.io/tags/IDEA/"/>
+    
+    <category term="快捷键" scheme="http://cikian.github.io/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Random随机数</title>
+    <link href="http://cikian.github.io/2022/03/25/random-sui-ji-shu/"/>
+    <id>http://cikian.github.io/2022/03/25/random-sui-ji-shu/</id>
+    <published>2022-03-25T13:14:32.000Z</published>
+    <updated>2022-03-25T16:29:18.644Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、使用方法&quot;&gt;&lt;a href=&quot;#一、使用方法&quot; class=&quot;headerlink&quot; title=&quot;一、使用方法&quot;&gt;&lt;/a&gt;一、使用方法&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;导包&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;import</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="http://cikian.github.io/categories/Java/"/>
+    
+    <category term="笔记" scheme="http://cikian.github.io/categories/Java/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Java" scheme="http://cikian.github.io/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>Java中的关键字</title>

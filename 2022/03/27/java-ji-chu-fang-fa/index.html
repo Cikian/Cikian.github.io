@@ -479,14 +479,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-03-29
+                    2022-04-02
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    538
+                    660
                 </div>
                 
 
@@ -629,7 +629,39 @@
 </li>
 </ol>
 </blockquote>
-<h2 id="六、API（Application-Programming-Interface）-应用程序编程接口"><a href="#六、API（Application-Programming-Interface）-应用程序编程接口" class="headerlink" title="六、API（Application Programming Interface）:应用程序编程接口"></a>六、API（Application Programming Interface）:应用程序编程接口</h2>
+<h2 id="六、StringBuilder"><a href="#六、StringBuilder" class="headerlink" title="六、StringBuilder"></a>六、StringBuilder</h2><ol>
+<li><p>使用方法：</p>
+<p><code>StringBuilder 对象名 = new StringBuilder();</code></p>
+</li>
+<li><p>添加和反转方法</p>
+<ul>
+<li><code>public StringBuilder append(任意类型)</code>：添加数据，并返回对象本身；</li>
+<li><code>public StringBuilder reverse()</code>：返回相反的字符序列。</li>
+</ul>
+</li>
+<li><p>String和StringBuilder相互转换</p>
+</li>
+</ol>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>myString<span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">myString</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//创建对象</span>
+        StringBuilder sb <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//空</span>
+        StringBuilder sb2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringBuilder</span><span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//带参数</span>
+        <span class="token comment" spellcheck="true">//添加</span>
+        sb<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>java<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        sb<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>hello<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>world<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//因为返回的是对象，所以可以调用方法</span>
+        <span class="token comment" spellcheck="true">//反转</span>
+        sb<span class="token punctuation">.</span><span class="token function">reverse</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//StringBuilder转换成String</span>
+        String s <span class="token operator">=</span> sb<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//String转换成StringBuilder</span>
+        String a <span class="token operator">=</span> <span class="token string">"hello"</span><span class="token punctuation">;</span>
+        StringBuilder sb3 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringBuilder</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+
                 
             </div>
             <hr/>

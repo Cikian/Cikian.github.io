@@ -6,7 +6,7 @@
   <link href="http://cikian.github.io/atom.xml" rel="self"/>
   
   <link href="http://cikian.github.io/"/>
-  <updated>2022-04-02T13:31:15.400Z</updated>
+  <updated>2022-04-07T14:38:54.936Z</updated>
   <id>http://cikian.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java小玩意：猜数游戏</title>
+    <link href="http://cikian.github.io/2022/04/07/java-xiao-wan-yi-cai-shu-you-xi/"/>
+    <id>http://cikian.github.io/2022/04/07/java-xiao-wan-yi-cai-shu-you-xi/</id>
+    <published>2022-04-07T14:34:33.000Z</published>
+    <updated>2022-04-07T14:38:54.936Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;通过Random获取随机数实现的一个超简单的猜数游戏&quot;&gt;&lt;a href=&quot;#通过Random获取随机数实现的一个超简单的猜数游戏&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="小玩意" scheme="http://cikian.github.io/categories/%E5%B0%8F%E7%8E%A9%E6%84%8F/"/>
+    
+    
+    <category term="Java" scheme="http://cikian.github.io/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>Java基础方法（更新中）</title>

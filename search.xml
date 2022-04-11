@@ -29,6 +29,31 @@
     
     
     <entry>
+      <title>Java—继承</title>
+      <link href="/2022/04/04/java-ji-cheng/"/>
+      <url>/2022/04/04/java-ji-cheng/</url>
+      
+        <content type="html"><![CDATA[<h1 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h1><h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><p>继承是面向对象三大特征之一。可以使得子类具有父类的属性和方法，还可以在子类中重新定义，追加属性和方法。</p><ul><li><strong>继承的格式：</strong>public class 子类名 <strong>extends</strong> 父类名{}</li><li>父类，也被称为<strong>基类、超类</strong></li><li>子类，也被称为<strong>派生类</strong></li></ul><p><strong>继承中子类的特点：</strong></p><ul><li>子类可以有父类的内容</li><li>子类还可以有自己特有的内容</li></ul><h2 id="二、继承的好处与弊端"><a href="#二、继承的好处与弊端" class="headerlink" title="二、继承的好处与弊端"></a>二、继承的好处与弊端</h2><p>继承的好处</p><ol><li>提高了代码的<strong>复用性</strong>（多个类相同的成员可以放到同一个类中）</li><li>提高了代码的<strong>维护性</strong>（如果多个方法的代码需要修改，修改一处即可）</li></ol><p>继承的弊端：</p><ul><li>继承让类与类之间产生了关系，类的耦合性增强了，当父类发生变化时，子类实现也不得不跟着变化，削弱了子类的独立性。</li></ul><h2 id="三、继承中变量的访问特点"><a href="#三、继承中变量的访问特点" class="headerlink" title="三、继承中变量的访问特点"></a>三、继承中变量的访问特点</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java基础方法（更新中）</title>
       <link href="/2022/03/27/java-ji-chu-fang-fa/"/>
       <url>/2022/03/27/java-ji-chu-fang-fa/</url>

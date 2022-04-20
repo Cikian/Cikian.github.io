@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Java—类型转换, Cikian,陈子健，cikian,&#39;cikian&#39;,&#39;Cikian&#39;,&#39;陈子健&#39;,czj,&#39;czj&#39;">
-    <meta name="description" content="Java程序中数据类型的转换">
+    <meta name="keywords" content="Java—继承, Cikian,陈子健，cikian,&#39;cikian&#39;,&#39;Cikian&#39;,&#39;陈子健&#39;,czj,&#39;czj&#39;">
+    <meta name="description" content="（描述）">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Java—类型转换 | CiKian</title>
+    <title>Java—继承 | CiKian</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -542,12 +542,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://img-upyun.cikian.cn/blog-cover/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://img-upyun.cikian.cn/blog-cover/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Java—类型转换</h1>
+                    <h1 class="description center-align post-title">Java—继承</h1>
                 </div>
             </div>
         </div>
@@ -688,21 +688,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-03-21
+                    2022-04-04
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-03-24
+                    2022-04-04
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    204
+                    250
                 </div>
                 
 
@@ -729,46 +729,27 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、自动类型转换"><a href="#一、自动类型转换" class="headerlink" title="一、自动类型转换"></a>一、自动类型转换</h2><p>把一个表示数据<strong>范围小的数值</strong>或者<strong>变量</strong>赋值给另一个表示数据<strong>范围大的变量</strong>。</p>
-<p><strong>※表示范围从小到大：</strong></p>
-<p><img src="https://s2.loli.net/2022/03/21/xnmoIYrADGFcOkM.png"></p>
-<p>测试代码：</p>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>company<span class="token punctuation">;</span>
-
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
-
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token comment" spellcheck="true">// 自动类型转换</span>
-        <span class="token keyword">int</span> a<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
-        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">double</span> b<span class="token operator">=</span>a<span class="token punctuation">;</span>
-        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-</code></pre>
-<p>测试结果：</p>
-<p><img src="https://s2.loli.net/2022/03/21/dZJgc2pjA1YiWyP.png"></p>
-<h2 id="二、强制类型转换"><a href="#二、强制类型转换" class="headerlink" title="二、强制类型转换"></a>二、强制类型转换</h2><p>把一个表示数据<strong>范围大的数值</strong>或者<strong>变量</strong>赋值给另一个表示数据<strong>范围小的变量</strong>。</p>
+                <h1 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h1><h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><p>继承是面向对象三大特征之一。可以使得子类具有父类的属性和方法，还可以在子类中重新定义，追加属性和方法。</p>
+<ul>
+<li><strong>继承的格式：</strong>public class 子类名 <strong>extends</strong> 父类名{}</li>
+<li>父类，也被称为<strong>基类、超类</strong></li>
+<li>子类，也被称为<strong>派生类</strong></li>
+</ul>
+<p><strong>继承中子类的特点：</strong></p>
+<ul>
+<li>子类可以有父类的内容</li>
+<li>子类还可以有自己特有的内容</li>
+</ul>
+<h2 id="二、继承的好处与弊端"><a href="#二、继承的好处与弊端" class="headerlink" title="二、继承的好处与弊端"></a>二、继承的好处与弊端</h2><p>继承的好处</p>
 <ol>
-<li>格式：<code>目标数据类型 变量名 = (目标数据类型)值或者变量;</code></li>
-<li>如：<code>int k = (int)3.14;</code></li>
+<li>提高了代码的<strong>复用性</strong>（多个类相同的成员可以放到同一个类中）</li>
+<li>提高了代码的<strong>维护性</strong>（如果多个方法的代码需要修改，修改一处即可）</li>
 </ol>
-<p>测试代码：</p>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>company<span class="token punctuation">;</span>
-
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
-
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token comment" spellcheck="true">// 强制类型转换</span>
-        <span class="token keyword">int</span> a<span class="token operator">=</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token number">3.14</span><span class="token punctuation">;</span>
-        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-</code></pre>
-<p>测试结果：</p>
-<p><img src="https://s2.loli.net/2022/03/21/kq5HSLPge1moDiu.png"></p>
-<p><strong>强制类型转换一般不建议使用</strong></p>
-
+<p>继承的弊端：</p>
+<ul>
+<li>继承让类与类之间产生了关系，类的耦合性增强了，当父类发生变化时，子类实现也不得不跟着变化，削弱了子类的独立性。</li>
+</ul>
+<h2 id="三、继承中变量的访问特点"><a href="#三、继承中变量的访问特点" class="headerlink" title="三、继承中变量的访问特点"></a>三、继承中变量的访问特点</h2>
                 
             </div>
             <hr/>
@@ -794,7 +775,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://www.cikian.cn/2022/03/21/java-lei-xing-zhuan-huan/">https://www.cikian.cn/2022/03/21/java-lei-xing-zhuan-huan/</a>
+                    <a href="https://www.cikian.cn/2022/04/04/java-ji-cheng/">https://www.cikian.cn/2022/04/04/java-ji-cheng/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1285,30 +1266,30 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/22/java-zi-fu-de-cao-zuo/">
+                <a href="/2022/04/07/java-xiao-wan-yi-cai-shu-you-xi/">
                     <div class="card-image">
                         
-                        <img src="https://img-upyun.cikian.cn/blog-cover/13.jpg" class="responsive-img" alt="Java—字符的“+”操作">
+                        <img src="https://img-upyun.cikian.cn/blog-cover/19.jpg" class="responsive-img" alt="Java小玩意：猜数游戏">
                         
-                        <span class="card-title">Java—字符的“+”操作</span>
+                        <span class="card-title">Java小玩意：猜数游戏</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Java中字符和字符串的“+”操作
+                            Java实现猜数小游戏。
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-22
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-07
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Java/" class="post-category">
-                                    Java
+                            <a href="/categories/%E5%B0%8F%E7%8E%A9%E6%84%8F/" class="post-category">
+                                    小玩意
                                 </a>
                             
                             
@@ -1333,23 +1314,23 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/20/java-yu-yan-kua-ping-tai-yuan-li/">
+                <a href="/2022/03/27/java-ji-chu-fang-fa/">
                     <div class="card-image">
                         
-                        <img src="https://img-upyun.cikian.cn/blog-cover/11.jpg" class="responsive-img" alt="Java语言跨平台原理">
+                        <img src="https://img-upyun.cikian.cn/blog-cover/17.jpg" class="responsive-img" alt="Java基础方法（更新中）">
                         
-                        <span class="card-title">Java语言跨平台原理</span>
+                        <span class="card-title">Java基础方法（更新中）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Java语言跨平台的原理
+                            Java中基础方法的基础使用，纯基础！
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-27
                             </span>
                         <span class="publish-author">
                             
@@ -1357,6 +1338,10 @@
                             
                             <a href="/categories/Java/" class="post-category">
                                     Java
+                                </a>
+                            
+                            <a href="/categories/Java/%E6%95%99%E7%A8%8B/" class="post-category">
+                                    教程
                                 </a>
                             
                             

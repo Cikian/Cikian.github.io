@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="关于, Cikian,陈子健，cikian,&#39;cikian&#39;,&#39;Cikian&#39;,&#39;陈子健&#39;,czj,&#39;czj&#39;">
+    <meta name="keywords" content="关于Cikian, Cikian,陈子健，cikian,&#39;cikian&#39;,&#39;Cikian&#39;,&#39;陈子健&#39;,czj,&#39;czj&#39;">
     <meta name="description" content="这里是Cikian，没错，我是陈子健，欢迎访问！">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>关于 | CiKian</title>
+    <title>关于Cikian | CiKian</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -32,13 +32,153 @@
     <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
     <script>LA.init({ id: "JeJlqAoGwWCXssib", ck: "JeJlqAoGwWCXssib" })</script>
 
-<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="CiKian" type="application/atom+xml">
+<style type="text/css" lang="css">
+    #loading-container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+        width: 100vw;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #FFF;
+        text-align: center;
+        /* loader页面消失采用渐隐的方式*/
+        -webkit-transition: opacity 1s ease;
+        -moz-transition: opacity 1s ease;
+        -o-transition: opacity 1s ease;
+        transition: opacity 1s ease;
+    }
+    .loading-image{
+        width: 120px;
+        height: 50px;
+        transform: translate(-50%);
+    }
+
+    .loading-image div:nth-child(2) {
+        -webkit-animation: pacman-balls 1s linear 0s infinite;
+        animation: pacman-balls 1s linear 0s infinite
+    }
+
+    .loading-image div:nth-child(3) {
+        -webkit-animation: pacman-balls 1s linear .33s infinite;
+        animation: pacman-balls 1s linear .33s infinite
+    }
+
+    .loading-image div:nth-child(4) {
+        -webkit-animation: pacman-balls 1s linear .66s infinite;
+        animation: pacman-balls 1s linear .66s infinite
+    }
+
+    .loading-image div:nth-child(5) {
+        -webkit-animation: pacman-balls 1s linear .99s infinite;
+        animation: pacman-balls 1s linear .99s infinite
+    }
+
+   .loading-image div:first-of-type {
+        width: 0;
+        height: 0;
+        border: 25px solid #49b1f5;
+        border-right-color: transparent;
+        border-radius: 25px;
+        -webkit-animation: rotate_pacman_half_up .5s 0s infinite;
+        animation: rotate_pacman_half_up .5s 0s infinite;
+    }
+    .loading-image div:nth-child(2) {
+        width: 0;
+        height: 0;
+        border: 25px solid #49b1f5;
+        border-right-color: transparent;
+        border-radius: 25px;
+        -webkit-animation: rotate_pacman_half_down .5s 0s infinite;
+        animation: rotate_pacman_half_down .5s 0s infinite;
+        margin-top: -50px;
+    }
+    @-webkit-keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
+
+    @keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
+
+    @-webkit-keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
+
+    @keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
+
+    @-webkit-keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
+
+    @keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
+
+
+    .loading-image div:nth-child(3),
+    .loading-image div:nth-child(4),
+    .loading-image div:nth-child(5),
+    .loading-image div:nth-child(6){
+        background-color: #49b1f5;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        margin: 2px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        transform: translateY(-6.25px);
+        top: 25px;
+        left: 100px;
+    }
+    .loading-text{
+        margin-bottom: 20vh;
+        text-align: center;
+        color: #2c3e50;
+        font-size: 2rem;
+        box-sizing: border-box;
+        padding: 0 10px;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    @media only screen and (max-width: 500px) {
+         .loading-text{
+            font-size: 1.5rem;
+         }
+    }
+    .fadeout {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    /* logo出现动画 */
+    @-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}
+    @keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);}}
+ </style>
+ <script>
+(function () {
+    const loaded = function(){
+       setTimeout(function(){
+            const loader = document.getElementById("loading-container");
+            loader.className="fadeout" ;//使用渐隐的方法淡出loading page
+            // document.getElementById("body-wrap").style.display="flex";
+            setTimeout(function(){
+                loader.style.display="none";
+            },1000); 
+        },1000);//强制显示loading page 1s  
+    };
+    loaded();
+})()
+ </script><meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="CiKian" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 
 
-<body>
+
+ <div id="loading-container">
+     <p class="loading-text">玩命加载中 . . . </p> 
+     <div class="loading-image">
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div> 
+         <div></div>
+     </div>
+ </div><body>
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
@@ -399,8 +539,12 @@
         <div class="brand">
             <div class="title center-align">
                 
+                            关于Cikian
+                                
+
+                                    <!-- 
                     Cikian
-                        
+                         -->
             </div>
 
             <div class="description center-align">
@@ -449,7 +593,7 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">19</a></span>
+    <span class="count"><a href="/">20</a></span>
     <span class="name">文章</span>
 </div>
 
@@ -479,7 +623,7 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">19</a></span>
+    <span class="count"><a href="/">20</a></span>
     <span class="name">文章</span>
 </div>
 
@@ -663,7 +807,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,6,12,1],
+                data: [0,0,0,0,0,0,0,0,0,0,6,12,2],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -705,7 +849,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"教程","value":3},{"name":"笔记","value":8},{"name":"Java","value":6},{"name":"JavaScript","value":4},{"name":"小玩意","value":1},{"name":"MySQL","value":2},{"name":"笔记","value":1},{"name":"分享","value":1},{"name":"教程","value":1}],
+                data: [{"name":"教程","value":3},{"name":"笔记","value":8},{"name":"JavaScript","value":4},{"name":"Java","value":7},{"name":"小玩意","value":1},{"name":"MySQL","value":2},{"name":"笔记","value":1},{"name":"分享","value":1},{"name":"教程","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -729,7 +873,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["Java","JavaScript","MySQL","IDEA","快捷键","JDK","配置","数组","函数","MarkDown"]
+                data: ["Java","JavaScript","MySQL","JDK","配置","IDEA","快捷键","动画","数组","函数"]
             }
         ],
         yAxis: [
@@ -742,7 +886,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [8,4,3,1,1,1,1,1,1,1],
+                data: [9,4,3,1,1,1,1,1,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -934,6 +1078,20 @@
         <div class="tag-chips center-align">
             
             
+            <a href="/tags/JDK/">
+                <span class="chip center-align waves-effect waves-light chip-default">JDK</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E9%85%8D%E7%BD%AE/">
+                <span class="chip center-align waves-effect waves-light chip-default">配置</span>
+            </a>
+            
+            
+            
+            
+            
             
             
             <a href="/tags/IDEA/">
@@ -948,17 +1106,9 @@
             
             
             
-            <a href="/tags/JDK/">
-                <span class="chip center-align waves-effect waves-light chip-default">JDK</span>
+            <a href="/tags/%E5%8A%A8%E7%94%BB/">
+                <span class="chip center-align waves-effect waves-light chip-default">动画</span>
             </a>
-            
-            
-            
-            <a href="/tags/%E9%85%8D%E7%BD%AE/">
-                <span class="chip center-align waves-effect waves-light chip-default">配置</span>
-            </a>
-            
-            
             
             
             
@@ -978,12 +1128,6 @@
             
             <a href="/tags/%E8%AF%AD%E6%B3%95/">
                 <span class="chip center-align waves-effect waves-light chip-default">语法</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E5%8A%A8%E7%94%BB/">
-                <span class="chip center-align waves-effect waves-light chip-default">动画</span>
             </a>
             
             
@@ -1100,7 +1244,7 @@
                                     <br>
                                     
                                         &nbsp;<i class="fas fa-chart-area"></i>&nbsp;
-                                        站点总字数:&nbsp;<span class="white-color">15.5k</span>
+                                        站点总字数:&nbsp;<span class="white-color">15.8k</span>
                                             
                                                 
                                                     

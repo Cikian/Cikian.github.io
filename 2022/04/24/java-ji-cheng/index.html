@@ -68,7 +68,7 @@
 			align-items: center;
 			/*交叉轴方向居中显示*/
 			height: 100vh;
-			background-color: #42bdff;
+			background-image: linear-gradient(to right bottom, #5151e5 0%, #72edf2 100%);
 		}
 
 		#loading-container ul {
@@ -266,7 +266,7 @@
             setTimeout(function(){
                 loader.style.display="none";
             },1000); 
-        },1000);//强制显示loading page 1s  
+        },1500);//强制显示loading page 1.5s  
     };
     loaded();
 })()
@@ -811,7 +811,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-04-24
+                    2022-04-29
                 </div>
                 
 
@@ -921,10 +921,12 @@
 <h2 id="七、方法重写"><a href="#七、方法重写" class="headerlink" title="七、方法重写"></a>七、方法重写</h2><p>概念：子类中出现了和父类中一模一样的方法声明；</p>
 <p>应用：当子类需要父类的功能，而功能主体子类有自己特有内容时，可以重写父类中的方法，这样，既保留了父类的功能，又定义了子类特有的内容。</p>
 <p><strong>注意事项：</strong></p>
-<ol>
-<li>父类中私有方法子类不能重写，因为父类私有成员子类不能继承；</li>
-<li>重写时，子类方法的访问权限不能比父类方法的访问权限低；</li>
-</ol>
+<ul>
+<li><p>父类中私有方法子类不能重写，因为父类私有成员子类不能继承；</p>
+</li>
+<li><p><strong>重写时，子类方法的访问权限不能比父类方法的访问权限低；</strong></p>
+</li>
+</ul>
 <h2 id="八、继承中的注意事项"><a href="#八、继承中的注意事项" class="headerlink" title="八、继承中的注意事项"></a>八、继承中的注意事项</h2><ol>
 <li>子类不能继承多个类；</li>
 <li>支持多层继承，如：“爸爸”继承“爷爷”，“爸爸”即有了“爷爷”中的方法，“儿子”继承“爸爸”，“儿子”即有了“爸爸”中的方法，相当于“儿子”有了“爷爷”中的方法。</li>

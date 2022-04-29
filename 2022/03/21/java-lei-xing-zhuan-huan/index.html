@@ -68,7 +68,7 @@
 			align-items: center;
 			/*交叉轴方向居中显示*/
 			height: 100vh;
-			background-color: #42bdff;
+			background-image: linear-gradient(to right bottom, #5151e5 0%, #72edf2 100%);
 		}
 
 		#loading-container ul {
@@ -266,7 +266,7 @@
             setTimeout(function(){
                 loader.style.display="none";
             },1000); 
-        },1000);//强制显示loading page 1s  
+        },1500);//强制显示loading page 1.5s  
     };
     loaded();
 })()

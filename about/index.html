@@ -68,7 +68,7 @@
 			align-items: center;
 			/*交叉轴方向居中显示*/
 			height: 100vh;
-			background-color: #42bdff;
+			background-image: linear-gradient(to right bottom, #5151e5 0%, #72edf2 100%);
 		}
 
 		#loading-container ul {
@@ -266,7 +266,7 @@
             setTimeout(function(){
                 loader.style.display="none";
             },1000); 
-        },1000);//强制显示loading page 1s  
+        },1500);//强制显示loading page 1.5s  
     };
     loaded();
 })()
@@ -972,7 +972,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"教程","value":3},{"name":"笔记","value":8},{"name":"Java","value":8},{"name":"JavaScript","value":4},{"name":"小玩意","value":1},{"name":"MySQL","value":2},{"name":"笔记","value":1},{"name":"分享","value":1},{"name":"教程","value":1}],
+                data: [{"name":"笔记","value":8},{"name":"教程","value":3},{"name":"JavaScript","value":4},{"name":"Java","value":8},{"name":"小玩意","value":1},{"name":"MySQL","value":2},{"name":"教程","value":1},{"name":"笔记","value":1},{"name":"分享","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -1203,6 +1203,8 @@
             
             
             
+            
+            
             <a href="/tags/IDEA/">
                 <span class="chip center-align waves-effect waves-light chip-default">IDEA</span>
             </a>
@@ -1224,8 +1226,6 @@
             <a href="/tags/%E9%85%8D%E7%BD%AE/">
                 <span class="chip center-align waves-effect waves-light chip-default">配置</span>
             </a>
-            
-            
             
             
             
@@ -1261,12 +1261,6 @@
             
             
             
-            <a href="/tags/Vue/">
-                <span class="chip center-align waves-effect waves-light chip-default">Vue</span>
-            </a>
-            
-            
-            
             <a href="/tags/%E7%BD%91%E7%AB%99/">
                 <span class="chip center-align waves-effect waves-light chip-default">网站</span>
             </a>
@@ -1287,6 +1281,12 @@
             
             <a href="/tags/%E6%8E%A8%E8%8D%90/">
                 <span class="chip center-align waves-effect waves-light chip-default">推荐</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Vue/">
+                <span class="chip center-align waves-effect waves-light chip-default">Vue</span>
             </a>
             
             

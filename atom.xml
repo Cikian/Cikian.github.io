@@ -6,7 +6,7 @@
   <link href="https://www.cikian.cn/atom.xml" rel="self"/>
   
   <link href="https://www.cikian.cn/"/>
-  <updated>2022-04-23T17:32:55.555Z</updated>
+  <updated>2022-05-04T09:19:05.766Z</updated>
   <id>https://www.cikian.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>微信小程序—url带参传值</title>
+    <link href="https://www.cikian.cn/2022/05/04/wei-xin-xiao-cheng-xu-url-dai-can-chuan-zhi/"/>
+    <id>https://www.cikian.cn/2022/05/04/wei-xin-xiao-cheng-xu-url-dai-can-chuan-zhi/</id>
+    <published>2022-05-04T09:15:00.000Z</published>
+    <updated>2022-05-04T09:19:05.766Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;微信小程序不同页面间url带参传递数据&quot;&gt;&lt;a href=&quot;#微信小程序不同页面间url带参传递数据&quot; class=&quot;headerlink&quot; title=&quot;微信小程序不同页面间url带参传递数据&quot;&gt;&lt;/a&gt;微信小程序不同页面间url带参传递数据&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="小程序" scheme="https://www.cikian.cn/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    
+    <category term="小程序" scheme="https://www.cikian.cn/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>Java—包&amp;导包</title>
@@ -521,37 +546,6 @@
     <category term="JavaScript" scheme="https://www.cikian.cn/tags/JavaScript/"/>
     
     <category term="数组" scheme="https://www.cikian.cn/tags/%E6%95%B0%E7%BB%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>网站分享（持续更新）</title>
-    <link href="https://www.cikian.cn/2022/02/10/wang-zhan-fen-xiang/"/>
-    <id>https://www.cikian.cn/2022/02/10/wang-zhan-fen-xiang/</id>
-    <published>2022-02-09T16:07:09.000Z</published>
-    <updated>2022-03-24T04:45:53.249Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;网站分享（持续更新）&quot;&gt;&lt;a href=&quot;#网站分享（持续更新）&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="分享" scheme="https://www.cikian.cn/categories/%E5%88%86%E4%BA%AB/"/>
-    
-    
-    <category term="网站" scheme="https://www.cikian.cn/tags/%E7%BD%91%E7%AB%99/"/>
-    
-    <category term="资源" scheme="https://www.cikian.cn/tags/%E8%B5%84%E6%BA%90/"/>
-    
-    <category term="工具" scheme="https://www.cikian.cn/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="推荐" scheme="https://www.cikian.cn/tags/%E6%8E%A8%E8%8D%90/"/>
     
   </entry>
   

@@ -6,7 +6,7 @@
   <link href="https://www.cikian.cn/atom.xml" rel="self"/>
   
   <link href="https://www.cikian.cn/"/>
-  <updated>2022-05-04T09:19:05.766Z</updated>
+  <updated>2022-05-20T16:40:08.646Z</updated>
   <id>https://www.cikian.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java小玩意：黄金矿工</title>
+    <link href="https://www.cikian.cn/2022/05/21/java-xiao-wan-yi-huang-jin-kuang-gong/"/>
+    <id>https://www.cikian.cn/2022/05/21/java-xiao-wan-yi-huang-jin-kuang-gong/</id>
+    <published>2022-05-20T16:37:30.000Z</published>
+    <updated>2022-05-20T16:40:08.646Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Java小玩意：黄金矿工&quot;&gt;&lt;a href=&quot;#Java小玩意：黄金矿工&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="小玩意" scheme="https://www.cikian.cn/categories/%E5%B0%8F%E7%8E%A9%E6%84%8F/"/>
+    
+    
+    <category term="Java" scheme="https://www.cikian.cn/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>微信小程序—url带参传值</title>
@@ -177,7 +202,7 @@
     <link href="https://www.cikian.cn/2022/03/25/random-sui-ji-shu/"/>
     <id>https://www.cikian.cn/2022/03/25/random-sui-ji-shu/</id>
     <published>2022-03-25T13:14:32.000Z</published>
-    <updated>2022-03-25T16:29:18.644Z</updated>
+    <updated>2022-05-20T16:43:27.874Z</updated>
     
     
       
@@ -193,8 +218,6 @@
     
     
     <category term="Java" scheme="https://www.cikian.cn/categories/Java/"/>
-    
-    <category term="笔记" scheme="https://www.cikian.cn/categories/Java/%E7%AC%94%E8%AE%B0/"/>
     
     
     <category term="Java" scheme="https://www.cikian.cn/tags/Java/"/>
@@ -517,35 +540,6 @@
     <category term="JavaScript" scheme="https://www.cikian.cn/tags/JavaScript/"/>
     
     <category term="函数" scheme="https://www.cikian.cn/tags/%E5%87%BD%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript—数组</title>
-    <link href="https://www.cikian.cn/2022/02/11/javascript-shu-zu/"/>
-    <id>https://www.cikian.cn/2022/02/11/javascript-shu-zu/</id>
-    <published>2022-02-10T16:50:28.000Z</published>
-    <updated>2022-03-24T04:46:07.478Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;JavaScript-数组&quot;&gt;&lt;a href=&quot;#JavaScript-数组&quot; class=&quot;headerlink&quot; title=&quot;JavaScript-数组&quot;&gt;&lt;/a&gt;JavaScript-数组&lt;/h1&gt;&lt;h2 id=&quot;一、创建数组&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="笔记" scheme="https://www.cikian.cn/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="JavaScript" scheme="https://www.cikian.cn/categories/%E7%AC%94%E8%AE%B0/JavaScript/"/>
-    
-    
-    <category term="JavaScript" scheme="https://www.cikian.cn/tags/JavaScript/"/>
-    
-    <category term="数组" scheme="https://www.cikian.cn/tags/%E6%95%B0%E7%BB%84/"/>
     
   </entry>
   

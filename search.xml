@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>GitHub不再允许“RSA密钥与SHA-1一起使用”</title>
+      <link href="/2022/06/08/github-bu-zai-yun-xu-rsa-mi-yao-yu-sha-1-yi-qi-shi-yong/"/>
+      <url>/2022/06/08/github-bu-zai-yun-xu-rsa-mi-yao-yu-sha-1-yi-qi-shi-yong/</url>
+      
+        <content type="html"><![CDATA[<p>克隆GitHub仓库时，报错：</p><pre><code>Eclipse/Git: &quot;You&#39;re using an RSA key with SHA-1,which is no longer allowed.Please use a newer client or a different key type.&quot;</code></pre><p>算是小问题吧，就是不知道什么时候开始，GitHub不允许“RSA密钥与SHA-1一起使用“了。</p><p>然后查到了解决办法：</p><blockquote><p>使用 ECDSA 加密创建新的 SSH 密钥</p></blockquote><p><code>ssh-keygen -t ecdsa -b 521 -C &quot;example@example.com&quot;</code></p><p>然后正常上传使用就好了。</p><p>原文地址：[<a href="https://namespaceit.com/blog/youre-using-an-rsa-key-with-sha-1-which-is-no-longer-allowed-please-use-a-newer-client-or-a-different-key-type-eclipse-git">已解决]“您正在将 RSA 密钥与 SHA-1 一起使用，这不再允许。请使用较新的客户端或其他密钥类型 |。命名空间IT (namespaceit.com)</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 问题解决 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 问题解决 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java小玩意：黄金矿工</title>
       <link href="/2022/05/21/java-xiao-wan-yi-huang-jin-kuang-gong/"/>
       <url>/2022/05/21/java-xiao-wan-yi-huang-jin-kuang-gong/</url>

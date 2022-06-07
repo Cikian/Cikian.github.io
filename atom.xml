@@ -6,7 +6,7 @@
   <link href="https://www.cikian.cn/atom.xml" rel="self"/>
   
   <link href="https://www.cikian.cn/"/>
-  <updated>2022-05-20T16:40:08.646Z</updated>
+  <updated>2022-06-07T18:49:28.906Z</updated>
   <id>https://www.cikian.cn/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>GitHub不再允许“RSA密钥与SHA-1一起使用”</title>
+    <link href="https://www.cikian.cn/2022/06/08/github-bu-zai-yun-xu-rsa-mi-yao-yu-sha-1-yi-qi-shi-yong/"/>
+    <id>https://www.cikian.cn/2022/06/08/github-bu-zai-yun-xu-rsa-mi-yao-yu-sha-1-yi-qi-shi-yong/</id>
+    <published>2022-06-07T18:41:05.000Z</published>
+    <updated>2022-06-07T18:49:28.906Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;克隆GitHub仓库时，报错：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Eclipse/Git: &amp;quot;You&amp;#39;re using an RSA key with SHA-1,which is no longer allowed.
+Please use a newer</summary>
+        
+      
+    
+    
+    
+    <category term="问题解决" scheme="https://www.cikian.cn/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    
+    
+    <category term="问题解决" scheme="https://www.cikian.cn/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Java小玩意：黄金矿工</title>
     <link href="https://www.cikian.cn/2022/05/21/java-xiao-wan-yi-huang-jin-kuang-gong/"/>
     <id>https://www.cikian.cn/2022/05/21/java-xiao-wan-yi-huang-jin-kuang-gong/</id>
     <published>2022-05-20T16:37:30.000Z</published>
-    <updated>2022-05-20T16:40:08.646Z</updated>
+    <updated>2022-05-20T16:40:10.000Z</updated>
     
     
       
@@ -46,7 +73,7 @@
     <link href="https://www.cikian.cn/2022/05/04/wei-xin-xiao-cheng-xu-url-dai-can-chuan-zhi/"/>
     <id>https://www.cikian.cn/2022/05/04/wei-xin-xiao-cheng-xu-url-dai-can-chuan-zhi/</id>
     <published>2022-05-04T09:15:00.000Z</published>
-    <updated>2022-05-04T09:19:05.766Z</updated>
+    <updated>2022-05-04T09:19:06.000Z</updated>
     
     
       
@@ -71,7 +98,7 @@
     <link href="https://www.cikian.cn/2022/04/24/java-bao-dao-bao/"/>
     <id>https://www.cikian.cn/2022/04/24/java-bao-dao-bao/</id>
     <published>2022-04-23T17:29:20.000Z</published>
-    <updated>2022-04-23T17:32:55.555Z</updated>
+    <updated>2022-04-23T17:32:56.000Z</updated>
     
     
       
@@ -96,7 +123,7 @@
     <link href="https://www.cikian.cn/2022/04/24/java-ji-cheng/"/>
     <id>https://www.cikian.cn/2022/04/24/java-ji-cheng/</id>
     <published>2022-04-23T16:56:31.000Z</published>
-    <updated>2022-04-29T01:30:14.370Z</updated>
+    <updated>2022-04-29T01:30:16.000Z</updated>
     
     
       
@@ -121,7 +148,7 @@
     <link href="https://www.cikian.cn/2022/04/07/java-xiao-wan-yi-cai-shu-you-xi/"/>
     <id>https://www.cikian.cn/2022/04/07/java-xiao-wan-yi-cai-shu-you-xi/</id>
     <published>2022-04-07T14:34:33.000Z</published>
-    <updated>2022-04-07T14:48:49.677Z</updated>
+    <updated>2022-04-07T14:48:50.000Z</updated>
     
     
       
@@ -146,7 +173,7 @@
     <link href="https://www.cikian.cn/2022/03/27/java-ji-chu-fang-fa/"/>
     <id>https://www.cikian.cn/2022/03/27/java-ji-chu-fang-fa/</id>
     <published>2022-03-27T11:32:06.000Z</published>
-    <updated>2022-04-02T13:31:15.400Z</updated>
+    <updated>2022-04-02T13:31:16.000Z</updated>
     
     
       
@@ -173,7 +200,7 @@
     <link href="https://www.cikian.cn/2022/03/26/idea-chang-yong-kuai-jie-jian/"/>
     <id>https://www.cikian.cn/2022/03/26/idea-chang-yong-kuai-jie-jian/</id>
     <published>2022-03-25T16:30:15.000Z</published>
-    <updated>2022-04-02T09:35:24.944Z</updated>
+    <updated>2022-04-02T09:35:26.000Z</updated>
     
     
       
@@ -202,7 +229,7 @@
     <link href="https://www.cikian.cn/2022/03/25/random-sui-ji-shu/"/>
     <id>https://www.cikian.cn/2022/03/25/random-sui-ji-shu/</id>
     <published>2022-03-25T13:14:32.000Z</published>
-    <updated>2022-05-20T16:43:27.874Z</updated>
+    <updated>2022-05-20T16:43:28.000Z</updated>
     
     
       
@@ -229,7 +256,7 @@
     <link href="https://www.cikian.cn/2022/03/23/java-zhong-de-guan-jian-zi/"/>
     <id>https://www.cikian.cn/2022/03/23/java-zhong-de-guan-jian-zi/</id>
     <published>2022-03-23T13:43:20.000Z</published>
-    <updated>2022-03-24T04:52:11.354Z</updated>
+    <updated>2022-03-24T04:52:12.000Z</updated>
     
     
       
@@ -254,7 +281,7 @@
     <link href="https://www.cikian.cn/2022/03/22/java-zi-fu-de-cao-zuo/"/>
     <id>https://www.cikian.cn/2022/03/22/java-zi-fu-de-cao-zuo/</id>
     <published>2022-03-22T10:40:01.000Z</published>
-    <updated>2022-03-24T04:50:19.940Z</updated>
+    <updated>2022-03-24T04:50:20.000Z</updated>
     
     
       
@@ -279,7 +306,7 @@
     <link href="https://www.cikian.cn/2022/03/21/java-lei-xing-zhuan-huan/"/>
     <id>https://www.cikian.cn/2022/03/21/java-lei-xing-zhuan-huan/</id>
     <published>2022-03-21T09:52:30.000Z</published>
-    <updated>2022-03-24T04:50:05.055Z</updated>
+    <updated>2022-03-24T04:50:06.000Z</updated>
     
     
       
@@ -304,7 +331,7 @@
     <link href="https://www.cikian.cn/2022/03/20/java-yu-yan-kua-ping-tai-yuan-li/"/>
     <id>https://www.cikian.cn/2022/03/20/java-yu-yan-kua-ping-tai-yuan-li/</id>
     <published>2022-03-20T14:07:15.000Z</published>
-    <updated>2022-03-24T04:49:23.419Z</updated>
+    <updated>2022-03-24T04:49:24.000Z</updated>
     
     
       
@@ -330,7 +357,7 @@
     <link href="https://www.cikian.cn/2022/03/12/vue-ji-chu/"/>
     <id>https://www.cikian.cn/2022/03/12/vue-ji-chu/</id>
     <published>2022-03-12T08:00:00.000Z</published>
-    <updated>2022-03-24T04:49:08.913Z</updated>
+    <updated>2022-03-24T04:49:10.000Z</updated>
     
     
       
@@ -355,7 +382,7 @@
     <link href="https://www.cikian.cn/2022/03/06/mysql-sql-yu-yan/"/>
     <id>https://www.cikian.cn/2022/03/06/mysql-sql-yu-yan/</id>
     <published>2022-03-06T10:50:10.000Z</published>
-    <updated>2022-03-24T04:49:00.213Z</updated>
+    <updated>2022-03-24T04:49:02.000Z</updated>
     
     
       
@@ -382,7 +409,7 @@
     <link href="https://www.cikian.cn/2022/03/06/mysql-tu-xing-hua-jie-mian-gong-ju-datagrip/"/>
     <id>https://www.cikian.cn/2022/03/06/mysql-tu-xing-hua-jie-mian-gong-ju-datagrip/</id>
     <published>2022-03-05T16:40:20.000Z</published>
-    <updated>2022-04-02T14:24:54.716Z</updated>
+    <updated>2022-04-02T14:24:56.000Z</updated>
     
     
       
@@ -407,7 +434,7 @@
     <link href="https://www.cikian.cn/2022/03/05/mysql-gai-shu/"/>
     <id>https://www.cikian.cn/2022/03/05/mysql-gai-shu/</id>
     <published>2022-03-05T07:37:41.000Z</published>
-    <updated>2022-03-24T04:48:30.910Z</updated>
+    <updated>2022-03-24T04:48:32.000Z</updated>
     
     
       
@@ -435,7 +462,7 @@
     <link href="https://www.cikian.cn/2022/03/01/jdk-pei-zhi-huan-jing-bian-liang-eclipse-an-zhuang-shi-yong/"/>
     <id>https://www.cikian.cn/2022/03/01/jdk-pei-zhi-huan-jing-bian-liang-eclipse-an-zhuang-shi-yong/</id>
     <published>2022-03-01T11:05:35.000Z</published>
-    <updated>2022-03-24T04:47:33.738Z</updated>
+    <updated>2022-03-24T04:47:34.000Z</updated>
     
     
       
@@ -463,7 +490,7 @@
     <link href="https://www.cikian.cn/2022/02/15/javascript-dong-hua/"/>
     <id>https://www.cikian.cn/2022/02/15/javascript-dong-hua/</id>
     <published>2022-02-15T07:12:07.000Z</published>
-    <updated>2022-03-24T04:46:56.545Z</updated>
+    <updated>2022-03-24T04:46:58.000Z</updated>
     
     
       
@@ -492,7 +519,7 @@
     <link href="https://www.cikian.cn/2022/02/13/javascript-zuo-yong-yu/"/>
     <id>https://www.cikian.cn/2022/02/13/javascript-zuo-yong-yu/</id>
     <published>2022-02-12T17:50:19.000Z</published>
-    <updated>2022-03-24T04:46:49.243Z</updated>
+    <updated>2022-03-24T04:46:50.000Z</updated>
     
     
       
@@ -511,35 +538,6 @@
     
     
     <category term="JavaScript" scheme="https://www.cikian.cn/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript—函数</title>
-    <link href="https://www.cikian.cn/2022/02/13/javascript-han-shu/"/>
-    <id>https://www.cikian.cn/2022/02/13/javascript-han-shu/</id>
-    <published>2022-02-12T17:47:36.000Z</published>
-    <updated>2022-03-24T04:46:35.513Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;JavaScript—函数&quot;&gt;&lt;a href=&quot;#JavaScript—函数&quot; class=&quot;headerlink&quot; title=&quot;JavaScript—函数&quot;&gt;&lt;/a&gt;JavaScript—函数&lt;/h1&gt;&lt;h2 id=&quot;一、函数的概念&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="笔记" scheme="https://www.cikian.cn/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="JavaScript" scheme="https://www.cikian.cn/categories/%E7%AC%94%E8%AE%B0/JavaScript/"/>
-    
-    
-    <category term="JavaScript" scheme="https://www.cikian.cn/tags/JavaScript/"/>
-    
-    <category term="函数" scheme="https://www.cikian.cn/tags/%E5%87%BD%E6%95%B0/"/>
     
   </entry>
   

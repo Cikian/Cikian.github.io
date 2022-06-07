@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="网站分享（持续更新）, Cikian,陈子健，cikian,&#39;cikian&#39;,&#39;Cikian&#39;,&#39;陈子健&#39;,czj,&#39;czj&#39;">
-    <meta name="description" content="本文分享一些我常用的网站">
+    <meta name="keywords" content="分类: 问题解决, Cikian,陈子健，cikian,&#39;cikian&#39;,&#39;Cikian&#39;,&#39;陈子健&#39;,czj,&#39;czj&#39;">
+    <meta name="description" content="这里是Cikian，没错，我是陈子健，欢迎访问！">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>网站分享（持续更新） | CiKian</title>
+    <title>分类: 问题解决 | CiKian</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -641,1079 +641,220 @@
     </nav>
 
 </header>
-    
-<script src="/libs/cryptojs/crypto-js.min.js"></script>
-<script>
-    (function() {
-        let pwd = '';
-        if (pwd && pwd.length > 0) {
-            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
-                alert('密码错误，将返回主页！');
-                location.href = '/';
-            }
-        }
-    })();
-</script>
+    <div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+                
+                            
+                                
 
+                                    <!-- 
+                    Cikian
+                         -->
+            </div>
 
-
-
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://img-upyun.cikian.cn/blog-cover/1.jpg')">
-    <div class="container" style="right: 0px;left: 0px;">
-        <div class="row">
-            <div class="col s12 m12 l12">
-                <div class="brand">
-                    <h1 class="description center-align post-title">网站分享（持续更新）</h1>
-                </div>
+            <div class="description center-align">
+                
+                    <span id="subtitle"></span>
+                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                    <script>
+                        var typed = new Typed("#subtitle", {
+                            strings: [
+                                
+                                "过去已过去, 未来还未来",
+                                
+                                "The past is past, the future is not yet",
+                                
+                            ],
+                            startDelay: 300,
+                            typeSpeed: 100,
+                            loop: true,
+                            backSpeed: 50,
+                            showCursor: true
+                        });
+                    </script>
+                    
             </div>
         </div>
     </div>
 </div>
 
 
+    <script>
+        // 每天切换 banner 图.  Switch banner image every day.
+        var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+        $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+        // $('.bg-cover').css('background-size', 'cover');
+    </script>
+    
+    </div>
+</div>
 
-
-<main class="post-container content">
+<main class="content">
 
     
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
-<style>
-    #articleContent h1::before,
-    #articleContent h2::before,
-    #articleContent h3::before,
-    #articleContent h4::before,
-    #articleContent h5::before,
-    #articleContent h6::before {
-        display: block;
-        content: " ";
-        height: 100px;
-        margin-top: -100px;
-        visibility: hidden;
-    }
 
-    #articleContent :focus {
-        outline: none;
-    }
-
-    .toc-fixed {
-        position: fixed;
-        top: 64px;
-    }
-
-    .toc-widget {
-        width: 345px;
-        padding-left: 20px;
-    }
-
-    .toc-widget .toc-title {
-        padding: 35px 0 15px 17px;
-        font-size: 1.5rem;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-
-    .toc-widget ol {
-        padding: 0;
-        list-style: none;
-    }
-
-    #toc-content {
-        padding-bottom: 30px;
-        overflow: auto;
-    }
-
-    #toc-content ol {
-        padding-left: 10px;
-    }
-
-    #toc-content ol li {
-        padding-left: 10px;
-    }
-
-    #toc-content .toc-link:hover {
-        color: #42b983;
-        font-weight: 700;
-        text-decoration: underline;
-    }
-
-    #toc-content .toc-link::before {
-        background-color: transparent;
-        max-height: 25px;
-
-        position: absolute;
-        right: 23.5vw;
-        display: block;
-    }
-
-    #toc-content .is-active-link {
-        color: #42b983;
-    }
-
-    #floating-toc-btn {
-        position: fixed;
-        right: 15px;
-        bottom: 76px;
-        padding-top: 15px;
-        margin-bottom: 0;
-        z-index: 998;
-    }
-
-    #floating-toc-btn .btn-floating {
-        width: 48px;
-        height: 48px;
-    }
-
-    #floating-toc-btn .btn-floating i {
-        line-height: 48px;
-        font-size: 1.4rem;
-    }
-</style>
-<div class="row">
-    <div id="main-content" class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
-<div id="artDetail">
+<div id="category-cloud" class="container chip-container">
     <div class="card">
-        <div class="card-content article-info">
-            <div class="row tag-cate">
-                <div class="col s7">
-                    
-                    <div class="article-tag">
-                        
-                            <a href="/tags/%E7%BD%91%E7%AB%99/">
-                                <span class="chip bg-color">网站</span>
-                            </a>
-                        
-                            <a href="/tags/%E8%B5%84%E6%BA%90/">
-                                <span class="chip bg-color">资源</span>
-                            </a>
-                        
-                            <a href="/tags/%E5%B7%A5%E5%85%B7/">
-                                <span class="chip bg-color">工具</span>
-                            </a>
-                        
-                            <a href="/tags/%E6%8E%A8%E8%8D%90/">
-                                <span class="chip bg-color">推荐</span>
-                            </a>
-                        
-                    </div>
-                    
-                </div>
-                <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/%E5%88%86%E4%BA%AB/" class="post-category">
-                                分享
-                            </a>
-                        
-                    </div>
-                    
-                </div>
+        <div class="card-content">
+            <div class="tag-title center-align">
+                <i class="fas fa-bookmark"></i>&nbsp;&nbsp;文章分类
             </div>
-
-            <div class="post-info">
+            <div class="tag-chips">
                 
-                <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-02-10
-                </div>
                 
-
                 
-                <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-05-21
-                </div>
+                <a href="/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" title="问题解决: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            style="background-color: #F9EBEA;">问题解决
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
                 
-
                 
-                <div class="info-break-policy">
-                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.2k
-                </div>
+                <a href="/categories/%E6%95%99%E7%A8%8B/" title="教程: 3">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F5EEF8;">教程
+                        <span class="tag-length">3</span>
+                    </span>
+                </a>
                 
-
                 
-                <div class="info-break-policy">
-                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
-                </div>
+                <a href="/categories/%E7%AC%94%E8%AE%B0/" title="笔记: 8">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #D5F5E3;">笔记
+                        <span class="tag-length">8</span>
+                    </span>
+                </a>
                 
-
                 
-                    <div id="busuanzi_container_page_pv" class="info-break-policy">
-                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
-                        <span id="busuanzi_value_page_pv"></span>
-                    </div>
-				
+                <a href="/categories/Java/" title="Java: 8">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #E8F8F5;">Java
+                        <span class="tag-length">8</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/%E7%AC%94%E8%AE%B0/JavaScript/" title="JavaScript: 4">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #FEF9E7;">JavaScript
+                        <span class="tag-length">4</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/%E5%B0%8F%E7%8E%A9%E6%84%8F/" title="小玩意: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F8F9F9;">小玩意
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/%E7%AC%94%E8%AE%B0/MySQL/" title="MySQL: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #82E0AA;">MySQL
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/" title="小程序: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #D7BDE2;">小程序
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/%E5%88%86%E4%BA%AB/" title="分享: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #A3E4D7;">分享
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/Java/%E6%95%99%E7%A8%8B/" title="教程: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #85C1E9;">教程
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
             </div>
         </div>
-        <hr class="clearfix">
-
-        
-
-        
-
-        <div class="card-content article-card-content">
-            <div id="articleContent">
-                <h1 id="网站分享（持续更新）"><a href="#网站分享（持续更新）" class="headerlink" title="网站分享（持续更新）"></a>网站分享（持续更新）</h1><p>这篇文章分享一些我经常用到的网站，其中包括资源、工具等类别的网站。</p>
-<h2 id="一、资源类"><a href="#一、资源类" class="headerlink" title="一、资源类"></a>一、资源类</h2><h3 id="1-Stocksnap"><a href="#1-Stocksnap" class="headerlink" title="1.Stocksnap"></a>1.Stocksnap</h3><p>Stocksnap是国外的一个免费图片素材库，图片质量很高，数量也很多，Stocksnap收集的图片都是来自于世界各地的优秀摄影师分享，所以图片质量很高，数量也很多，但是貌似是每天下载数量有限制。</p>
-<p>网站国内能访问，但是访问速度非常慢，要经常使用的话建议使用一些魔法🤫</p>
-<p><img src="https://s2.loli.net/2022/02/10/jt8qDchsU3xyI5Q.png"></p>
-<p><strong>链接：</strong><a target="_blank" rel="noopener" href="http://stocksnap.com/">StockSnap： stocksnap.com</a></p>
-<h3 id="2-PNG-images"><a href="#2-PNG-images" class="headerlink" title="2.PNG images"></a>2.PNG images</h3><p>PNG images同样是国外的一个免费的图片素材网站，但是其中的素材全部是png格式的，网站没有。</p>
-<p>PNG images的分类做的可以说是相当不错，几乎包括你需要的一切类目，比如animals、nature、fruit等等。</p>
-<p>网站没有任何花里胡哨的功能，甚至没有登陆按钮（至少我现在还没发现😁），只有满屏的分类和“成千上万”的搜索标签（真的很多）。</p>
-<p><img src="https://s2.loli.net/2022/02/10/Jo3TwIzbKAcqV5U.png"></p>
-<p>说是图片资源，其实我认为说PNG images是一个图片元素的素材网站比较合适，因为在里面得到的素材并不是一张完整的图片，而是你搜索的元素。比如你在PNG images中搜索bird，你得到是下面这样：</p>
-<p><img src="https://s2.loli.net/2022/02/10/KfGds1ZtyDT92kH.png"></p>
-<p>我认为PNG images还是非常实用的，尤其是经常进行平面设计的同学，里面的素材真的非常非常多。</p>
-<p><strong>链接：</strong><a target="_blank" rel="noopener" href="http://pngimg.com/">PNG images：pngimg.com</a></p>
-<h3 id="3-CUPCAKE"><a href="#3-CUPCAKE" class="headerlink" title="3.CUPCAKE"></a>3.CUPCAKE</h3><p>CUPCAKE和Stocksnap类似，同样来自国外，不同的是，CUPCAKE是由摄影师Jonas Wimmerström创建的，其中的图片也都是他自己拍摄的图片，图片数量比不上但是Stocksnap，但是质量也都非常不错。</p>
-<p>我个人认为，CUPCAKE可能比Stocksnap更“纯粹”一些，真的是纯粹的免费，你不但可以下载，还可以随意修改和发布，甚至还可以作为商用。</p>
-<p>当然，国外的网站嘛，国内虽然能访问，但是还是建议使用一些魔法，体验会更好。</p>
-<p><img src="https://s2.loli.net/2022/02/10/LlN4QkrPnUBtf3G.png"></p>
-<p><strong>链接：</strong><a target="_blank" rel="noopener" href="https://cupcake.nilssonlee.se/">Cupcake：cupcake.nilssonlee.se</a></p>
-<h3 id="4-站长素材"><a href="#4-站长素材" class="headerlink" title="4.站长素材"></a>4.站长素材</h3><p>国内比较老，也是大部分人都知道的一个素材网站。</p>
-<p>站长素材的资源相对比较综合，包括高清图片，psd等格式的图片素材，还包括网页模板、脚本等素材。类目比较杂，大致分类附图：</p>
-<p><img src="https://s2.loli.net/2022/02/10/xWQNqUetzKABlmO.png"></p>
-<p><strong>链接：</strong><a target="_blank" rel="noopener" href="https://sc.chinaz.com/">站长素材： sc.chinaz.com</a></p>
-<h3 id="5-NavNav"><a href="#5-NavNav" class="headerlink" title="5.NavNav+"></a>5.NavNav+</h3><p>这个网站推荐给所有做前端的同学。</p>
-<p>NavNav+是一个分享网页组件的网站，在NavNav+中你几乎可以找到你网页中所有需要用到的组件，比如按钮、加载动画、登录框等，内容质量很高，各种组件的分类也做的很好，使用也很方便。</p>
-<p><img src="https://s2.loli.net/2022/02/10/4T9xYWoyKMmLOVd.png"></p>
-<p>当你点开一个组件，你会得到它的HTML、CSS和JS代码，你可以直接复制使用，也可以根据需求进行一些调整，也可以在其给出的控制台进行可视化的调整。</p>
-<p><img src="https://s2.loli.net/2022/02/10/AMjvOFwuGWeExT2.png"></p>
-<p>网站国内可以正常访问，速度不快，但是在能接受的范围里面，不需要借助魔法。</p>
-<p><strong>链接：</strong><a target="_blank" rel="noopener" href="http://navnav.co/">NavNav+：navnav.co</a></p>
-<h2 id="二、工具类"><a href="#二、工具类" class="headerlink" title="二、工具类"></a>二、工具类</h2><h3 id="1-removebg"><a href="#1-removebg" class="headerlink" title="1.removebg"></a>1.removebg</h3><p>removebg是一个在线的消除图片背景的网站，说白了就是抠图，网站可以免费使用，但是处理过的图片分辨率会稍微低一些，由于我用这个网站主要处理人像，所以我使用觉得影响不大。如果是强迫症患者，可以付费使用（可以但没必要，个人感觉降低的分辨率影响不大）。</p>
-<p><img src="https://s2.loli.net/2022/02/10/ilyPAMfLwzreck7.png"></p>
-<p>它的处理速度和质量个人认为是相当的高，基本我每次扣人像都是可以达到头发丝的精度（即使图片背景很复杂），如果你对自动扣的图片不满意，你也可以在其处理后再进行手动抠图（我从来没有手动扣过，每次处理的都非常哇塞），算法真的牛。放图给大家对比一下：</p>
-<p>原图：</p>
-<p><img src="https://s2.loli.net/2022/02/10/vijrK2cbxVdlA6h.png"></p>
-<p>处理后：</p>
-<p><img src="https://s2.loli.net/2022/02/10/q8c25VOpwEBg9FM.png"></p>
-<p>removebg同时也有客户端，但是个人认为没有必要下载，因为客户端和网页端的功能完全相同，处理图片也没有质量上的差别，我使用过程中感受到的最大的差别是客户端处理图片的速度会稍快一些（网页端已经够快了），而且处理完成之后不需要下载，会直接将png格式的图片保存到你指定的文件夹中。</p>
-<p><strong>链接：</strong><a target="_blank" rel="noopener" href="https://www.remove.bg/zh/">remove.bg：www.remove.bg/zh</a></p>
-<h3 id="2-SM-MS"><a href="#2-SM-MS" class="headerlink" title="2.SM.MS"></a>2.SM.MS</h3><p>sm.ms是一个可以免费使用的在线图床，搭建网站的同学应该了解图床是什么，简单科普一下：如果你的网站使用了的图片，你会将图片放在你服务器中的某个地方，对于服务器来说就是放在本地（不是你正在使用的电脑哟），如果网站中的图片比较少，那么影响并不大，如果图片少我更推荐你放在本地。但是当你的网站中有大量图片，而且这些图片你还是全部放在本地的话，那么就会产生一些问题，首先是这样非常占用服务器的存储资源，这也是主要问题，其次，大量的图片会导致你的网站加载速度会变慢。</p>
-<p>此时有一个解决办法，就是你再买一台服务器来专门存放图片，然后你网站用到的图片从这个服务器里面调取，这个服务器就是图床。</p>
-<p>SM.MS便是相当于这样一台服务器，你可以将图片上传到SM.MS，而SM.MS会给你生成图片的链接，你可以直接使用。</p>
-<p><img src="https://s2.loli.net/2022/02/10/BfxFwKQ4rmR2s6t.png"></p>
-<p>免费用户有5G的存储空间，这对于一些个人的网站是足够使用的。如果你使用一些工具将图片压缩一下再上传，5G也可以存储相当多的图片。在SM.MS调用图片加载速度个人认为还是比较快的。</p>
-<p>SM.MS有移动端的APP，但是需要通过谷歌商店才能下载，下载需要使用魔法，但是使用不需要。如果需要安装包可以关注（微信公众号：奶茶九分糖）回复SM.MS获取。</p>
-<p><strong>链接：</strong><a target="_blank" rel="noopener" href="https://sm.ms/"> sm.ms</a></p>
-<h3 id="3-LeanCloud"><a href="#3-LeanCloud" class="headerlink" title="3.LeanCloud"></a>3.LeanCloud</h3><p>LeanCloud是一个BssS提供商，具体什么是BaaS，了解不多，不敢乱说，详见百度：<a href="baike.baidu.com/item/BaaS/271609?fr=aladdin">BaaS</a>。</p>
-<p><img src="https://s2.loli.net/2022/02/10/qaEwxTjtcuG6BXU.png"></p>
-<p>我是这么理解的，可能不是很准确，如果有了解的同学，欢迎在评论区留言指正，我个人将LeanCloud是当作一个“云引擎”来使用，也可以说是一种云计算服务吧，比如评论功能，总得有个后台处理一下数据吧，比如本篇文章下面的评论系统和本博客的BB功能就是使用LeanCloud处理的后台数据。</p>
-<p><img src="https://s2.loli.net/2022/02/10/cNOQ6KqhAm4gp7Y.png"></p>
-<p><img src="https://s2.loli.net/2022/02/10/tlwg2kqBMJObao1.png"></p>
-<p>LeanCloud分为国际版和中国版，推荐使用国际版，原因不敢多说，怕被请喝茶。</p>
-<p><strong>链接：</strong><a target="_blank" rel="noopener" href="https://www.leancloud.cn/">LeanCloud中国版：www.leancloud.cn</a>     <a target="_blank" rel="noopener" href="https://leancloud.app/">LeanCloud国际版：leancloud.app</a></p>
-<h3 id="4-Neumorphism"><a href="#4-Neumorphism" class="headerlink" title="4.Neumorphism"></a>4.Neumorphism</h3><p>Neumorphism是一个在线设计网页按钮、容器的网站，更具体的说是通过阴影来得到不同视觉效果的容器。</p>
-<p>你可以在上面用可视化的方式调整你需要的按钮、容器的样式，可以修改颜色、大小、阴影角度、视觉效果等，并实时生成CSS代码。</p>
-<p><img src="https://s2.loli.net/2022/02/10/VOZ9ycbuLTCa5Kq.png"></p>
-<p><strong>链接：</strong><a target="_blank" rel="noopener" href="https://neumorphism.io/">Neumorphism：neumorphism.io</a></p>
-<h3 id="5-W3school"><a href="#5-W3school" class="headerlink" title="5.W3school"></a>5.W3school</h3><p>W3school准确来说是一个学习类的网站，之所以我将其归类到工具类，是因为我认为可以将W3school当作一个在线的手册使用，你可以随时在上面查询到HTML中某个标签或者CSS中某个属性的用法，并且还可以在线写代码，并且实时生成网页效果。</p>
-<p>W3school中包括的Web技术比较全面，包括基本的HTML、CSS、JS以及服务器脚本和XML系列。</p>
-<p><img src="https://s2.loli.net/2022/02/10/IJABjL14QNP5CgZ.png"></p>
-<p><strong>链接：</strong><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/">w3school：www.w3school.com.cn</a></p>
-<h3 id="6-webtor"><a href="#6-webtor" class="headerlink" title="6. webtor"></a>6. webtor</h3><p>这是一个在线解析BT和磁力链接的网站，可以在线播放或者下载。实测，好用！只需要将磁力链接复制到输入框即可。缺点：国外网站访问速度较慢，网页也不支持中文，不过并不影响使用体验，解析资源还是非常快的。</p>
-<p><img src="https://s2.loli.net/2022/05/21/MkmG6CtcNjxsPaZ.png"></p>
-<p><strong>链接：</strong><a target="_blank" rel="noopener" href="https://webtor.io/#/">Webtor</a></p>
-<hr>
-<hr>
-<hr>
-<p>（本篇文章持续更新）</p>
-<p>（本篇文章所用图片和部分内容来源于网络，如有侵权，请联系我，我将在第一时间删除侵权内容，感谢！）</p>
-
-                
-            </div>
-            <hr/>
-
-            
-
-    <div class="reprint" id="reprint-statement">
-        
-            <div class="reprint__author">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-user">
-                        文章作者:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">Cikian</a>
-                </span>
-            </div>
-            <div class="reprint__type">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-link">
-                        文章链接:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="https://www.cikian.cn/2022/02/10/wang-zhan-fen-xiang/">https://www.cikian.cn/2022/02/10/wang-zhan-fen-xiang/</a>
-                </span>
-            </div>
-            <div class="reprint__notice">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-copyright">
-                        版权声明:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    本博客所有文章除特別声明外，均采用
-                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
-                    许可协议。转载请注明来源
-                    <a href="/about" target="_blank">Cikian</a>
-                    !
-                </span>
-            </div>
-        
     </div>
-
-    <script async defer>
-      document.addEventListener("copy", function (e) {
-        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
-        M.toast({html: toastHTML})
-      });
-
-      function navToReprintStatement() {
-        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
-      }
-    </script>
+</div>
 
 
+    
 
-            <div class="tag_share" style="display: block;">
-                <div class="post-meta__tag-list" style="display: inline-block;">
-                    
-                        <div class="article-tag">
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/06/08/github-bu-zai-yun-xu-rsa-mi-yao-yu-sha-1-yi-qi-shi-yong/">
+                        <div class="card-image tag-image">
                             
-                                <a href="/tags/%E7%BD%91%E7%AB%99/">
-                                    <span class="chip bg-color">网站</span>
-                                </a>
+                            <img src="https://img-upyun.cikian.cn/blog-cover/24.jpg" class="responsive-img" alt="GitHub不再允许“RSA密钥与SHA-1一起使用”">
                             
-                                <a href="/tags/%E8%B5%84%E6%BA%90/">
-                                    <span class="chip bg-color">资源</span>
-                                </a>
+                            <span class="card-title">GitHub不再允许“RSA密钥与SHA-1一起使用”</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
                             
-                                <a href="/tags/%E5%B7%A5%E5%85%B7/">
-                                    <span class="chip bg-color">工具</span>
-                                </a>
-                            
-                                <a href="/tags/%E6%8E%A8%E8%8D%90/">
-                                    <span class="chip bg-color">推荐</span>
-                                </a>
+                                关于Github不再允许“RSA密钥与SHA-1一起使用”
                             
                         </div>
-                    
-                </div>
-                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
-<div id="article-share">
-
-    
-    <div class="social-share" data-sites="wechat,qq,qzone,weibo,douban,twitter,facebook,google,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="/libs/share/js/social-share.min.js"></script>
-    
-
-    
-
-</div>
-
-                </div>
-            </div>
-            
-                <style>
-    #reward {
-        margin: 40px 0;
-        text-align: center;
-    }
-
-    #reward .reward-link {
-        font-size: 1.4rem;
-        line-height: 38px;
-    }
-
-    #reward .btn-floating:hover {
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    #rewardModal {
-        width: 320px;
-        height: 350px;
-    }
-
-    #rewardModal .reward-title {
-        margin: 15px auto;
-        padding-bottom: 5px;
-    }
-
-    #rewardModal .modal-content {
-        padding: 10px;
-    }
-
-    #rewardModal .close {
-        position: absolute;
-        right: 15px;
-        top: 15px;
-        color: rgba(0, 0, 0, 0.5);
-        font-size: 1.3rem;
-        line-height: 20px;
-        cursor: pointer;
-    }
-
-    #rewardModal .close:hover {
-        color: #ef5350;
-        transform: scale(1.3);
-        -moz-transform:scale(1.3);
-        -webkit-transform:scale(1.3);
-        -o-transform:scale(1.3);
-    }
-
-    #rewardModal .reward-tabs {
-        margin: 0 auto;
-        width: 210px;
-    }
-
-    .reward-tabs .tabs {
-        height: 38px;
-        margin: 10px auto;
-        padding-left: 0;
-    }
-
-    .reward-content ul {
-        padding-left: 0 !important;
-    }
-
-    .reward-tabs .tabs .tab {
-        height: 38px;
-        line-height: 38px;
-    }
-
-    .reward-tabs .tab a {
-        color: #fff;
-        background-color: #ccc;
-    }
-
-    .reward-tabs .tab a:hover {
-        background-color: #ccc;
-        color: #fff;
-    }
-
-    .reward-tabs .wechat-tab .active {
-        color: #fff !important;
-        background-color: #22AB38 !important;
-    }
-
-    .reward-tabs .alipay-tab .active {
-        color: #fff !important;
-        background-color: #019FE8 !important;
-    }
-
-    .reward-tabs .reward-img {
-        width: 210px;
-        height: 210px;
-    }
-</style>
-
-<div id="reward">
-    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
-
-    <!-- Modal Structure -->
-    <div id="rewardModal" class="modal">
-        <div class="modal-content">
-            <a class="close modal-close"><i class="fas fa-times"></i></a>
-            <h4 class="reward-title">你的赏识是我前进的动力</h4>
-            <div class="reward-content">
-                <div class="reward-tabs">
-                    <ul class="tabs row">
-                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
-                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
-                    </ul>
-                    <div id="alipay">
-                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
-                    </div>
-                    <div id="wechat">
-                        <img src="/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    $(function () {
-        $('.tabs').tabs();
-    });
-</script>
-
-            
-        </div>
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <style>
-    .twikoo-card {
-        margin: 1.5rem auto;
-    }
-
-    .twikoo-card .card-content {
-        padding: 20px;
-    }
-
-    #tcomments textarea {
-        box-sizing: border-box;
-        background: url("/") 100% 100% no-repeat;
-    }
-
-    #tcomments p {
-        margin: 2px 2px 10px;
-        font-size: 1.05rem;
-        line-height: 1.78rem;
-    }
-
-    #tcomments blockquote p {
-        text-indent: 0.2rem;
-    }
-
-    #tcomments a {
-        padding: 0 2px;
-        color: #4cbf30;
-        font-weight: 500;
-        text-decoration: none;
-    }
-
-    #tcomments img {
-        max-width: 100%;
-        height: auto;
-        cursor: pointer;
-    }
-
-    #tcomments ol li {
-        list-style-type: decimal;
-    }
-
-    #tcomments ol,
-    ul {
-        display: block;
-        padding-left: 2em;
-        word-spacing: 0.05rem;
-    }
-
-    #tcomments ul li,
-    ol li {
-        display: list-item;
-        line-height: 1.8rem;
-        font-size: 1rem;
-    }
-
-    #tcomments ul li {
-        list-style-type: disc;
-    }
-
-    #tcomments ul ul li {
-        list-style-type: circle;
-    }
-
-    #tcomments table,
-    th,
-    td {
-        padding: 12px 13px;
-        border: 1px solid #dfe2e5;
-    }
-
-    #tcomments table,
-    th,
-    td {
-        border: 0;
-    }
-
-    table tr:nth-child(2n),
-    thead {
-        background-color: #fafafa;
-    }
-
-    #tcomments table th {
-        background-color: #f2f2f2;
-        min-width: 80px;
-    }
-
-    #tcomments table td {
-        min-width: 80px;
-    }
-
-    #tcomments h1 {
-        font-size: 1.85rem;
-        font-weight: bold;
-        line-height: 2.2rem;
-    }
-
-    #tcomments h2 {
-        font-size: 1.65rem;
-        font-weight: bold;
-        line-height: 1.9rem;
-    }
-
-    #tcomments h3 {
-        font-size: 1.45rem;
-        font-weight: bold;
-        line-height: 1.7rem;
-    }
-
-    #tcomments h4 {
-        font-size: 1.25rem;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-
-    #tcomments h5 {
-        font-size: 1.1rem;
-        font-weight: bold;
-        line-height: 1.4rem;
-    }
-
-    #tcomments h6 {
-        font-size: 1rem;
-        line-height: 1.3rem;
-    }
-
-    #tcomments p {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-
-    #tcomments hr {
-        margin: 12px 0;
-        border: 0;
-        border-top: 1px solid #ccc;
-    }
-
-    #tcomments blockquote {
-        margin: 15px 0;
-        border-left: 5px solid #42b983;
-        padding: 1rem 0.8rem 0.3rem 0.8rem;
-        color: #666;
-        background-color: rgba(66, 185, 131, .1);
-    }
-
-    #tcomments pre {
-        font-family: monospace, monospace;
-        padding: 1.2em;
-        margin: .5em 0;
-        background: #272822;
-        overflow: auto;
-        border-radius: 0.3em;
-        tab-size: 4;
-    }
-
-    #tcomments code {
-        font-family: monospace, monospace;
-        padding: 1px 3px;
-        font-size: 0.92rem;
-        color: #e96900;
-        background-color: #f8f8f8;
-        border-radius: 2px;
-    }
-
-    #tcomments pre code {
-        font-family: monospace, monospace;
-        padding: 0;
-        color: #e8eaf6;
-        background-color: #272822;
-    }
-
-    #tcomments pre[class*="language-"] {
-        padding: 1.2em;
-        margin: .5em 0;
-    }
-
-    #tcomments code[class*="language-"],
-    pre[class*="language-"] {
-        color: #e8eaf6;
-    }
-
-    #tcomments [type="checkbox"]:not(:checked),
-    [type="checkbox"]:checked {
-        position: inherit;
-        margin-left: -1.3rem;
-        margin-right: 0.4rem;
-        margin-top: -1px;
-        vertical-align: middle;
-        left: unset;
-        visibility: visible;
-    }
-
-    #tcomments b,
-    strong {
-        font-weight: bold;
-    }
-
-    #tcomments dfn {
-        font-style: italic;
-    }
-
-    #tcomments small {
-        font-size: 85%;
-    }
-
-    #tcomments cite {
-        font-style: normal;
-    }
-
-    #tcomments mark {
-        background-color: #fcf8e3;
-        padding: .2em;
-    }
-
-    #tcomments table,
-    th,
-    td {
-        padding: 12px 13px;
-        border: 1px solid #dfe2e5;
-    }
-
-    table tr:nth-child(2n),
-    thead {
-        background-color: #fafafa;
-    }
-
-    #tcomments table th {
-        background-color: #f2f2f2;
-        min-width: 80px;
-    }
-
-    #tcomments table td {
-        min-width: 80px;
-    }
-
-    #tcomments [type="checkbox"]:not(:checked),
-    [type="checkbox"]:checked {
-        position: inherit;
-        margin-left: -1.3rem;
-        margin-right: 0.4rem;
-        margin-top: -1px;
-        vertical-align: middle;
-        left: unset;
-        visibility: visible;
-    }
-</style>
-
-<div class="card twikoo-card" data-aos="fade-up">
-    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
-        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
-        <span>评论</span>
-    </div>
-    <div class="card-content" style="display: grid">
-        <div id="tcomments"></div>
-    </div>
-</div>
-
-<script src="https://cdn.staticfile.org/twikoo/1.5.10/twikoo.all.min.js"></script>
-<script>
-    twikoo.init({
-        envId: 'twikoo-1ghbvivj03c45d67',
-        el: '#tcomments',
-        region: '',
-        path: ''
-    }).then(function () {
-        var tkInputs = document.querySelector('#twikoo').getElementsByTagName('input');
-        for (var tkInputsIndex = 0; tkInputsIndex < tkInputs.length; tkInputsIndex++) {
-            if (tkInputs[tkInputsIndex]) {
-                tkInputs[tkInputsIndex].classList.add('browser-default');
-            }
-        }
-    });
-</script>
-
-    
-
-    
-
-<article id="prenext-posts" class="prev-next articles">
-    <div class="row article-row">
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
-            <div class="card">
-                <a href="/2022/02/11/javascript-shu-zu/">
-                    <div class="card-image">
-                        
-                        <img src="https://img-upyun.cikian.cn/blog-cover/2.jpg" class="responsive-img" alt="JavaScript—数组">
-                        
-                        <span class="card-title">JavaScript—数组</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            JavaScript中的数组知识整理
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-02-11
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    笔记
-                                </a>
-                            
-                            <a href="/categories/%E7%AC%94%E8%AE%B0/JavaScript/" class="post-category">
-                                    JavaScript
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/JavaScript/">
-                        <span class="chip bg-color">JavaScript</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%95%B0%E7%BB%84/">
-                        <span class="chip bg-color">数组</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/02/06/markdown-yu-fa/">
-                    <div class="card-image">
-                        
-                        <img src="https://img-upyun.cikian.cn/blog-cover/0.jpg" class="responsive-img" alt="MarkDown语法">
-                        
-                        <span class="card-title">MarkDown语法</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            本文总结了MarkDown的常用语法
-                        
-                    </div>
-                    <div class="publish-info">
+                        <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-06
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-08
                             </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    笔记
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" class="post-category">
+                                    问题解决
                                 </a>
-                            
-                            
-                        </span>
+                                
+                                
+                            </span>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
+
                     
-                    <a href="/tags/MarkDown/">
-                        <span class="chip bg-color">MarkDown</span>
-                    </a>
-                    
-                    <a href="/tags/%E8%AF%AD%E6%B3%95/">
-                        <span class="chip bg-color">语法</span>
-                    </a>
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">
+                            <span class="chip bg-color">问题解决</span>
+                        </a>
+                        
+                    </div>
                     
                 </div>
-                
             </div>
+            
         </div>
-        
-    </div>
-</article>
-
-</div>
-
-
-<script>
-    $('#articleContent').on('copy', function (e) {
-        // IE8 or earlier browser is 'undefined'
-        if (typeof window.getSelection === 'undefined') return;
-
-        var selection = window.getSelection();
-        // if the selection is short let's not annoy our users.
-        if (('' + selection).length < Number.parseInt('10')) {
-            return;
-        }
-
-        // create a div outside of the visible area and fill it with the selected text.
-        var bodyElement = document.getElementsByTagName('body')[0];
-        var newdiv = document.createElement('div');
-        newdiv.style.position = 'absolute';
-        newdiv.style.left = '-99999px';
-        bodyElement.appendChild(newdiv);
-        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
-
-        // we need a <pre> tag workaround.
-        // otherwise the text inside "pre" loses all the line breaks!
-        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE' || selection.getRangeAt(0).commonAncestorContainer.nodeName === 'CODE') {
-            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
-        }
-
-        var url = document.location.href;
-        newdiv.innerHTML += '<br />'
-            + '来源: CiKian<br />'
-            + '文章作者: Cikian<br />'
-            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
-            + '本文章著作权归作者陈子健所有，任何形式的转载都请注明出处，如有疑问，请联系cikian@126.com。';
-
-        selection.selectAllChildren(newdiv);
-        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
-    });
-</script>
-
-
-<!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
-
-<!-- 代码语言 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
-
-
-<!-- 代码块复制 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
-
-
-<!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
-
-    </div>
-    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
-        <div class="toc-widget card" style="background-color: white;">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
-            <div id="toc-content"></div>
-        </div>
-    </div>
-</div>
-
-<!-- TOC 悬浮按钮. -->
-
-<div id="floating-toc-btn" class="hide-on-med-and-down">
-    <a class="btn-floating btn-large bg-color">
-        <i class="fas fa-list-ul"></i>
-    </a>
-</div>
-
-
-<script src="/libs/tocbot/tocbot.min.js"></script>
-<script>
-    $(function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '#articleContent',
-            headingsOffset: -($(window).height() * 0.4 - 45),
-            collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
-        });
-
-        // modify the toc link href to support Chinese.
-        let i = 0;
-        let tocHeading = 'toc-heading-';
-        $('#toc-content a').each(function () {
-            $(this).attr('href', '#' + tocHeading + (++i));
-        });
-
-        // modify the heading title id to support Chinese.
-        i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
-            $(this).attr('id', tocHeading + (++i));
-        });
-
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
-            }
-        });
-
-        
-        /* 修复文章卡片 div 的宽度. */
-        let fixPostCardWidth = function (srcId, targetId) {
-            let srcDiv = $('#' + srcId);
-            if (srcDiv.length === 0) {
-                return;
-            }
-
-            let w = srcDiv.width();
-            if (w >= 450) {
-                w = w + 21;
-            } else if (w >= 350 && w < 450) {
-                w = w + 18;
-            } else if (w >= 300 && w < 350) {
-                w = w + 16;
-            } else {
-                w = w + 14;
-            }
-            $('#' + targetId).width(w);
-        };
-
-        // 切换TOC目录展开收缩的相关操作.
-        const expandedClass = 'expanded';
-        let $tocAside = $('#toc-aside');
-        let $mainContent = $('#main-content');
-        $('#floating-toc-btn .btn-floating').click(function () {
-            if ($tocAside.hasClass(expandedClass)) {
-                $tocAside.removeClass(expandedClass).hide();
-                $mainContent.removeClass('l9');
-            } else {
-                $tocAside.addClass(expandedClass).show();
-                $mainContent.addClass('l9');
-            }
-            fixPostCardWidth('artDetail', 'prenext-posts');
-        });
-        
-    });
-</script>
-
-    
-
+    </article>
 </main>
 
 

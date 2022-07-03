@@ -56,7 +56,6 @@
 		* {
 			padding: 0;
 			margin: 0;
-			list-style: none;
 		}
 
 		#loading-image {
@@ -280,7 +279,7 @@
     <div id="loading-container">
 			
     <div id="loading-image">
-        <ul id="loading-ul">
+        <ul id="loading-ul" style="list-style: none;">
 					<li id="l1"></li>
 					<li id="l2"></li>
 					<li id="l3"></li>
@@ -815,14 +814,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-04-25
+                    2022-07-04
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    770
+                    827
                 </div>
                 
 
@@ -948,9 +947,9 @@
 </code></pre>
 <p>显示效果：</p>
 <ol>
-<li>1.列表内容</li>
-<li>2.列表内容</li>
-<li>3.列表内容</li>
+<li>列表内容</li>
+<li>列表内容</li>
+<li>列表内容</li>
 </ol>
 <h3 id="3-列表的嵌套"><a href="#3-列表的嵌套" class="headerlink" title="3.列表的嵌套"></a>3.列表的嵌套</h3><p>上一级和下一级之间敲三个空格即可</p>
 <p><strong>示例：</strong></p>
@@ -975,10 +974,39 @@
 </ul>
 </li>
 </ul>
-<h2 id="八、表格"><a href="#八、表格" class="headerlink" title="八、表格"></a>八、表格</h2><p>表头|表头|表头</p>
-<p>—|:—:|—:</p>
-<p>内容|内容|内容</p>
-<p>内容|内容|内容</p>
+<h2 id="八、表格"><a href="#八、表格" class="headerlink" title="八、表格"></a>八、表格</h2><p>| 表头| 表头| 表头|<br>| —- | :—-: | —-: |<br>| 内容 | 内容 | 内容 |<br>| 内容 | 内容 | 内容 |<br>| 内容 | 内容 | 内容 |</p>
+<p><strong>示例：</strong></p>
+<pre class=" language-markdown"><code class="language-markdown">| 表头 | 表头 | 表头 |
+| ---- | :----: | ----: |
+| 内容 | 内容 | 内容 |
+| 内容 | 内容 | 内容 |
+| 内容 | 内容 | 内容 |
+</code></pre>
+<p>显示效果：</p>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th align="center">表头</th>
+<th align="right">表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>内容</td>
+<td align="center">内容</td>
+<td align="right">内容</td>
+</tr>
+<tr>
+<td>内容</td>
+<td align="center">内容</td>
+<td align="right">内容</td>
+</tr>
+<tr>
+<td>内容</td>
+<td align="center">内容</td>
+<td align="right">内容</td>
+</tr>
+</tbody></table>
 <p>tips：文字默认左对齐，两边加：表示居中，右边加：表示右对齐。</p>
 <h2 id="九、代码"><a href="#九、代码" class="headerlink" title="九、代码"></a>九、代码</h2><ol>
 <li>单行代码，代码用一个反引号包起来。</li>
@@ -1822,7 +1850,7 @@ if (a&lt;=5){
                                     
                                         &nbsp;<i class="fas fa-chart-area"></i>&nbsp;
                                         站点总字数:&nbsp;<span class="white-color">
-                                                20.1k
+                                                20.8k
                                             </span>
                                             
                                                 

@@ -56,7 +56,6 @@
 		* {
 			padding: 0;
 			margin: 0;
-			list-style: none;
 		}
 
 		#loading-image {
@@ -280,7 +279,7 @@
     <div id="loading-container">
 			
     <div id="loading-image">
-        <ul id="loading-ul">
+        <ul id="loading-ul" style="list-style: none;">
 					<li id="l1"></li>
 					<li id="l2"></li>
 					<li id="l3"></li>
@@ -709,21 +708,21 @@
                         <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                             
 <div class="statis">
-    <span class="count"><a href="/">24</a></span>
+    <span class="count"><a href="/">25</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">10</a></span>
+    <span class="count"><a href="/categories">11</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">19</a></span>
+    <span class="count"><a href="/tags">20</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -739,21 +738,21 @@
                                     <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                         
 <div class="statis">
-    <span class="count"><a href="/">24</a></span>
+    <span class="count"><a href="/">25</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">10</a></span>
+    <span class="count"><a href="/categories">11</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">19</a></span>
+    <span class="count"><a href="/tags">20</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -920,7 +919,7 @@
         },
         xAxis: {
             type: 'category',
-            data: ["2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06"]
+            data: ["2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07"]
         },
         yAxis: {
             type: 'value',
@@ -930,7 +929,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,6,12,3,2,1],
+                data: [0,0,0,0,0,0,0,6,12,3,2,1,1],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -972,7 +971,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"问题解决","value":1},{"name":"教程","value":3},{"name":"笔记","value":8},{"name":"Java","value":8},{"name":"JavaScript","value":4},{"name":"小玩意","value":2},{"name":"MySQL","value":2},{"name":"小程序","value":1},{"name":"分享","value":1},{"name":"教程","value":1}],
+                data: [{"name":"教程","value":3},{"name":"问题解决","value":1},{"name":"笔记","value":8},{"name":"Java","value":8},{"name":"JavaScript","value":4},{"name":"小玩意","value":2},{"name":"MySQL","value":2},{"name":"Python","value":1},{"name":"小程序","value":1},{"name":"分享","value":1},{"name":"教程","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -996,7 +995,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["Java","JavaScript","MySQL","问题解决","IDEA","快捷键","JDK","配置","动画","函数"]
+                data: ["Java","JavaScript","MySQL","IDEA","快捷键","问题解决","JDK","配置","函数","动画"]
             }
         ],
         yAxis: [
@@ -1201,12 +1200,6 @@
         <div class="tag-chips center-align">
             
             
-            <a href="/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">
-                <span class="chip center-align waves-effect waves-light chip-default">问题解决</span>
-            </a>
-            
-            
-            
             
             
             <a href="/tags/IDEA/">
@@ -1220,6 +1213,10 @@
             </a>
             
             
+            
+            <a href="/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">
+                <span class="chip center-align waves-effect waves-light chip-default">问题解决</span>
+            </a>
             
             
             
@@ -1235,14 +1232,16 @@
             
             
             
-            <a href="/tags/%E5%8A%A8%E7%94%BB/">
-                <span class="chip center-align waves-effect waves-light chip-default">动画</span>
-            </a>
-            
             
             
             <a href="/tags/%E5%87%BD%E6%95%B0/">
                 <span class="chip center-align waves-effect waves-light chip-default">函数</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E5%8A%A8%E7%94%BB/">
+                <span class="chip center-align waves-effect waves-light chip-default">动画</span>
             </a>
             
             
@@ -1263,6 +1262,12 @@
             
             <a href="/tags/MySQL/">
                 <span class="chip center-align waves-effect waves-light chip-default">MySQL</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Python/">
+                <span class="chip center-align waves-effect waves-light chip-default">Python</span>
             </a>
             
             
@@ -1384,7 +1389,7 @@
                                     
                                         &nbsp;<i class="fas fa-chart-area"></i>&nbsp;
                                         站点总字数:&nbsp;<span class="white-color">
-                                                20.1k
+                                                20.8k
                                             </span>
                                             
                                                 

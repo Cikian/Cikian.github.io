@@ -6,7 +6,7 @@
   <link href="https://www.cikian.cn/atom.xml" rel="self"/>
   
   <link href="https://www.cikian.cn/"/>
-  <updated>2022-06-07T19:03:43.233Z</updated>
+  <updated>2022-07-03T19:30:16.421Z</updated>
   <id>https://www.cikian.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python中Random库函数用法</title>
+    <link href="https://www.cikian.cn/2022/07/04/python-zhong-random-ku-han-shu-yong-fa/"/>
+    <id>https://www.cikian.cn/2022/07/04/python-zhong-random-ku-han-shu-yong-fa/</id>
+    <published>2022-07-03T17:37:39.000Z</published>
+    <updated>2022-07-03T19:30:16.421Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、使用Random库&quot;&gt;&lt;a href=&quot;#一、使用Random库&quot; class=&quot;headerlink&quot; title=&quot;一、使用Random库&quot;&gt;&lt;/a&gt;一、使用Random库&lt;/h2&gt;&lt;p&gt;&lt;code&gt;import</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://www.cikian.cn/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="https://www.cikian.cn/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>GitHub不再允许“RSA密钥与SHA-1一起使用”</title>
@@ -511,33 +536,6 @@ Please use a newer</summary>
     <category term="JavaScript" scheme="https://www.cikian.cn/tags/JavaScript/"/>
     
     <category term="动画" scheme="https://www.cikian.cn/tags/%E5%8A%A8%E7%94%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript—作用域</title>
-    <link href="https://www.cikian.cn/2022/02/13/javascript-zuo-yong-yu/"/>
-    <id>https://www.cikian.cn/2022/02/13/javascript-zuo-yong-yu/</id>
-    <published>2022-02-12T17:50:19.000Z</published>
-    <updated>2022-03-24T04:46:50.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;JavaScript—作用域&quot;&gt;&lt;a href=&quot;#JavaScript—作用域&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="笔记" scheme="https://www.cikian.cn/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="JavaScript" scheme="https://www.cikian.cn/categories/%E7%AC%94%E8%AE%B0/JavaScript/"/>
-    
-    
-    <category term="JavaScript" scheme="https://www.cikian.cn/tags/JavaScript/"/>
     
   </entry>
   

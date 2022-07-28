@@ -6,7 +6,7 @@
   <link href="https://www.cikian.cn/atom.xml" rel="self"/>
   
   <link href="https://www.cikian.cn/"/>
-  <updated>2022-07-03T19:30:16.421Z</updated>
+  <updated>2022-07-28T16:06:26.224Z</updated>
   <id>https://www.cikian.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决Ubuntu更新Snap Store失败</title>
+    <link href="https://www.cikian.cn/2022/07/29/ubuntu-geng-xin-snap-store-shi-bai/"/>
+    <id>https://www.cikian.cn/2022/07/29/ubuntu-geng-xin-snap-store-shi-bai/</id>
+    <published>2022-07-28T16:03:20.000Z</published>
+    <updated>2022-07-28T16:06:26.224Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Ubuntu更新Snap-Store失败&quot;&gt;&lt;a href=&quot;#Ubuntu更新Snap-Store失败&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu更新Snap Store失败&quot;&gt;&lt;/a&gt;Ubuntu更新Snap</summary>
+        
+      
+    
+    
+    
+    <category term="问题解决" scheme="https://www.cikian.cn/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    
+    
+    <category term="问题解决" scheme="https://www.cikian.cn/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>Python中Random库函数用法</title>
@@ -507,35 +532,6 @@ Please use a newer</summary>
     <category term="JDK" scheme="https://www.cikian.cn/tags/JDK/"/>
     
     <category term="配置" scheme="https://www.cikian.cn/tags/%E9%85%8D%E7%BD%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript—动画</title>
-    <link href="https://www.cikian.cn/2022/02/15/javascript-dong-hua/"/>
-    <id>https://www.cikian.cn/2022/02/15/javascript-dong-hua/</id>
-    <published>2022-02-15T07:12:07.000Z</published>
-    <updated>2022-03-24T04:46:58.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;JavaScript—动画&quot;&gt;&lt;a href=&quot;#JavaScript—动画&quot; class=&quot;headerlink&quot; title=&quot;JavaScript—动画&quot;&gt;&lt;/a&gt;JavaScript—动画&lt;/h1&gt;&lt;h2 id=&quot;一、动画原理&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="笔记" scheme="https://www.cikian.cn/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="JavaScript" scheme="https://www.cikian.cn/categories/%E7%AC%94%E8%AE%B0/JavaScript/"/>
-    
-    
-    <category term="JavaScript" scheme="https://www.cikian.cn/tags/JavaScript/"/>
-    
-    <category term="动画" scheme="https://www.cikian.cn/tags/%E5%8A%A8%E7%94%BB/"/>
     
   </entry>
   

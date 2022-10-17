@@ -6,7 +6,7 @@
   <link href="https://www.cikian.cn/atom.xml" rel="self"/>
   
   <link href="https://www.cikian.cn/"/>
-  <updated>2022-08-15T14:08:12.681Z</updated>
+  <updated>2022-10-17T07:26:52.915Z</updated>
   <id>https://www.cikian.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux常用命令及参数（持续更新）</title>
+    <link href="https://www.cikian.cn/2022/10/07/linux-chang-yong-ming-ling-ji-can-shu/"/>
+    <id>https://www.cikian.cn/2022/10/07/linux-chang-yong-ming-ling-ji-can-shu/</id>
+    <published>2022-10-07T07:26:30.000Z</published>
+    <updated>2022-10-17T07:26:52.915Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、磁盘操作&quot;&gt;&lt;a href=&quot;#一、磁盘操作&quot; class=&quot;headerlink&quot; title=&quot;一、磁盘操作&quot;&gt;&lt;/a&gt;一、磁盘操作&lt;/h2&gt;&lt;h3 id=&quot;1-ls命令&quot;&gt;&lt;a href=&quot;#1-ls命令&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://www.cikian.cn/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://www.cikian.cn/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>解决Ubuntu更新Snap Store失败</title>
@@ -504,34 +529,6 @@ Please use a newer</summary>
     
     
     <category term="MySQL" scheme="https://www.cikian.cn/tags/MySQL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JDK配置环境变量+eclipse安装使用</title>
-    <link href="https://www.cikian.cn/2022/03/01/jdk-pei-zhi-huan-jing-bian-liang-eclipse-an-zhuang-shi-yong/"/>
-    <id>https://www.cikian.cn/2022/03/01/jdk-pei-zhi-huan-jing-bian-liang-eclipse-an-zhuang-shi-yong/</id>
-    <published>2022-03-01T11:05:35.000Z</published>
-    <updated>2022-03-24T04:47:34.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、下载JDK&quot;&gt;&lt;a href=&quot;#一、下载JDK&quot; class=&quot;headerlink&quot; title=&quot;一、下载JDK&quot;&gt;&lt;/a&gt;一、下载JDK&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;访问Oracle官网下载最新版JDK&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="教程" scheme="https://www.cikian.cn/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-    <category term="JDK" scheme="https://www.cikian.cn/tags/JDK/"/>
-    
-    <category term="配置" scheme="https://www.cikian.cn/tags/%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   

@@ -6,7 +6,7 @@
   <link href="https://www.cikian.cn/atom.xml" rel="self"/>
   
   <link href="https://www.cikian.cn/"/>
-  <updated>2022-10-17T07:39:53.049Z</updated>
+  <updated>2022-10-20T03:03:05.204Z</updated>
   <id>https://www.cikian.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java异常&amp;处理异常</title>
+    <link href="https://www.cikian.cn/2022/10/20/java-guan-yu-yi-chang-de-fen-xi/"/>
+    <id>https://www.cikian.cn/2022/10/20/java-guan-yu-yi-chang-de-fen-xi/</id>
+    <published>2022-10-20T03:00:20.000Z</published>
+    <updated>2022-10-20T03:03:05.204Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Java异常-amp-处理异常&quot;&gt;&lt;a href=&quot;#Java异常-amp-处理异常&quot; class=&quot;headerlink&quot; title=&quot;Java异常&amp;amp;处理异常&quot;&gt;&lt;/a&gt;Java异常&amp;amp;处理异常&lt;/h1&gt;&lt;h2 id=&quot;一、什么是异常&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://www.cikian.cn/categories/Java/"/>
+    
+    
+    <category term="Java" scheme="https://www.cikian.cn/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux常用命令及参数（持续更新）</title>
@@ -498,34 +523,6 @@ Please use a newer</summary>
     
     
     <category term="教程" scheme="https://www.cikian.cn/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-    <category term="MySQL" scheme="https://www.cikian.cn/tags/MySQL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MySQL—概述</title>
-    <link href="https://www.cikian.cn/2022/03/05/mysql-gai-shu/"/>
-    <id>https://www.cikian.cn/2022/03/05/mysql-gai-shu/</id>
-    <published>2022-03-05T07:37:41.000Z</published>
-    <updated>2022-03-24T04:48:32.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、下载安装&quot;&gt;&lt;a href=&quot;#一、下载安装&quot; class=&quot;headerlink&quot; title=&quot;一、下载安装&quot;&gt;&lt;/a&gt;一、下载安装&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;下载地址（官方）：&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="笔记" scheme="https://www.cikian.cn/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="MySQL" scheme="https://www.cikian.cn/categories/%E7%AC%94%E8%AE%B0/MySQL/"/>
     
     
     <category term="MySQL" scheme="https://www.cikian.cn/tags/MySQL/"/>

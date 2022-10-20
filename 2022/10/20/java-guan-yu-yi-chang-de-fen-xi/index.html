@@ -817,7 +817,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    790
+                    800
                 </div>
                 
 
@@ -848,11 +848,9 @@
 <p>举个例子：当你穿上鞋，走路时发现左右脚穿反了，这时候，就是发生了异常，当然，这个异常不是致命的，你可以选择继续这样穿下去，继续走路，但是这样可能会引发其他严重的后果。大多数时候，我们会中断当前的事情，脱下鞋子，换过来。</p>
 <h2 id="二、异常分类"><a href="#二、异常分类" class="headerlink" title="二、异常分类"></a>二、异常分类</h2><h3 id="1-编译时异常"><a href="#1-编译时异常" class="headerlink" title="1. 编译时异常"></a>1. 编译时异常</h3><p>当我们编写Java代码时，编译器会对代码进行检查，如果有异常则不能通过编译，所以此类异常一旦出现，就必须处理。</p>
 <h3 id="2-运行时异常"><a href="#2-运行时异常" class="headerlink" title="2. 运行时异常"></a>2. 运行时异常</h3><p>运行时异常，即编译时不会报错，在运行时发生的异常。此类异常不强制处理，但是就像上面举的“穿鞋”的例子，假如不处理，可能会引发其他更严重的错误。</p>
-<h3 id="3-处理办法"><a href="#3-处理办法" class="headerlink" title="3. 处理办法"></a>3. 处理办法</h3><p>无论是编译时异常还是运行时异常，理论上都需要我们去处理，假如不处理异常，JVM的默认处理办法是，在异常发生的位置终止程序，然后输出异常的信息。</p>
-<ol>
-<li><p>使用 <code>throws</code> 抛出异常，由JVM处理，即以默认方式处理异常：在出现异常的位置终止异常；</p>
-</li>
-<li><p>是由 <code>try...catch.. </code> 环绕：</p>
+<h2 id="三、-处理办法"><a href="#三、-处理办法" class="headerlink" title="三、 处理办法"></a>三、 处理办法</h2><p>无论是编译时异常还是运行时异常，理论上都需要我们去处理，假如不处理异常，JVM的默认处理办法是，在异常发生的位置终止程序，然后输出异常的信息。</p>
+<h3 id="1-throws"><a href="#1-throws" class="headerlink" title="1. throws"></a>1. throws</h3><p>使用 <code>throws</code> 抛出异常，由JVM处理，即以默认方式处理异常：在出现异常的位置终止异常；</p>
+<h3 id="2-thy…catch…"><a href="#2-thy…catch…" class="headerlink" title="2. thy…catch…"></a>2. thy…catch…</h3><p>使用 <code>try...catch.. </code> 环绕：</p>
 <pre class=" language-java"><code class="language-java"><span class="token keyword">try</span><span class="token punctuation">{</span>
     <span class="token comment" spellcheck="true">// 出现异常的代码</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span class="token keyword">catch</span> <span class="token punctuation">(</span>异常类<span class="token number">1</span> 异常对象<span class="token punctuation">)</span><span class="token punctuation">{</span>
@@ -876,8 +874,7 @@
     <span class="token comment" spellcheck="true">// 处理办法3</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
 </code></pre>
-</li>
-<li><p><code>throws</code> 和 <code>try...catch...</code> 配合使用：</p>
+<h3 id="3-二者结合"><a href="#3-二者结合" class="headerlink" title="3. 二者结合"></a>3. 二者结合</h3><p><code>throws</code> 和 <code>try...catch...</code> 配合使用：</p>
 <p>在可能出现异常的方法名后使用 <code>throws</code> 抛出异常，在此方法处不处理异常，调用者在调用此方法时，需要集中捕获处理异常</p>
 <p><strong>如：</strong></p>
 <pre class=" language-java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Fun</span> <span class="token punctuation">{</span>
@@ -899,8 +896,6 @@
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
 <p>在上面的例子中，Fun 类并未处理异常，而是使用 <code>throws</code> 将异常抛出，而在下方调用时，则需要使用 <code>try...catch...</code> 环绕，捕获处理异常。</p>
-</li>
-</ol>
 
                 
             </div>

@@ -6,7 +6,7 @@
   <link href="https://www.cikian.cn/atom.xml" rel="self"/>
   
   <link href="https://www.cikian.cn/"/>
-  <updated>2022-11-16T17:39:38.318Z</updated>
+  <updated>2022-12-20T16:09:20.747Z</updated>
   <id>https://www.cikian.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MyBatis快速入门</title>
+    <link href="https://www.cikian.cn/2022/12/21/mybatis-kuai-su-ru-men/"/>
+    <id>https://www.cikian.cn/2022/12/21/mybatis-kuai-su-ru-men/</id>
+    <published>2022-12-20T16:08:55.000Z</published>
+    <updated>2022-12-20T16:09:20.747Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;MyBatis快速入门&quot;&gt;&lt;a href=&quot;#MyBatis快速入门&quot; class=&quot;headerlink&quot; title=&quot;MyBatis快速入门&quot;&gt;&lt;/a&gt;MyBatis快速入门&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;官方文档：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="教程" scheme="https://www.cikian.cn/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="MyBatis" scheme="https://www.cikian.cn/tags/MyBatis/"/>
+    
+  </entry>
   
   <entry>
     <title>Java小玩意：模拟ATM</title>
@@ -501,33 +526,6 @@ Please use a newer</summary>
     
     
     <category term="Vue" scheme="https://www.cikian.cn/tags/Vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MySQL—SQL语言</title>
-    <link href="https://www.cikian.cn/2022/03/06/mysql-sql-yu-yan/"/>
-    <id>https://www.cikian.cn/2022/03/06/mysql-sql-yu-yan/</id>
-    <published>2022-03-06T10:50:10.000Z</published>
-    <updated>2022-03-24T04:49:02.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、通用语法&quot;&gt;&lt;a href=&quot;#一、通用语法&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="笔记" scheme="https://www.cikian.cn/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="MySQL" scheme="https://www.cikian.cn/categories/%E7%AC%94%E8%AE%B0/MySQL/"/>
-    
-    
-    <category term="MySQL" scheme="https://www.cikian.cn/tags/MySQL/"/>
     
   </entry>
   

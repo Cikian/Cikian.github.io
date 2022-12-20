@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="GitHub不再允许“RSA密钥与SHA-1一起使用”, Cikian,陈子健，cikian,&#39;cikian&#39;,&#39;Cikian&#39;,&#39;陈子健&#39;,czj,&#39;czj&#39;">
-    <meta name="description" content="关于Github不再允许“RSA密钥与SHA-1一起使用”">
+    <meta name="keywords" content="MyBatis快速入门, Cikian,陈子健，cikian,&#39;cikian&#39;,&#39;Cikian&#39;,&#39;陈子健&#39;,czj,&#39;czj&#39;">
+    <meta name="description" content="MyBatis核心配置文件及快速入门">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>GitHub不再允许“RSA密钥与SHA-1一起使用” | Cikian | 有用的文字</title>
+    <title>MyBatis快速入门 | Cikian | 有用的文字</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -672,12 +672,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://img-upyun.cikian.cn/blog-cover/24.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://img-upyun.cikian.cn/blog-cover/30.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">GitHub不再允许“RSA密钥与SHA-1一起使用”</h1>
+                    <h1 class="description center-align post-title">MyBatis快速入门</h1>
                 </div>
             </div>
         </div>
@@ -793,8 +793,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">
-                                <span class="chip bg-color">问题解决</span>
+                            <a href="/tags/MyBatis/">
+                                <span class="chip bg-color">MyBatis</span>
                             </a>
                         
                     </div>
@@ -805,8 +805,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" class="post-category">
-                                问题解决
+                            <a href="/categories/%E6%95%99%E7%A8%8B/" class="post-category">
+                                教程
                             </a>
                         
                     </div>
@@ -818,28 +818,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-06-08
+                    2022-12-21
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-06-08
+                    2022-12-21
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    161
+                    970
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -859,18 +859,131 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>克隆GitHub仓库时，报错：</p>
-<pre><code>Eclipse/Git: &quot;You&#39;re using an RSA key with SHA-1,which is no longer allowed.
-Please use a newer client or a different key type.&quot;
+                <h1 id="MyBatis快速入门"><a href="#MyBatis快速入门" class="headerlink" title="MyBatis快速入门"></a>MyBatis快速入门</h1><p><strong>官方文档：<a target="_blank" rel="noopener" href="https://mybatis.org/mybatis-3/zh/getting-started.html">mybatis – MyBatis 3 | 入门</a></strong></p>
+<h2 id="一、导包"><a href="#一、导包" class="headerlink" title="一、导包"></a>一、导包</h2><ol>
+<li><p>将 <a target="_blank" rel="noopener" href="https://github.com/mybatis/mybatis-3/releases">mybatis-x.x.x.jar</a> 文件置于类路径（classpath）中即可。</p>
+</li>
+<li><p>使用Maven构建项目时，将以下依赖置于pom.xml文件中</p>
+</li>
+</ol>
+<pre class=" language-xml"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>org.mybatis<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>mybatis<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">></span></span>x.x.x<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span>
 </code></pre>
-<p>算是小问题吧，就是不知道什么时候开始，GitHub不允许“RSA密钥与SHA-1一起使用“了。</p>
-<p>然后查到了解决办法：</p>
-<blockquote>
-<p>使用 ECDSA 加密创建新的 SSH 密钥</p>
-</blockquote>
-<p><code>ssh-keygen -t ecdsa -b 521 -C &quot;example@example.com&quot;</code></p>
-<p>然后正常上传使用就好了。</p>
-<p>原文地址：[<a target="_blank" rel="noopener" href="https://namespaceit.com/blog/youre-using-an-rsa-key-with-sha-1-which-is-no-longer-allowed-please-use-a-newer-client-or-a-different-key-type-eclipse-git">已解决]“您正在将 RSA 密钥与 SHA-1 一起使用，这不再允许。请使用较新的客户端或其他密钥类型 |。命名空间IT (namespaceit.com)</a></p>
+<h2 id="二、配置SQL映射文件"><a href="#二、配置SQL映射文件" class="headerlink" title="二、配置SQL映射文件"></a>二、配置SQL映射文件</h2><pre class=" language-xml"><code class="language-xml"><span class="token prolog">&lt;?xml version="1.0" encoding="UTF-8" ?></span>
+<span class="token doctype">&lt;!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd"></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mapper</span> <span class="token attr-name">namespace</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>test<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>selectBlog<span class="token punctuation">"</span></span> <span class="token attr-name">resultType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>User<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    select * from User where id = #{id};
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mapper</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>配置字段解释：</p>
+<ol>
+<li><p>mapper ：</p>
+<p>namespace：名称空间，通常情况下，一个项目的数据库不只有一张表，而操作不同表的SQL语句的id（下方解释id）的有可能重复，如查询所有用户信息和查询所有管理员信息，SQL语句的id可都为 <strong>selectAll</strong> 此时，名称空间便可对此进行区分，就像3班的张三和4班的张三。</p>
+</li>
+<li><p>select（不只有select，还有insert，update等）：</p>
+<ol>
+<li>id：在同一名称空间内，一条SQL语句的唯一标识。</li>
+<li>resultType：返回结果的类型，类似于泛型中尖括号中的内容的作用。</li>
+</ol>
+</li>
+</ol>
+<h2 id="三、配置核心配置文件以及在核心配置文件中加载SQL映射文件"><a href="#三、配置核心配置文件以及在核心配置文件中加载SQL映射文件" class="headerlink" title="三、配置核心配置文件以及在核心配置文件中加载SQL映射文件"></a>三、配置核心配置文件以及在核心配置文件中加载SQL映射文件</h2><pre class=" language-xml"><code class="language-xml"><span class="token prolog">&lt;?xml version="1.0" encoding="UTF-8" ?></span>
+<span class="token doctype">&lt;!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-config.dtd"></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>configuration</span><span class="token punctuation">></span></span>
+    
+    <span class="token comment" spellcheck="true">&lt;!--
+    设置别名
+    --></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typeAliases</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>package</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>com.cikian.pojo<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>typeAliases</span><span class="token punctuation">></span></span>
+    
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>environments</span> <span class="token attr-name">default</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>development<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token comment" spellcheck="true">&lt;!--
+        配置数据库连接环境信息，可以配置多个environment，使用不同的id区分，可通过上方的default属性选择使用相应的环境
+        --></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>environment</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>development<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>transactionManager</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>JDBC<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dataSource</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>POOLED<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>driver<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>com.mysql.cj.jdbc.Driver<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>jdbc:mysql:///mybatis?useSSL<span class="token punctuation">=</span>False<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>username<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>root<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>123456<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dataSource</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>environment</span><span class="token punctuation">></span></span>
+        
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>environments</span><span class="token punctuation">></span></span>
+    
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mappers</span><span class="token punctuation">></span></span>
+        <span class="token comment" spellcheck="true">&lt;!--加载SQL映射文件，两种方式--></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mapper</span> <span class="token attr-name">resource</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>com/cikian/mapper/UserMapper.xml<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>package</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>com.cikian.mapper<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mappers</span><span class="token punctuation">></span></span>
+    
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>configuration</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>核心配置文件中，<strong>&lt;dataSource&gt;</strong> 标签中的内容……..（一看就懂0.0）</p>
+<p><strong>加载SQL映射文件的两种方式：</strong></p>
+<ol>
+<li>第一种方式resource字段的值即为SQL映射文件的相对路径。</li>
+<li>第二种方式为“包扫描”方式，如上，会加载com&#x2F;cikian&#x2F;mapper目录中所有的SQL映射文件（<strong>有条件，如下</strong>）</li>
+</ol>
+<p>在代理开发中，Mapper接口名和SQL映射文件名称相同，并且在同一目录下，推荐使用第二种方式加载映射文件，如果使用第一种方式，有多少SQL映射文件就需要写多少次，比较繁琐，而第二种方式只需要写一次。</p>
+<h2 id="四、在Java中使用"><a href="#四、在Java中使用" class="headerlink" title="四、在Java中使用"></a>四、在Java中使用</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MyBatisDemo</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> IOException <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">// 1.加载配置文件</span>
+        String resource <span class="token operator">=</span> <span class="token string">"mybatis-config.xml"</span><span class="token punctuation">;</span>
+        InputStream inputStream <span class="token operator">=</span> Resources<span class="token punctuation">.</span><span class="token function">getResourceAsStream</span><span class="token punctuation">(</span>resource<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        SqlSessionFactory sqlSessionFactory <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">SqlSessionFactoryBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span>inputStream<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">// 2.获取SqlSession对象</span>
+        SqlSession sqlSession <span class="token operator">=</span> sqlSessionFactory<span class="token punctuation">.</span><span class="token function">openSession</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">// 3.执行SQL</span>
+        List<span class="token operator">&lt;</span>User<span class="token operator">></span> users <span class="token operator">=</span> sqlSession<span class="token punctuation">.</span><span class="token function">selectList</span><span class="token punctuation">(</span><span class="token string">"test.selectAll"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//这里就是名称空间和id的使用</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>users<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">// 4.释放资源</span>
+        sqlSession<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="五、代理开发"><a href="#五、代理开发" class="headerlink" title="五、代理开发"></a>五、代理开发</h2><p><strong>要求：</strong></p>
+<ol>
+<li>定义与SQL映射文件同名的Mapper接口，并且将Mapper接口和SQL映射文件放在同一目录下；</li>
+<li>设置SQL映射文件的namespace属性为Mapper接口全限定名；</li>
+<li>在Mapper接口中定义方法，方法名就是SQL映射文件中SQL语句的id，并保持参数类型和返回值类型一致；</li>
+</ol>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MyBatisDemo2</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> IOException <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">// 1.加载配置文件</span>
+        String resource <span class="token operator">=</span> <span class="token string">"mybatis-config.xml"</span><span class="token punctuation">;</span>
+        InputStream inputStream <span class="token operator">=</span> Resources<span class="token punctuation">.</span><span class="token function">getResourceAsStream</span><span class="token punctuation">(</span>resource<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        SqlSessionFactory sqlSessionFactory <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">SqlSessionFactoryBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span>inputStream<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">// 2.获取SqlSession对象</span>
+        SqlSession sqlSession <span class="token operator">=</span> sqlSessionFactory<span class="token punctuation">.</span><span class="token function">openSession</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">// 3.执行SQL</span>
+        UserMapper userMapper <span class="token operator">=</span> sqlSession<span class="token punctuation">.</span><span class="token function">getMapper</span><span class="token punctuation">(</span>UserMapper<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">// 获取接口的代理对象</span>
+        List<span class="token operator">&lt;</span>User<span class="token operator">></span> users <span class="token operator">=</span> userMapper<span class="token punctuation">.</span><span class="token function">selectAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>users<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">// 4.释放资源</span>
+        sqlSession<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p>代理开发中，通过SqlSession的<strong>getMapper</strong>方法获取Mapper接口的代理对象，代理对象再调用相关方法（方法名与SQL语句id相同）即可完成SQL的执行。</p>
 
                 
             </div>
@@ -897,7 +1010,7 @@ Please use a newer client or a different key type.&quot;
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://www.cikian.cn/2022/06/08/github-bu-zai-yun-xu-rsa-mi-yao-yu-sha-1-yi-qi-shi-yong/">https://www.cikian.cn/2022/06/08/github-bu-zai-yun-xu-rsa-mi-yao-yu-sha-1-yi-qi-shi-yong/</a>
+                    <a href="https://www.cikian.cn/2022/12/21/mybatis-kuai-su-ru-men/">https://www.cikian.cn/2022/12/21/mybatis-kuai-su-ru-men/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -935,8 +1048,8 @@ Please use a newer client or a different key type.&quot;
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">
-                                    <span class="chip bg-color">问题解决</span>
+                                <a href="/tags/MyBatis/">
+                                    <span class="chip bg-color">MyBatis</span>
                                 </a>
                             
                         </div>
@@ -1384,45 +1497,47 @@ Please use a newer client or a different key type.&quot;
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/07/04/python-zhong-random-ku-han-shu-yong-fa/">
+                <a href="/2022/12/21/mybatis-kuai-su-ru-men/">
                     <div class="card-image">
                         
-                        <img src="https://img-upyun.cikian.cn/blog-cover/25.jpg" class="responsive-img" alt="Python中Random库函数用法">
+                        <img src="https://img-upyun.cikian.cn/blog-cover/30.jpg" class="responsive-img" alt="MyBatis快速入门">
                         
-                        <span class="card-title">Python中Random库函数用法</span>
+                        <span class="card-title">MyBatis快速入门</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Python中常用的Random库函数用法
+                            MyBatis核心配置文件及快速入门
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-07-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Python/" class="post-category">
-                                    Python
+                            <a href="/categories/%E6%95%99%E7%A8%8B/" class="post-category">
+                                    教程
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/MyBatis/">
+                        <span class="chip bg-color">MyBatis</span>
                     </a>
                     
                 </div>
@@ -1436,30 +1551,30 @@ Please use a newer client or a different key type.&quot;
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/05/21/java-xiao-wan-yi-huang-jin-kuang-gong/">
+                <a href="/2022/11/17/java-xiao-wan-yi-mo-ni-atm/">
                     <div class="card-image">
                         
-                        <img src="https://img-upyun.cikian.cn/blog-cover/23.jpg" class="responsive-img" alt="Java小玩意：黄金矿工">
+                        <img src="https://img-upyun.cikian.cn/blog-cover/29.jpg" class="responsive-img" alt="Java小玩意：模拟ATM">
                         
-                        <span class="card-title">Java小玩意：黄金矿工</span>
+                        <span class="card-title">Java小玩意：模拟ATM</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Java实现黄金矿工（适合小白）
+                            纯Java + MySQL实现模拟ATM功能
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-21
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-11-17
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%B0%8F%E7%8E%A9%E6%84%8F/" class="post-category">
-                                    小玩意
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
                                 </a>
                             
                             
@@ -1471,6 +1586,10 @@ Please use a newer client or a different key type.&quot;
                     
                     <a href="/tags/Java/">
                         <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                    <a href="/tags/MySQL/">
+                        <span class="chip bg-color">MySQL</span>
                     </a>
                     
                 </div>

@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="MySQL—SQL语言, Cikian,陈子健，cikian,&#39;cikian&#39;,&#39;Cikian&#39;,&#39;陈子健&#39;,czj,&#39;czj&#39;">
-    <meta name="description" content="SQL语法的介绍">
+    <meta name="keywords" content="Linux部署网站（Nginx+PHP+MySQL）, Cikian,陈子健，cikian,&#39;cikian&#39;,&#39;Cikian&#39;,&#39;陈子健&#39;,czj,&#39;czj&#39;">
+    <meta name="description" content="本文从0开始详细叙述在Linux上使用Nginx、PHP、MySQL部署网站的过程">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>MySQL—SQL语言 | Cikian | 有用的文字</title>
+    <title>Linux部署网站（Nginx+PHP+MySQL） | Cikian | 有用的文字</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -672,12 +672,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://img-upyun.cikian.cn/blog-cover/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://img-upyun.cikian.cn/blog-cover/32.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">MySQL—SQL语言</h1>
+                    <h1 class="description center-align post-title">Linux部署网站（Nginx+PHP+MySQL）</h1>
                 </div>
             </div>
         </div>
@@ -793,8 +793,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/MySQL/">
-                                <span class="chip bg-color">MySQL</span>
+                            <a href="/tags/Linux/">
+                                <span class="chip bg-color">Linux</span>
+                            </a>
+                        
+                            <a href="/tags/%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99/">
+                                <span class="chip bg-color">部署网站</span>
                             </a>
                         
                     </div>
@@ -805,12 +809,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
-                                笔记
-                            </a>
-                        
-                            <a href="/categories/%E7%AC%94%E8%AE%B0/MySQL/" class="post-category">
-                                MySQL
+                            <a href="/categories/%E6%95%99%E7%A8%8B/" class="post-category">
+                                教程
                             </a>
                         
                     </div>
@@ -822,28 +822,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-03-06
+                    2023-01-07
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-03-24
+                    2023-01-07
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.6k
+                    2.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    12 分
                 </div>
                 
 
@@ -863,257 +863,190 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、通用语法"><a href="#一、通用语法" class="headerlink" title="一、通用语法"></a>一、通用语法</h2><ol>
-<li><p>SQL语句可以单行或多行书写，以分号结尾；</p>
-</li>
-<li><p>SQL语句可以使用空格&amp;缩进来增强语句的可读性；</p>
-</li>
-<li><p>MySQL数据库的SQL语句不区分大小写，关键字建议使用大写；</p>
-</li>
-<li><p>注释：</p>
-<ul>
-<li><p>单行注释：–注释内容 或 #注释内容（MySQL特有）</p>
-</li>
-<li><p>多行注释：&#x2F;*注释内容*&#x2F;</p>
-</li>
-</ul>
-</li>
-</ol>
-<h2 id="二、SQL语句分类"><a href="#二、SQL语句分类" class="headerlink" title="二、SQL语句分类"></a>二、SQL语句分类</h2><p><img src="https://img-upyun.cikian.cn/blog-img/2022-3/20220305171046.png"></p>
-<h3 id="1-DDL语句—数据库操作"><a href="#1-DDL语句—数据库操作" class="headerlink" title="1.DDL语句—数据库操作"></a>1.DDL语句—数据库操作</h3><ol>
-<li><p>查询</p>
-<p>查询所有数据库<code>SHOW DATABASES;</code></p>
-<p>查询当前数据库<code>SELECT DATABASE();</code></p>
-</li>
-<li><p>创建</p>
-<p><code>CREATE DATABASE [IF NOT EXISTS] 数据库名 [DEFAULT CHARSET 字符集] [COLLATE 排序规则];</code></p>
-<p>（中括号的内容可以省略，使用时不加中括号）</p>
-</li>
-<li><p>删除</p>
-<p><code>DROP DATABASE [IF ESISTS] 数据库名;</code></p>
-</li>
-<li><p>使用</p>
-<p><code>USE 数据库名;</code></p>
-</li>
-</ol>
-<h4 id="1-1-DDL表操作创建-amp-查询"><a href="#1-1-DDL表操作创建-amp-查询" class="headerlink" title="1.1 DDL表操作创建&amp;查询"></a>1.1 DDL表操作创建&amp;查询</h4><ol>
-<li><p>查询当前数据库所有表</p>
-<p><code>SHOW TABLES;</code></p>
-</li>
-<li><p>查询表结构</p>
-<p><code>DESC 表名;</code></p>
-</li>
-<li><p>查询指定的建表语句</p>
-<p><code>SHOW CREATE TABLE 表名;</code></p>
-</li>
-</ol>
-<p><strong>1.1.1 DDL表操作—建表</strong></p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> 表名<span class="token punctuation">(</span>
-    字段<span class="token number">1</span> 字段<span class="token number">1</span>类型<span class="token punctuation">[</span><span class="token keyword">COMMENT</span> 字段<span class="token number">1</span>注释<span class="token punctuation">]</span><span class="token punctuation">,</span>
-    字段<span class="token number">2</span> 字段<span class="token number">2</span>类型<span class="token punctuation">[</span><span class="token keyword">COMMENT</span> 字段<span class="token number">2</span>注释<span class="token punctuation">]</span><span class="token punctuation">,</span>
-    字段<span class="token number">3</span> 字段<span class="token number">3</span>类型<span class="token punctuation">[</span><span class="token keyword">COMMENT</span> 字段<span class="token number">3</span>注释<span class="token punctuation">]</span><span class="token punctuation">,</span>
-    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
-    字段n 字段n类型<span class="token punctuation">[</span><span class="token keyword">COMMENT</span> 字段n注释<span class="token punctuation">]</span>
-<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token keyword">COMMENT</span> 表注释<span class="token punctuation">]</span><span class="token punctuation">;</span>
+                <h1 id="Linux部署网站（Nginx-PHP-MySQL）"><a href="#Linux部署网站（Nginx-PHP-MySQL）" class="headerlink" title="Linux部署网站（Nginx+PHP+MySQL）"></a>Linux部署网站（Nginx+PHP+MySQL）</h1><h2 id="一、部署思路"><a href="#一、部署思路" class="headerlink" title="一、部署思路"></a>一、部署思路</h2><p>做好网站部署前期准备，购买域名、服务器、备案等工作（如果是学习需要，可以使用虚拟机），在服务器上使用Nginx、PHP、MySQL官方网站提供的源码包进行本地编译安装。安装完成之后对各软件进行配置、修改配置文件等工作，以及对服务器安全进行配置，如打开防火墙，开放相关端口等，保证各软件、各模块之间能够互相配合，支持网站各项功能正常使用。最后进行网站源代码和编写和上传工作。</p>
+<h2 id="二、网站架构"><a href="#二、网站架构" class="headerlink" title="二、网站架构"></a>二、网站架构</h2><p>考虑到网站初期访问人数较少资源有限，所以将应用程序、文件资源和数据库都放在同一个服务器中，如果网站具有一定规模，可以考虑购买使用数据库服务器、文件服务器将给服务分开管理。</p>
+<p>本文将所有服务放在同一服务器上。</p>
+<h2 id="三、环境"><a href="#三、环境" class="headerlink" title="三、环境"></a>三、环境</h2><p>服务器系统：CentOS 7.9</p>
+<p>Nginx版本：1.22.1</p>
+<p>PHP版本：7.3.23</p>
+<p>MySQL版本：8.0.31</p>
+<blockquote>
+<p>RHEL（红帽）系统可完全参考本文章。</p>
+</blockquote>
+<h2 id="四、前期准备工作"><a href="#四、前期准备工作" class="headerlink" title="四、前期准备工作"></a>四、前期准备工作</h2><p><strong>省略购买域名、服务器、备案、安装操作系统等操作</strong></p>
+<h3 id="1-配置yum仓库"><a href="#1-配置yum仓库" class="headerlink" title="1. 配置yum仓库"></a>1. 配置yum仓库</h3><p>在安装所需软件时，我们需要非常多的依赖，所以将yum源更换为国内访问速度更快的清华镜像源</p>
+<p>在 &#x2F;etc&#x2F;yum.repos.d 目录下新建CentOS-Base.repo文件，并在文件中写入以下内容：</p>
+<pre class=" language-ini"><code class="language-ini"><span class="token selector">[base]</span>
+<span class="token constant">name</span><span class="token attr-value"><span class="token punctuation">=</span>CentOS-$releasever - Base</span>
+<span class="token constant">baseurl</span><span class="token attr-value"><span class="token punctuation">=</span>https://mirrors.tuna.tsinghua.edu.cn/centos/$releasever/os/$basearch/</span>
+<span class="token constant">#mirrorlist</span><span class="token attr-value"><span class="token punctuation">=</span>http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=os</span>
+<span class="token constant">enabled</span><span class="token attr-value"><span class="token punctuation">=</span>1</span>
+<span class="token constant">gpgcheck</span><span class="token attr-value"><span class="token punctuation">=</span>1</span>
+<span class="token constant">gpgkey</span><span class="token attr-value"><span class="token punctuation">=</span>file:///etc/pki/rpm-gpg/RPM-GPG-KEY-7</span>
+
+#released updates
+<span class="token selector">[updates]</span>
+<span class="token constant">name</span><span class="token attr-value"><span class="token punctuation">=</span>CentOS-$releasever - Updates</span>
+<span class="token constant">baseurl</span><span class="token attr-value"><span class="token punctuation">=</span>https://mirrors.tuna.tsinghua.edu.cn/centos/$releasever/updates/$basearch/</span>
+<span class="token constant">#mirrorlist</span><span class="token attr-value"><span class="token punctuation">=</span>http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=updates</span>
+<span class="token constant">enabled</span><span class="token attr-value"><span class="token punctuation">=</span>1</span>
+<span class="token constant">gpgcheck</span><span class="token attr-value"><span class="token punctuation">=</span>1</span>
+<span class="token constant">gpgkey</span><span class="token attr-value"><span class="token punctuation">=</span>file:///etc/pki/rpm-gpg/RPM-GPG-KEY-7</span>
+
+#additional packages that may be useful
+<span class="token selector">[extras]</span>
+<span class="token constant">name</span><span class="token attr-value"><span class="token punctuation">=</span>CentOS-$releasever - Extras</span>
+<span class="token constant">baseurl</span><span class="token attr-value"><span class="token punctuation">=</span>https://mirrors.tuna.tsinghua.edu.cn/centos/$releasever/extras/$basearch/</span>
+<span class="token constant">#mirrorlist</span><span class="token attr-value"><span class="token punctuation">=</span>http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=extras</span>
+<span class="token constant">enabled</span><span class="token attr-value"><span class="token punctuation">=</span>1</span>
+<span class="token constant">gpgcheck</span><span class="token attr-value"><span class="token punctuation">=</span>1</span>
+<span class="token constant">gpgkey</span><span class="token attr-value"><span class="token punctuation">=</span>file:///etc/pki/rpm-gpg/RPM-GPG-KEY-7</span>
+
+#additional packages that extend functionality of existing packages
+<span class="token selector">[centosplus]</span>
+<span class="token constant">name</span><span class="token attr-value"><span class="token punctuation">=</span>CentOS-$releasever - Plus</span>
+<span class="token constant">baseurl</span><span class="token attr-value"><span class="token punctuation">=</span>https://mirrors.tuna.tsinghua.edu.cn/centos/$releasever/centosplus/$basearch/</span>
+<span class="token constant">#mirrorlist</span><span class="token attr-value"><span class="token punctuation">=</span>http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=centosplus</span>
+<span class="token constant">gpgcheck</span><span class="token attr-value"><span class="token punctuation">=</span>1</span>
+<span class="token constant">enabled</span><span class="token attr-value"><span class="token punctuation">=</span>0</span>
+<span class="token constant">gpgkey</span><span class="token attr-value"><span class="token punctuation">=</span>file:///etc/pki/rpm-gpg/RPM-GPG-KEY-7</span>
 </code></pre>
-<p><strong>1.1.2 DDL表操作—数据类型</strong></p>
-<ol>
-<li>数值类型</li>
-</ol>
-<p><img src="https://img-upyun.cikian.cn/blog-img/2022-3/20220305210648.png"></p>
-<ol start="2">
-<li>字符串类型</li>
-</ol>
-<p><img src="https://img-upyun.cikian.cn/blog-img/2022-3/20220305211504.png"></p>
-<p>char 和 varchar在使用时都需要指定字符串的长度，如<code>char(10);</code></p>
-<ol start="3">
-<li>日期时间类型</li>
-</ol>
-<p><img src="https://img-upyun.cikian.cn/blog-img/2022-3/20220305212028.png"></p>
-<p><strong>1.1.3 DDL表操作—修改</strong></p>
-<ol>
-<li><p>添加字段</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名 <span class="token keyword">ADD</span> 字段名 类型（长度）<span class="token punctuation">[</span><span class="token keyword">COMMENT</span> 注释<span class="token punctuation">]</span> <span class="token punctuation">[</span>约束<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<p>保存文件后使用 <code>yum clean all</code>命令清除缓存，然后使用<code>yum makecache</code>生成新的缓存。</p>
+<h3 id="2-安装依赖"><a href="#2-安装依赖" class="headerlink" title="2. 安装依赖"></a>2. 安装依赖</h3><p>安装所需软件需要很多依赖，所以在开始之前我们将所需的依赖全部安装，在命令行输入以下命令，执行（tips：可以复制哟 ^o^&#x2F; ）</p>
+<pre class=" language-shell"><code class="language-shell">yum -y install apr* autoconf automake numactl bison bzip2-devel cpp curl-devel fontconfig-devel freetype-devel gcc gcc-c++ gd-devel gettex-devel kernel-headers keyutils-libs-devel krb5-devel libcom_err-devel libpng-devel libjpeg* libsepol-devel libselinux-devel libstdc++-devel libtool* libxml2-devel libXpm* libxml* libXaw-devel libXmu-devel libaio libtiff* make openssl-devel patch pcrdevel perl php-common php-gd telnet zlib-devel libtirpc-devel gtk* ntpstat na* bison* lrzsz cmake ncurses-devel libzip-devel libxslt-devel gdbm-devel readlin-devel gmp-devel
 </code></pre>
-</li>
-<li><p>修改</p>
-<ol>
-<li><p>修改数据类型</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名 <span class="token keyword">MODIFY</span> 字段名 新数据类型（长度）<span class="token punctuation">;</span>
+<h2 id="五、安装Nginx"><a href="#五、安装Nginx" class="headerlink" title="五、安装Nginx"></a>五、安装Nginx</h2><h3 id="1-下载并解压源码包"><a href="#1-下载并解压源码包" class="headerlink" title="1. 下载并解压源码包"></a>1. 下载并解压源码包</h3><p>在工作目录（建议&#x2F;usr&#x2F;local&#x2F;src）使用<code>wget</code>命令从Nginx官方网站下载最新版本的Nginx源码包，然后使用<code>tar</code>命令加上<code>-zxvf</code>参数将下载的源码包解压到当前工作目录。</p>
+<p><code>wget http://nginx.org/download/nginx-1.22.1.tar.gz</code></p>
+<p><code>tar -zxvf nginx-1.22.1.tar.gz</code></p>
+<p>解压后会发现当前目录下多出一个，nginx-1.22.1的目录，使用<code>cd</code>命令进入此目录</p>
+<p><img src="https://img-upyun.cikian.cn//blog-img/2022-11/202301070214650.png"></p>
+<h3 id="2-对Nginx的安装进行配置"><a href="#2-对Nginx的安装进行配置" class="headerlink" title="2. 对Nginx的安装进行配置"></a>2. 对Nginx的安装进行配置</h3><p>进入之前解压好的目录执行 .&#x2F;configure 文件对Nginx的进行配置，如设置Nginx的安装目录、启用SSL模块等</p>
+<pre class=" language-shell"><code class="language-shell">./configuer --prefix=/usr/local/nginx --with-http_ssl_module
 </code></pre>
-</li>
-<li><p>修改字段名和字段类型</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名 CHANGE 旧字段名 新字段名 类型（长度） <span class="token punctuation">[</span><span class="token keyword">COMMENT</span> 注释<span class="token punctuation">]</span> <span class="token punctuation">[</span>约束<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<p><code>--prefix</code>参数用来设置nginx的安装目录，可自行更改，但是要注意目录的权限问题，后方参数为开启某模块，这里我们仅需开启ssl模块，以便开启后期https访问</p>
+<h3 id="3-安装及配置"><a href="#3-安装及配置" class="headerlink" title="3. 安装及配置"></a>3. 安装及配置</h3><p>在执行完 .&#x2F;configure文件后若无报错，则使用make 和 make install 命令编译并安装Nginx,安装完成之后创建Nginx软件的运行用户nginx，并设置为“不可登录”。</p>
+<pre class=" language-shell"><code class="language-shell">useradd nginx -M -s /sbin/nologin
 </code></pre>
-</li>
-</ol>
-</li>
-<li><p>删除字段</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名 <span class="token keyword">DROP</span> 字段名<span class="token punctuation">;</span>
+<p>进入Nginx的安装目录找到nginx.conf的配置文件，将运行用户由nobody改为nginx用户组的nginx用户。然后将http块中的server块中的server name后面的内容修改为已经正确解析到此服务器IP的域名。之后在第一个location块中将index.php增加在最前面，保证访问网站时优先返回index.php文件作为首页。将第二个location块，也就是有关PHP的配置信息部分的注释解开，并做相关修改。Nginx的监听端口使用默认的80端口，不做修改。</p>
+<p>具体请参考下方内容（无关内容已省略）：</p>
+<pre class=" language-ini"><code class="language-ini"># ---此处需要修改---
+user  nginx nginx;
+worker_processes  1;
+
+#error_log  logs/error.log;
+#error_log  logs/error.log  notice;
+#error_log  logs/error.log  info;
+#pid        logs/nginx.pid;
+
+events {
+    worker_connections  1024;
+};
+
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+
+    #log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+    #                  '$status $body_bytes_sent "$http_referer" '
+    #                  '"$http_user_agent" "$http_x_forwarded_for"';
+    #access_log  logs/access.log  main;
+
+    sendfile        on;
+    #tcp_nopush     on;
+    #keepalive_timeout  0;
+    keepalive_timeout  65;
+
+    #gzip  on;
+    client_max_body_size 100M;
+    client_body_buffer_size 1024k;
+    fastcgi_intercept_errors on;
+
+    server {
+        # ---监听端口，默认80---
+        listen       80;
+        # ---此处需要修改，也可不修改，默认使用IP访问---
+        server_name  xxx.xxx.com;
+
+        #charset koi8-r;
+        #access_log  logs/host.access.log  main;
+
+        location / {
+            root   html;
+            # ---此处需要修改---
+            index  index.php index.html index.htm;
+        };
+        # ---此处可选择修改，若有404页面，需解开注释并且在后方指定404页面的路径---
+        #error_page  404              /404.html;
+        # redirect server error pages to the static page /50x.html
+        #
+        
+        # ---同404---
+        error_page   500 502 503 504  /50x.html;
+<span class="token constant">        location</span> <span class="token attr-value"><span class="token punctuation">=</span> /50x.html {</span>
+            root   html;
+        };
+        ...
+        ...
+        ...
+        # ---此处需要修改，默认是注释的，需要解开下方注释，并修改fastcgi_param  SCRIPT_FILENAME后方的内容---
+        location ~ \.php$ {
+            root           html;
+            fastcgi_pass   127.0.0.1:9000;
+            fastcgi_index  index.php;
+                                            # ---这里是网站的根目录，也可修改为$document_root---
+          # fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;                                 
+            fastcgi_param  SCRIPT_FILENAME  /usr/local/nginx/html$fastcgi_script_name;
+            include        fastcgi_params;
+        };
+        ...
+        ...
+    };
+    ...
+    ...
+    ...
+};
 </code></pre>
-</li>
-<li><p>修改表名</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名 <span class="token keyword">RENAME</span> <span class="token keyword">TO</span> 新表名<span class="token punctuation">;</span>
+<p>至此，Nginx的安装完成。</p>
+<h2 id="六、安装MySQL"><a href="#六、安装MySQL" class="headerlink" title="六、安装MySQL"></a>六、安装MySQL</h2><h3 id="1-下载并解压源码包-1"><a href="#1-下载并解压源码包-1" class="headerlink" title="1. 下载并解压源码包"></a>1. 下载并解压源码包</h3><p>下载MySQL源码包的方式有很多，可以使用wget命令，也可以从Windows上下载后上传到服务器中，由于MySQL源码包中有许多安装包是我们不需要的，所以我从Windows下载后删除压缩包中不需要的内容后，在上传到服务器，如果你也使用这种方式，那么我们只需要留下压缩包中的以下文件即可：</p>
+<p><img src="https://img-upyun.cikian.cn//blog-img/2022-11/202301070253608.png"></p>
+<p>你可以像我一样操作，也可以直接下载我已经修改好的压缩包，<a target="_blank" rel="noopener" href="http://files.cikian.cn/mysql/mysql-8.0.31.tar">mysql-8.0.31.tar</a>，或者直接在命令行使用<code>wget http://files.cikian.cn/mysql/mysql-8.0.31.tar</code>下载，</p>
+<p>解压步骤在此省略，同Nginx源码包的解压大同小异，不同点是下载的MySQL源码包是.tar文件而不是.tar.gz文件所以使用<code>tar</code>命令解压时不需要使用<code>-z</code>参数，只需要使用<code>-xvf</code>参数即可。</p>
+<h3 id="2-安装rpm包"><a href="#2-安装rpm包" class="headerlink" title="2. 安装rpm包"></a>2. 安装rpm包</h3><p>由于下载的源码包解压后是已经编译过的多个rpm包，所以可使用rpm命令直接安装即可，但是由于各包之间存在依赖关系，所以安装时要注意安装顺序，依次安装：mysql-community-common-8.0.31-1.rpm、mysql-community-client-plugins-8.0.31-1.rpm、mysql-community-libs-8.0.31-1.rpm 、mysql-community-client-8.0.31-1.rpm、mysql-community-icu-data-files-8.0.31-1.rpm 、mysql-community-server-8.0.31-1.rpm</p>
+<p>使用 <code>rpm -ivh mysql-community-... .rpm</code> 命令安装上方的顺序安装即可</p>
+<p><strong>（如果安装过程中出现问题，请继续往下看哟 (^&#x2F;&#x2F;&#x2F;^)  ）</strong></p>
+<h3 id="3-问题解决"><a href="#3-问题解决" class="headerlink" title="3. 问题解决"></a>3. 问题解决</h3><p>经过我多次安装，以及帮他人安装，在MySQL的安装过程中可能会出现以下问题</p>
+<h4 id="a-依赖检测失败（一般不会出现，因为我们已经安装过依赖）"><a href="#a-依赖检测失败（一般不会出现，因为我们已经安装过依赖）" class="headerlink" title="a. 依赖检测失败（一般不会出现，因为我们已经安装过依赖）"></a>a. 依赖检测失败（一般不会出现，因为我们已经安装过依赖）</h4><p>若安装过程中出现以下报错信息：</p>
+<p><img src="https://img-upyun.cikian.cn//blog-img/2022-11/202301070308768.png"></p>
+<p>使用 <code>wget http://files.cikian.cn/mysql/openssl-libs.rpm</code>下载此依赖文件，然后使用 <code>rpm -ivh openssl-libs.rpm --force</code>命令安装，<strong>注意一定要加 –force 参数！</strong></p>
+<h4 id="b-软件冲突"><a href="#b-软件冲突" class="headerlink" title="b. 软件冲突"></a>b. 软件冲突</h4><p>一般情况下，安装操作系统时，系统会自带一个叫<strong>mariadb</strong>的数据库软件</p>
+<p>使用 <code>rpm -qa | grep mariadb</code> 命令查找冲突软件mariadb所有相关的服务并使用<code>rpm -e –nodeps ... </code>命令忽略依赖卸载，也就是强制卸载冲突软件本体以及其相关的所有服务。**(搜索到多少卸载多少，注意名字，如我这里需要卸载的是mariadb-libs，如有其他软件的冲突，也如此操作)**</p>
+<p><img src="https://img-upyun.cikian.cn//blog-img/2022-11/202301070321069.png"></p>
+<h3 id="4-初始化及启动"><a href="#4-初始化及启动" class="headerlink" title="4. 初始化及启动"></a>4. 初始化及启动</h3><p>全部安装完成后，使用 <code>mysqld –initialize –console</code> 命令初始化MySQL，之后使用 <code>chown -R mysql:mysql /var/lib/mysql</code> 命令设置MySQL运行用户的权限。然后使用 <code> systemstl start mysqld</code> 启动MySQL服务，并在mysqld.log文件中查看MySQL的root用户临时密码</p>
+<p><img src="https://img-upyun.cikian.cn//blog-img/2022-11/202301070325637.png"></p>
+<p>localhost后方的内容即临时密码，如我查询到的临时密码为：<code>bQUzwB-2pLG+</code></p>
+<p>然后使用 <code>mysql -u root -p</code> 命令并输入查询到的临时密码进入MySQL控制台，在MySQL控制台中使用 <code>alter user &#39;root&#39;@&#39;localhost&#39; identified by &#39;123456&#39;</code> 修改root用户的密码,<strong>123456</strong>即为我修改后的密码。</p>
+<p>至此，MySQL的安装完成。</p>
+<h2 id="七、安装PHP"><a href="#七、安装PHP" class="headerlink" title="七、安装PHP"></a>七、安装PHP</h2><h3 id="1-下载并解压源码包-2"><a href="#1-下载并解压源码包-2" class="headerlink" title="1. 下载并解压源码包"></a>1. 下载并解压源码包</h3><p>在工作目录使用 <code>wget</code> 命令从PHP官方网站下载PHP的源码包，也可使用 <code>wget http://files.cikian.cn/php/php-7.3.23.tar.gz</code> 命令下载我已经下载好的源码包，并使用tar命令解压，此步骤同安装Nginx时的下载和解压几乎一致（除了文件名），所以在此不再赘述。</p>
+<h3 id="2-对PHP的安装进行配置以及安装"><a href="#2-对PHP的安装进行配置以及安装" class="headerlink" title="2. 对PHP的安装进行配置以及安装"></a>2. 对PHP的安装进行配置以及安装</h3><p>进入解压后的PHP源码包，运行 .&#x2F;configure 文件加上相关参数对PHP的安装进行配置，如设置PHP的安装目录、启用php-fpm、开启mysqli拓展、开启gd拓展等，可根据需求自行增加或删除拓展，但是建议不要删除，可增加。</p>
+<pre class=" language-shell"><code class="language-shell">./configure --prefix=/usr/local/php --enable-fpm --with-mysqli --with-curl --with-pdo_mysql --with-pdo_sqlite --enable-mysqlnd --enable-mbstring --with-gd --with-jpeg-dir --with-png-dir --with-openssl --with-zlib
 </code></pre>
-</li>
-<li><p>删除表</p>
-<ol>
-<li><p>删除表</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">DROP</span> <span class="token keyword">TABLE</span> <span class="token punctuation">[</span><span class="token keyword">IF</span> <span class="token keyword">EXISTS</span><span class="token punctuation">]</span> 表名<span class="token punctuation">;</span>
+<p>执行完上述步骤后，使用 <code>make</code> 和 <code>make install</code> 命令进行编译并安装</p>
+<h3 id="3-生成配置文件"><a href="#3-生成配置文件" class="headerlink" title="3. 生成配置文件"></a>3. 生成配置文件</h3><p>待安装完成之后，将PHP提供的配置文件模板复制到相应的目录，一是源码包根目录下的 <code>php.ini.development</code>，需要将它复制或者移动到PHP安装目录的etc目录中，并且重命名为 <code>php.ini</code>；二是PHP安装目录中的etc目录（下方简称etc目录）下的 <code>php-fpm.conf.default</code> 文件，需要将它原地重命名为 <code>php-fpm.conf</code> ；三是etc目录中的php-fpm.d目录下的 <code>www.confapl.default</code> 文件，需要将他原地重命名为 <code>www.conf</code>。</p>
+<p>至此，PHP的安装完成。</p>
+<h2 id="八、启动服务并测试"><a href="#八、启动服务并测试" class="headerlink" title="八、启动服务并测试"></a>八、启动服务并测试</h2><p>直接在命令行运行 <code>/usr/local/nginx/sbin/nginx</code> 和 <code>/usr/local/php/sbin/php-fpm</code> 启动nginx和php服务</p>
+<p>在网站根目录也就是 &#x2F;usr&#x2F;local&#x2F;nginx&#x2F;html 目录下新建一个文件名为 index.php 在其中写入以下内容：</p>
+<pre class=" language-php"><code class="language-php"><span class="token delimiter">&lt;?php</span>
+<span class="token function">phpinfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token delimiter">?></span>
 </code></pre>
-</li>
-<li><p>删除指定表，并重新创建该表</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">TRUNCATE</span> <span class="token keyword">TABLE</span> 表名<span class="token punctuation">;</span>
-</code></pre>
-</li>
-</ol>
-</li>
-</ol>
-<h3 id="2-DML语句—数据操作"><a href="#2-DML语句—数据操作" class="headerlink" title="2.DML语句—数据操作"></a>2.DML语句—数据操作</h3><h4 id="2-1-添加数据（INSERT）"><a href="#2-1-添加数据（INSERT）" class="headerlink" title="2.1 添加数据（INSERT）"></a>2.1 添加数据（INSERT）</h4><ol>
-<li><p>给指定字段添加数据</p>
-<p><code>INSERT INTO 表名 (字段名1,字段名2,...) VALUES(值1,值2,...);</code></p>
-</li>
-<li><p>给全部字段添加数据</p>
-<p><code>INSERT INTO 表名 VALUES(值1,值2,...);</code></p>
-</li>
-<li><p>批量添加数据</p>
-<p><code>INSERT INTO 表名 (字段名1,字段名2,...) VALUES(值1,值2,...),(值1,值2,...),(值1,值2,...);</code></p>
-<p><code>INSERT INTO 表名 VALUES(值1,值2,...),(值1,值2,...),(值1,值2,...);</code></p>
-</li>
-</ol>
-<p><strong>注意：</strong></p>
-<ul>
-<li>插入数据时，指定字段顺序需要与值的顺序是一一对应的；</li>
-<li>字符串和日期型数据应该包含在引号中；</li>
-<li>插入的数据大小，应该在字段的规定范围内。</li>
-</ul>
-<h4 id="2-2-修改数据（UPDATE）"><a href="#2-2-修改数据（UPDATE）" class="headerlink" title="2.2 修改数据（UPDATE）"></a>2.2 修改数据（UPDATE）</h4><p><code>UPDATE 表名 SET 字段名1=值1,字段名2=值2,...[WHERE 条件];</code></p>
-<p><strong>注意：</strong>修改语句的条件可以有，也可以没有，如果没有条件，则会修改整张表的全部数据。</p>
-<h4 id="2-3-删除数据（DELETE）"><a href="#2-3-删除数据（DELETE）" class="headerlink" title="2.3 删除数据（DELETE）"></a>2.3 删除数据（DELETE）</h4><p><code>DELETE FROM 表名 [WHERE 条件];</code></p>
-<p><strong>注意：</strong></p>
-<ul>
-<li>DELETE语句的条件可以有，也可以没有，如果没有条件，则会删除整张表的全部数据；</li>
-<li>DELETE语句不能删除某一个字段的值（可以使用updata）。</li>
-</ul>
-<h3 id="3-DQL语句—数据查询"><a href="#3-DQL语句—数据查询" class="headerlink" title="3.DQL语句—数据查询"></a>3.DQL语句—数据查询</h3><h4 id="3-1-语法结构"><a href="#3-1-语法结构" class="headerlink" title="3.1 语法结构"></a>3.1 语法结构</h4><ol>
-<li><p>基本查询</p>
-<ul>
-<li><code>SELECT</code>字段列表</li>
-<li><code>FROM</code>表名列表</li>
-</ul>
-</li>
-<li><p>条件查询</p>
-<ul>
-<li><code>WHERE</code>条件列表</li>
-</ul>
-</li>
-<li><p>分组查询</p>
-<p>聚合函数（count、max、min、avg、sum）</p>
-<ol>
-<li><code>GROUP BY</code>分组字段列表</li>
-<li><code>HAVING</code>分组后条件列表</li>
-</ol>
-</li>
-<li><p>排序查询</p>
-<ul>
-<li><code>ORDER BY</code>排序字段列表</li>
-</ul>
-</li>
-<li><p>分页查询</p>
-<ul>
-<li><code>LIMIT</code>分页参数</li>
-</ul>
-</li>
-</ol>
-<h5 id="3-1-1-基本查询"><a href="#3-1-1-基本查询" class="headerlink" title="3.1.1 基本查询"></a>3.1.1 基本查询</h5><ol>
-<li><p>查询多个字段</p>
-<p><code>SELECT 字段1,字段2,字段3,...FROM 表名;</code></p>
-<p><code>SELECT * FROM 表名;</code></p>
-</li>
-<li><p>设置别名</p>
-<p><code>SELECT 字段1 [AS 别名1],字段2 [AS 别名2]...FROM 表名;</code></p>
-</li>
-<li><p>去除重复记录</p>
-<p><code>SELECT DISTINCT 字段列表 FROM 表名;</code></p>
-</li>
-</ol>
-<h5 id="3-1-2-条件查询"><a href="#3-1-2-条件查询" class="headerlink" title="3.1.2 条件查询"></a>3.1.2 条件查询</h5><ol>
-<li><p>语法</p>
-<p><code>SELETE 字段列表 FROM 表名 WHERE 条件列表;</code></p>
-</li>
-<li><p>条件</p>
-<p><img src="https://img-upyun.cikian.cn/blog-img/2022-3/20220306170208.png"></p>
-<p><img src="https://img.cikian.cn/blog-img/20220306170246.png"></p>
-</li>
-</ol>
-<h5 id="3-1-3-聚合函数"><a href="#3-1-3-聚合函数" class="headerlink" title="3.1.3 聚合函数"></a>3.1.3 聚合函数</h5><ol>
-<li><p>介绍：将一列数据作为一个整体，进行纵向计算。</p>
-</li>
-<li><p>常见的聚合函数：</p>
-<p><img src="https://img-upyun.cikian.cn/blog-img/2022-3/20220306170947.png"></p>
-</li>
-<li><p>语法：</p>
-<p><code>SELECT 聚合函数(字段列表) FROM 表名;</code></p>
-<p><strong>注意：</strong>null值不参与所有聚合函数运算</p>
-</li>
-</ol>
-<h5 id="3-1-4-分组查询"><a href="#3-1-4-分组查询" class="headerlink" title="3.1.4 分组查询"></a>3.1.4 分组查询</h5><ol>
-<li><p>语法：</p>
-<p><code>SELETE 字段列表 FROM 表名 [WHERE 条件] GROUP BY 分组字段名 [HAVING 分组后过滤条件];</code></p>
-</li>
-<li><p>WHERE 与 HAVING的区别：</p>
-<ol>
-<li>执行时机不同：where是分组之前进行过滤，不满足where条件，不参与分组；而having是分组之后对结果进行过滤。</li>
-<li>判断条件不同：where不能对聚合函数进行判断，而having可以。</li>
-</ol>
-</li>
-<li><p>注意：</p>
-<ul>
-<li>执行顺序：where &gt; 聚合函数 &gt; having</li>
-<li>分组之后，查询的字段一般为聚合函数和分组字段，查询其他字段无意义</li>
-</ul>
-</li>
-</ol>
-<h5 id="3-1-5-排序查询"><a href="#3-1-5-排序查询" class="headerlink" title="3.1.5 排序查询"></a>3.1.5 排序查询</h5><ol>
-<li><p>语法：</p>
-<p><code>SELETE 字段列表 FROM 表名 ORDER BY 字段1 排序方式1,字段2 排序方式2;</code></p>
-</li>
-<li><p>排序方式：</p>
-<ul>
-<li>ASC 升序（默认值）</li>
-<li>DESC 降序</li>
-</ul>
-</li>
-<li><p>注意：如果是多字段排序，当第一个字段相同时，才会根据第二个字段进行排序。</p>
-</li>
-</ol>
-<h5 id="3-1-6-分页查询"><a href="#3-1-6-分页查询" class="headerlink" title="3.1.6 分页查询"></a>3.1.6 分页查询</h5><ol>
-<li><p>语法：</p>
-<p><code>SELETE 字段列表 FROM 表名 LIMIT 起始索引,查询记录数;</code></p>
-</li>
-<li><p>注意：</p>
-<ul>
-<li>起始索引从0开始，起始索引 &#x3D; (查询页码 - 1) * 每页显示记录数。</li>
-<li>分页查询是数据库的“方言”，不同的数据库有不同的实现，MySQL中是LIMIT。</li>
-<li>如果查询的是第一页数据，起始索引可以省略，直接简写为limit 10。</li>
-</ul>
-</li>
-</ol>
-<h4 id="3-2-执行顺序"><a href="#3-2-执行顺序" class="headerlink" title="3.2 执行顺序"></a>3.2 执行顺序</h4><p><strong>FROM → WHERE → GROUP BY → SELECT → ORDER BY → LIMIT</strong></p>
-<h3 id="4-DCL语句—数据控制（管理用户）"><a href="#4-DCL语句—数据控制（管理用户）" class="headerlink" title="4. DCL语句—数据控制（管理用户）"></a>4. DCL语句—数据控制（管理用户）</h3><h4 id="4-1-用户管理"><a href="#4-1-用户管理" class="headerlink" title="4.1 用户管理"></a>4.1 用户管理</h4><h5 id="4-1-1-查询用户"><a href="#4-1-1-查询用户" class="headerlink" title="4.1.1 查询用户"></a>4.1.1 查询用户</h5><p><code>USE mysql;</code></p>
-<p><code>SELETE USER * FROM user</code></p>
-<h5 id="4-1-2-创建用户"><a href="#4-1-2-创建用户" class="headerlink" title="4.1.2 创建用户"></a>4.1.2 创建用户</h5><p><code>CREATE USER &#39;用户名&#39;@&#39;主机名&#39; IDENTIFIED BY &#39;密码&#39;;</code></p>
-<h5 id="4-1-3-修改用户密码"><a href="#4-1-3-修改用户密码" class="headerlink" title="4.1.3 修改用户密码"></a>4.1.3 修改用户密码</h5><p><code>ALTER USER &#39;用户名&#39;@&#39;主机名&#39; IDENTIFIED WITH mysql_native_password BY &#39;新密码&#39;;</code></p>
-<h5 id="4-1-4-删除用户"><a href="#4-1-4-删除用户" class="headerlink" title="4.1.4 删除用户"></a>4.1.4 删除用户</h5><p><code>DROP USER &#39;用户名&#39;@&#39;主机名&#39;;</code></p>
-<h4 id="4-2-权限控制"><a href="#4-2-权限控制" class="headerlink" title="4.2 权限控制"></a>4.2 权限控制</h4><h5 id="4-2-1-常用权限列表"><a href="#4-2-1-常用权限列表" class="headerlink" title="4.2.1 常用权限列表"></a>4.2.1 常用权限列表</h5><p><img src="https://img-upyun.cikian.cn/blog-img/2022-3/20220306182903.png"></p>
-<h5 id="4-2-2-查询权限"><a href="#4-2-2-查询权限" class="headerlink" title="4.2.2 查询权限"></a>4.2.2 查询权限</h5><p><code>SHOW GRANTS FOR &#39;用户名&#39;@&#39;主机名&#39;;</code></p>
-<h5 id="4-2-3-授予权限"><a href="#4-2-3-授予权限" class="headerlink" title="4.2.3 授予权限"></a>4.2.3 授予权限</h5><p><code>GRANT 权限列表 ON 数据库名.表名 TO &#39;用户名&#39;@&#39;主机名&#39;;</code></p>
-<h5 id="4-2-4-撤销权限"><a href="#4-2-4-撤销权限" class="headerlink" title="4.2.4 撤销权限"></a>4.2.4 撤销权限</h5><p><code>REVOKE 权限列表 ON 数据库名.表名 FROM &#39;用户名&#39;@&#39;主机名&#39;;</code></p>
-<p><strong>注意：</strong> </p>
-<ol>
-<li>多个权限之间，使用逗号分隔；</li>
-<li>授权时，数据库名和表名可以使用*进行通配，代表所有。</li>
-</ol>
+<p>保存后访问域名，未配置域名则直接访问IP，虚拟机访问127.0.0.1，出现PHP信息，则配置成功，<strong>若是使用虚拟机，还需要使用 <code>firewall-cmd --zone=public --add-port=80/tcp --permanent</code> 和 <code>firewall-cmd --reload</code> 开放80端口并重启防火墙，云服务器使用控制台的安全组放行端口即可</strong></p>
+<p><img src="https://img-upyun.cikian.cn//blog-img/2022-11/202301070418280.png"></p>
+</hr>
+
+<p>至此，Linux使用Nginx、PHP、MySQL部署网站的全部工作完成。</p>
+<p><strong>如有问题，欢迎留言讨论</strong></p>
+<p><strong>原创不易，转发即使用请标明出处，万分感谢！</strong></p>
+<p><strong>感谢阅读！</strong></p>
 
                 
             </div>
@@ -1140,7 +1073,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://www.cikian.cn/2022/03/06/mysql-sql-yu-yan/">https://www.cikian.cn/2022/03/06/mysql-sql-yu-yan/</a>
+                    <a href="https://www.cikian.cn/2023/01/07/linux-bu-shu-wang-zhan-nginx-php-mysql/">https://www.cikian.cn/2023/01/07/linux-bu-shu-wang-zhan-nginx-php-mysql/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1178,8 +1111,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/MySQL/">
-                                    <span class="chip bg-color">MySQL</span>
+                                <a href="/tags/Linux/">
+                                    <span class="chip bg-color">Linux</span>
+                                </a>
+                            
+                                <a href="/tags/%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99/">
+                                    <span class="chip bg-color">部署网站</span>
                                 </a>
                             
                         </div>
@@ -1627,45 +1564,51 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/03/12/vue-ji-chu/">
+                <a href="/2023/01/07/linux-bu-shu-wang-zhan-nginx-php-mysql/">
                     <div class="card-image">
                         
-                        <img src="https://img-upyun.cikian.cn/blog-cover/10.jpg" class="responsive-img" alt="Vue基础">
+                        <img src="https://img-upyun.cikian.cn/blog-cover/32.jpg" class="responsive-img" alt="Linux部署网站（Nginx+PHP+MySQL）">
                         
-                        <span class="card-title">Vue基础</span>
+                        <span class="card-title">Linux部署网站（Nginx+PHP+MySQL）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Vue基础知识总结
+                            本文从0开始详细叙述在Linux上使用Nginx、PHP、MySQL部署网站的过程
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-07
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    笔记
+                            <a href="/categories/%E6%95%99%E7%A8%8B/" class="post-category">
+                                    教程
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Vue/">
-                        <span class="chip bg-color">Vue</span>
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                    <a href="/tags/%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99/">
+                        <span class="chip bg-color">部署网站</span>
                     </a>
                     
                 </div>
@@ -1679,23 +1622,23 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/06/mysql-tu-xing-hua-jie-mian-gong-ju-datagrip/">
+                <a href="/2022/12/21/mybatis-kuai-su-ru-men/">
                     <div class="card-image">
                         
-                        <img src="https://img-upyun.cikian.cn/blog-cover/8.jpg" class="responsive-img" alt="MySQL—图形化界面工具DataGrip">
+                        <img src="https://img-upyun.cikian.cn/blog-cover/31.jpg" class="responsive-img" alt="MyBatis快速入门">
                         
-                        <span class="card-title">MySQL—图形化界面工具DataGrip</span>
+                        <span class="card-title">MyBatis快速入门</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            MySQL的图形化界面工具DataGrip
+                            MyBatis核心配置文件及快速入门
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-06
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-21
                             </span>
                         <span class="publish-author">
                             
@@ -1712,8 +1655,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/MySQL/">
-                        <span class="chip bg-color">MySQL</span>
+                    <a href="/tags/MyBatis/">
+                        <span class="chip bg-color">MyBatis</span>
                     </a>
                     
                 </div>

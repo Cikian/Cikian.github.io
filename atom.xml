@@ -6,7 +6,7 @@
   <link href="https://www.cikian.cn/atom.xml" rel="self"/>
   
   <link href="https://www.cikian.cn/"/>
-  <updated>2022-12-20T16:09:20.747Z</updated>
+  <updated>2023-01-06T20:41:11.646Z</updated>
   <id>https://www.cikian.cn/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Linux部署网站（Nginx+PHP+MySQL）</title>
+    <link href="https://www.cikian.cn/2023/01/07/linux-bu-shu-wang-zhan-nginx-php-mysql/"/>
+    <id>https://www.cikian.cn/2023/01/07/linux-bu-shu-wang-zhan-nginx-php-mysql/</id>
+    <published>2023-01-06T20:30:08.000Z</published>
+    <updated>2023-01-06T20:41:11.646Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Linux部署网站（Nginx-PHP-MySQL）&quot;&gt;&lt;a href=&quot;#Linux部署网站（Nginx-PHP-MySQL）&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="教程" scheme="https://www.cikian.cn/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="Linux" scheme="https://www.cikian.cn/tags/Linux/"/>
+    
+    <category term="部署网站" scheme="https://www.cikian.cn/tags/%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
     <title>MyBatis快速入门</title>
     <link href="https://www.cikian.cn/2022/12/21/mybatis-kuai-su-ru-men/"/>
     <id>https://www.cikian.cn/2022/12/21/mybatis-kuai-su-ru-men/</id>
     <published>2022-12-20T16:08:55.000Z</published>
-    <updated>2022-12-20T16:09:20.747Z</updated>
+    <updated>2022-12-20T16:14:43.601Z</updated>
     
     
       
@@ -173,7 +200,7 @@
     <link href="https://www.cikian.cn/2022/06/08/github-bu-zai-yun-xu-rsa-mi-yao-yu-sha-1-yi-qi-shi-yong/"/>
     <id>https://www.cikian.cn/2022/06/08/github-bu-zai-yun-xu-rsa-mi-yao-yu-sha-1-yi-qi-shi-yong/</id>
     <published>2022-06-07T18:41:05.000Z</published>
-    <updated>2022-06-07T19:03:44.000Z</updated>
+    <updated>2023-01-06T20:41:05.274Z</updated>
     
     
       
@@ -501,31 +528,6 @@ Please use a newer</summary>
     
     
     <category term="Java" scheme="https://www.cikian.cn/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vue基础</title>
-    <link href="https://www.cikian.cn/2022/03/12/vue-ji-chu/"/>
-    <id>https://www.cikian.cn/2022/03/12/vue-ji-chu/</id>
-    <published>2022-03-12T08:00:00.000Z</published>
-    <updated>2022-03-24T04:49:10.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;VUE-基础&quot;&gt;&lt;a href=&quot;#VUE-基础&quot; class=&quot;headerlink&quot; title=&quot;VUE 基础&quot;&gt;&lt;/a&gt;VUE 基础&lt;/h1&gt;&lt;h2 id=&quot;一、导入使用&quot;&gt;&lt;a href=&quot;#一、导入使用&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="笔记" scheme="https://www.cikian.cn/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="Vue" scheme="https://www.cikian.cn/tags/Vue/"/>
     
   </entry>
   

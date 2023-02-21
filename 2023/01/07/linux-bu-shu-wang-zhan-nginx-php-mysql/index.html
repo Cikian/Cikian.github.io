@@ -829,7 +829,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-01-07
+                    2023-01-19
                 </div>
                 
 
@@ -921,7 +921,7 @@
 <p>解压后会发现当前目录下多出一个，nginx-1.22.1的目录，使用<code>cd</code>命令进入此目录</p>
 <p><img src="https://img-upyun.cikian.cn//blog-img/2022-11/202301070214650.png"></p>
 <h3 id="2-对Nginx的安装进行配置"><a href="#2-对Nginx的安装进行配置" class="headerlink" title="2. 对Nginx的安装进行配置"></a>2. 对Nginx的安装进行配置</h3><p>进入之前解压好的目录执行 .&#x2F;configure 文件对Nginx的进行配置，如设置Nginx的安装目录、启用SSL模块等</p>
-<pre class=" language-shell"><code class="language-shell">./configuer --prefix=/usr/local/nginx --with-http_ssl_module
+<pre class=" language-shell"><code class="language-shell">./configure --prefix=/usr/local/nginx --with-http_ssl_module
 </code></pre>
 <p><code>--prefix</code>参数用来设置nginx的安装目录，可自行更改，但是要注意目录的权限问题，后方参数为开启某模块，这里我们仅需开启ssl模块，以便开启后期https访问</p>
 <h3 id="3-安装及配置"><a href="#3-安装及配置" class="headerlink" title="3. 安装及配置"></a>3. 安装及配置</h3><p>在执行完 .&#x2F;configure文件后若无报错，则使用make 和 make install 命令编译并安装Nginx,安装完成之后创建Nginx软件的运行用户nginx，并设置为“不可登录”。</p>
@@ -1019,9 +1019,9 @@ http {
 <p><img src="https://img-upyun.cikian.cn//blog-img/2022-11/202301070308768.png"></p>
 <p>使用 <code>wget http://files.cikian.cn/mysql/openssl-libs.rpm</code>下载此依赖文件，然后使用 <code>rpm -ivh openssl-libs.rpm --force</code>命令安装，<strong>注意一定要加 –force 参数！</strong></p>
 <h4 id="b-软件冲突"><a href="#b-软件冲突" class="headerlink" title="b. 软件冲突"></a>b. 软件冲突</h4><p>一般情况下，安装操作系统时，系统会自带一个叫<strong>mariadb</strong>的数据库软件</p>
-<p>使用 <code>rpm -qa | grep mariadb</code> 命令查找冲突软件mariadb所有相关的服务并使用<code>rpm -e –nodeps ... </code>命令忽略依赖卸载，也就是强制卸载冲突软件本体以及其相关的所有服务。**(搜索到多少卸载多少，注意名字，如我这里需要卸载的是mariadb-libs，如有其他软件的冲突，也如此操作)**</p>
+<p>使用 <code>rpm -qa | grep mariadb</code> 命令查找冲突软件mariadb所有相关的服务并使用<code>rpm -e –-nodeps ... </code>命令忽略依赖卸载，也就是强制卸载冲突软件本体以及其相关的所有服务。**(搜索到多少卸载多少，注意名字，如我这里需要卸载的是mariadb-libs，如有其他软件的冲突，也如此操作)**</p>
 <p><img src="https://img-upyun.cikian.cn//blog-img/2022-11/202301070321069.png"></p>
-<h3 id="4-初始化及启动"><a href="#4-初始化及启动" class="headerlink" title="4. 初始化及启动"></a>4. 初始化及启动</h3><p>全部安装完成后，使用 <code>mysqld –initialize –console</code> 命令初始化MySQL，之后使用 <code>chown -R mysql:mysql /var/lib/mysql</code> 命令设置MySQL运行用户的权限。然后使用 <code> systemstl start mysqld</code> 启动MySQL服务，并在mysqld.log文件中查看MySQL的root用户临时密码</p>
+<h3 id="4-初始化及启动"><a href="#4-初始化及启动" class="headerlink" title="4. 初始化及启动"></a>4. 初始化及启动</h3><p>全部安装完成后，使用 <code>mysqld –-initialize –-console</code> 命令初始化MySQL，之后使用 <code>chown -R mysql:mysql /var/lib/mysql</code> 命令设置MySQL运行用户的权限。然后使用 <code> systemstl start mysqld</code> 启动MySQL服务，并在mysqld.log文件中查看MySQL的root用户临时密码</p>
 <p><img src="https://img-upyun.cikian.cn//blog-img/2022-11/202301070325637.png"></p>
 <p>localhost后方的内容即临时密码，如我查询到的临时密码为：<code>bQUzwB-2pLG+</code></p>
 <p>然后使用 <code>mysql -u root -p</code> 命令并输入查询到的临时密码进入MySQL控制台，在MySQL控制台中使用 <code>alter user &#39;root&#39;@&#39;localhost&#39; identified by &#39;123456&#39;</code> 修改root用户的密码,<strong>123456</strong>即为我修改后的密码。</p>
@@ -1031,7 +1031,7 @@ http {
 <pre class=" language-shell"><code class="language-shell">./configure --prefix=/usr/local/php --enable-fpm --with-mysqli --with-curl --with-pdo_mysql --with-pdo_sqlite --enable-mysqlnd --enable-mbstring --with-gd --with-jpeg-dir --with-png-dir --with-openssl --with-zlib
 </code></pre>
 <p>执行完上述步骤后，使用 <code>make</code> 和 <code>make install</code> 命令进行编译并安装</p>
-<h3 id="3-生成配置文件"><a href="#3-生成配置文件" class="headerlink" title="3. 生成配置文件"></a>3. 生成配置文件</h3><p>待安装完成之后，将PHP提供的配置文件模板复制到相应的目录，一是源码包根目录下的 <code>php.ini.development</code>，需要将它复制或者移动到PHP安装目录的etc目录中，并且重命名为 <code>php.ini</code>；二是PHP安装目录中的etc目录（下方简称etc目录）下的 <code>php-fpm.conf.default</code> 文件，需要将它原地重命名为 <code>php-fpm.conf</code> ；三是etc目录中的php-fpm.d目录下的 <code>www.confapl.default</code> 文件，需要将他原地重命名为 <code>www.conf</code>。</p>
+<h3 id="3-生成配置文件"><a href="#3-生成配置文件" class="headerlink" title="3. 生成配置文件"></a>3. 生成配置文件</h3><p>待安装完成之后，将PHP提供的配置文件模板复制到相应的目录，一是源码包根目录下的 <code>php.ini.development</code>，需要将它复制或者移动到PHP安装目录的etc目录（下方简称etc目录）中，并且重命名为 <code>php.ini</code>；二是etc目录下的 <code>php-fpm.conf.default</code> 文件，需要将它原地重命名为 <code>php-fpm.conf</code> ；三是etc目录中的php-fpm.d目录下的 <code>www.confapl.default</code> 文件，需要将他原地重命名为 <code>www.conf</code>。</p>
 <p>至此，PHP的安装完成。</p>
 <h2 id="八、启动服务并测试"><a href="#八、启动服务并测试" class="headerlink" title="八、启动服务并测试"></a>八、启动服务并测试</h2><p>直接在命令行运行 <code>/usr/local/nginx/sbin/nginx</code> 和 <code>/usr/local/php/sbin/php-fpm</code> 启动nginx和php服务</p>
 <p>在网站根目录也就是 &#x2F;usr&#x2F;local&#x2F;nginx&#x2F;html 目录下新建一个文件名为 index.php 在其中写入以下内容：</p>
@@ -1564,51 +1564,49 @@ http {
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/01/07/linux-bu-shu-wang-zhan-nginx-php-mysql/">
+                <a href="/2023/02/08/mybatis-zi-dong-feng-zhuang-wen-ti/">
                     <div class="card-image">
                         
-                        <img src="https://img-upyun.cikian.cn/blog-cover/33.jpg" class="responsive-img" alt="Linux部署网站（Nginx+PHP+MySQL）">
+                        <img src="https://img-upyun.cikian.cn/blog-cover/34.jpg" class="responsive-img" alt="MyBatis自动封装问题">
                         
-                        <span class="card-title">Linux部署网站（Nginx+PHP+MySQL）</span>
+                        <span class="card-title">MyBatis自动封装问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本文从0开始详细叙述在Linux上使用Nginx、PHP、MySQL部署网站的过程
+                            解决MyBatis查询字段含下划线的自动封装问题
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-07
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-02-08
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%95%99%E7%A8%8B/" class="post-category">
-                                    教程
+                            <a href="/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" class="post-category">
+                                    问题解决
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Linux/">
-                        <span class="chip bg-color">Linux</span>
+                    <a href="/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">
+                        <span class="chip bg-color">问题解决</span>
                     </a>
                     
-                    <a href="/tags/%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99/">
-                        <span class="chip bg-color">部署网站</span>
+                    <a href="/tags/MyBatis/">
+                        <span class="chip bg-color">MyBatis</span>
                     </a>
                     
                 </div>
@@ -1850,7 +1848,7 @@ http {
                                     
                                         &nbsp;<i class="fas fa-chart-area"></i>&nbsp;
                                         站点总字数:&nbsp;<span class="white-color">
-                                                31.1k
+                                                31.5k
                                             </span>
                                             
                                                 

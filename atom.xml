@@ -6,7 +6,7 @@
   <link href="https://www.cikian.cn/atom.xml" rel="self"/>
   
   <link href="https://www.cikian.cn/"/>
-  <updated>2023-01-06T20:46:55.833Z</updated>
+  <updated>2023-02-07T18:52:05.603Z</updated>
   <id>https://www.cikian.cn/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>MyBatis自动封装问题</title>
+    <link href="https://www.cikian.cn/2023/02/08/mybatis-zi-dong-feng-zhuang-wen-ti/"/>
+    <id>https://www.cikian.cn/2023/02/08/mybatis-zi-dong-feng-zhuang-wen-ti/</id>
+    <published>2023-02-07T18:35:23.000Z</published>
+    <updated>2023-02-07T18:52:05.603Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="问题解决" scheme="https://www.cikian.cn/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    
+    
+    <category term="问题解决" scheme="https://www.cikian.cn/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    
+    <category term="MyBatis" scheme="https://www.cikian.cn/tags/MyBatis/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Linux部署网站（Nginx+PHP+MySQL）</title>
     <link href="https://www.cikian.cn/2023/01/07/linux-bu-shu-wang-zhan-nginx-php-mysql/"/>
     <id>https://www.cikian.cn/2023/01/07/linux-bu-shu-wang-zhan-nginx-php-mysql/</id>
     <published>2023-01-06T20:30:08.000Z</published>
-    <updated>2023-01-06T20:46:55.833Z</updated>
+    <updated>2023-01-18T21:14:50.543Z</updated>
     
     
       
@@ -493,32 +520,6 @@ Please use a newer</summary>
         
         
     <summary type="html">&lt;h2 id=&quot;一、自动类型转换&quot;&gt;&lt;a href=&quot;#一、自动类型转换&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Java" scheme="https://www.cikian.cn/categories/Java/"/>
-    
-    
-    <category term="Java" scheme="https://www.cikian.cn/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java语言跨平台原理</title>
-    <link href="https://www.cikian.cn/2022/03/20/java-yu-yan-kua-ping-tai-yuan-li/"/>
-    <id>https://www.cikian.cn/2022/03/20/java-yu-yan-kua-ping-tai-yuan-li/</id>
-    <published>2022-03-20T14:07:15.000Z</published>
-    <updated>2022-03-24T04:49:24.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://s2.loli.net/2022/03/20/igvBVGqbIsQdlOx.png&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;一、平台和跨平台&quot;&gt;&lt;a href=&quot;#一、平台和跨平台&quot; class=&quot;headerlink&quot;</summary>
         
       
     

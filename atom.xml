@@ -6,7 +6,7 @@
   <link href="https://www.cikian.cn/atom.xml" rel="self"/>
   
   <link href="https://www.cikian.cn/"/>
-  <updated>2023-02-07T18:52:05.603Z</updated>
+  <updated>2023-08-03T19:33:42.991Z</updated>
   <id>https://www.cikian.cn/</id>
   
   <author>
@@ -15,6 +15,87 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Spring整合</title>
+    <link href="https://www.cikian.cn/2023/08/04/2023-08-04-spring-zheng-he/"/>
+    <id>https://www.cikian.cn/2023/08/04/2023-08-04-spring-zheng-he/</id>
+    <published>2023-08-03T19:25:55.000Z</published>
+    <updated>2023-08-03T19:33:42.991Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、MyBatis核心对象分析&quot;&gt;&lt;a href=&quot;#一、MyBatis核心对象分析&quot; class=&quot;headerlink&quot; title=&quot;一、MyBatis核心对象分析&quot;&gt;&lt;/a&gt;一、MyBatis核心对象分析&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://www.cikian.cn/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="Spring" scheme="https://www.cikian.cn/categories/%E7%AC%94%E8%AE%B0/Spring/"/>
+    
+    
+    <category term="Spring" scheme="https://www.cikian.cn/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring纯注解开发入门</title>
+    <link href="https://www.cikian.cn/2023/08/04/spring-chun-zhu-jie-kai-fa-ru-men/"/>
+    <id>https://www.cikian.cn/2023/08/04/spring-chun-zhu-jie-kai-fa-ru-men/</id>
+    <published>2023-08-03T17:55:23.000Z</published>
+    <updated>2023-08-03T19:34:32.782Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Spring-MVC入门（注解开发）&quot;&gt;&lt;a href=&quot;#Spring-MVC入门（注解开发）&quot; class=&quot;headerlink&quot; title=&quot;Spring MVC入门（注解开发）&quot;&gt;&lt;/a&gt;Spring MVC入门（注解开发）&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://www.cikian.cn/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="Spring" scheme="https://www.cikian.cn/categories/%E7%AC%94%E8%AE%B0/Spring/"/>
+    
+    
+    <category term="Spring" scheme="https://www.cikian.cn/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring入门</title>
+    <link href="https://www.cikian.cn/2023/08/03/spring-ru-men/"/>
+    <id>https://www.cikian.cn/2023/08/03/spring-ru-men/</id>
+    <published>2023-08-02T19:36:33.000Z</published>
+    <updated>2023-08-03T17:59:15.689Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Spring入门&quot;&gt;&lt;a href=&quot;#Spring入门&quot; class=&quot;headerlink&quot; title=&quot;Spring入门&quot;&gt;&lt;/a&gt;Spring入门&lt;/h1&gt;&lt;h2 id=&quot;一、IoC（Inversion-of-Control）控制反转&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://www.cikian.cn/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="Spring" scheme="https://www.cikian.cn/categories/%E7%AC%94%E8%AE%B0/Spring/"/>
+    
+    
+    <category term="Spring" scheme="https://www.cikian.cn/tags/Spring/"/>
+    
+  </entry>
   
   <entry>
     <title>MyBatis自动封装问题</title>
@@ -445,81 +526,6 @@ Please use a newer</summary>
     <summary type="html">&lt;h2 id=&quot;一、使用方法&quot;&gt;&lt;a href=&quot;#一、使用方法&quot; class=&quot;headerlink&quot; title=&quot;一、使用方法&quot;&gt;&lt;/a&gt;一、使用方法&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;导包&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;import</summary>
-        
-      
-    
-    
-    
-    <category term="Java" scheme="https://www.cikian.cn/categories/Java/"/>
-    
-    
-    <category term="Java" scheme="https://www.cikian.cn/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java中的关键字</title>
-    <link href="https://www.cikian.cn/2022/03/23/java-zhong-de-guan-jian-zi/"/>
-    <id>https://www.cikian.cn/2022/03/23/java-zhong-de-guan-jian-zi/</id>
-    <published>2022-03-23T13:43:20.000Z</published>
-    <updated>2022-03-24T04:52:12.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Java中的53个关键字&quot;&gt;&lt;a href=&quot;#Java中的53个关键字&quot; class=&quot;headerlink&quot; title=&quot;Java中的53个关键字&quot;&gt;&lt;/a&gt;Java中的53个关键字&lt;/h1&gt;&lt;h3 id=&quot;一、-48个关键字&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Java" scheme="https://www.cikian.cn/categories/Java/"/>
-    
-    
-    <category term="Java" scheme="https://www.cikian.cn/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java—字符的“+”操作</title>
-    <link href="https://www.cikian.cn/2022/03/22/java-zi-fu-de-cao-zuo/"/>
-    <id>https://www.cikian.cn/2022/03/22/java-zi-fu-de-cao-zuo/</id>
-    <published>2022-03-22T10:40:01.000Z</published>
-    <updated>2022-03-24T04:50:20.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、字符的-操作&quot;&gt;&lt;a href=&quot;#一、字符的-操作&quot; class=&quot;headerlink&quot; title=&quot;一、字符的 + 操作&quot;&gt;&lt;/a&gt;一、字符的 +</summary>
-        
-      
-    
-    
-    
-    <category term="Java" scheme="https://www.cikian.cn/categories/Java/"/>
-    
-    
-    <category term="Java" scheme="https://www.cikian.cn/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java—类型转换</title>
-    <link href="https://www.cikian.cn/2022/03/21/java-lei-xing-zhuan-huan/"/>
-    <id>https://www.cikian.cn/2022/03/21/java-lei-xing-zhuan-huan/</id>
-    <published>2022-03-21T09:52:30.000Z</published>
-    <updated>2022-03-24T04:50:06.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、自动类型转换&quot;&gt;&lt;a href=&quot;#一、自动类型转换&quot; class=&quot;headerlink&quot;</summary>
         
       
     

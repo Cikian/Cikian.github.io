@@ -6,7 +6,7 @@
   <link href="https://www.cikian.cn/atom.xml" rel="self"/>
   
   <link href="https://www.cikian.cn/"/>
-  <updated>2023-08-03T19:33:42.991Z</updated>
+  <updated>2023-08-04T18:49:28.784Z</updated>
   <id>https://www.cikian.cn/</id>
   
   <author>
@@ -17,9 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>SpringAOP</title>
+    <link href="https://www.cikian.cn/2023/08/05/springaop/"/>
+    <id>https://www.cikian.cn/2023/08/05/springaop/</id>
+    <published>2023-08-04T18:35:30.000Z</published>
+    <updated>2023-08-04T18:49:28.784Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、SpringAOP&quot;&gt;&lt;a href=&quot;#一、SpringAOP&quot; class=&quot;headerlink&quot; title=&quot;一、SpringAOP&quot;&gt;&lt;/a&gt;一、SpringAOP&lt;/h2&gt;&lt;h3 id=&quot;1-简介&quot;&gt;&lt;a href=&quot;#1-简介&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Spring" scheme="https://www.cikian.cn/categories/Spring/"/>
+    
+    
+    <category term="Spring" scheme="https://www.cikian.cn/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Spring整合</title>
-    <link href="https://www.cikian.cn/2023/08/04/2023-08-04-spring-zheng-he/"/>
-    <id>https://www.cikian.cn/2023/08/04/2023-08-04-spring-zheng-he/</id>
+    <link href="https://www.cikian.cn/2023/08/04/spring-zheng-he/"/>
+    <id>https://www.cikian.cn/2023/08/04/spring-zheng-he/</id>
     <published>2023-08-03T19:25:55.000Z</published>
     <updated>2023-08-03T19:33:42.991Z</updated>
     
@@ -508,33 +533,6 @@ Please use a newer</summary>
     <category term="IDEA" scheme="https://www.cikian.cn/tags/IDEA/"/>
     
     <category term="快捷键" scheme="https://www.cikian.cn/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Random随机数</title>
-    <link href="https://www.cikian.cn/2022/03/25/random-sui-ji-shu/"/>
-    <id>https://www.cikian.cn/2022/03/25/random-sui-ji-shu/</id>
-    <published>2022-03-25T13:14:32.000Z</published>
-    <updated>2022-05-20T16:43:28.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、使用方法&quot;&gt;&lt;a href=&quot;#一、使用方法&quot; class=&quot;headerlink&quot; title=&quot;一、使用方法&quot;&gt;&lt;/a&gt;一、使用方法&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;导包&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;import</summary>
-        
-      
-    
-    
-    
-    <category term="Java" scheme="https://www.cikian.cn/categories/Java/"/>
-    
-    
-    <category term="Java" scheme="https://www.cikian.cn/tags/Java/"/>
     
   </entry>
   

@@ -6,7 +6,7 @@
   <link href="https://www.cikian.cn/atom.xml" rel="self"/>
   
   <link href="https://www.cikian.cn/"/>
-  <updated>2023-08-04T18:49:28.784Z</updated>
+  <updated>2023-08-05T10:57:48.909Z</updated>
   <id>https://www.cikian.cn/</id>
   
   <author>
@@ -17,11 +17,62 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Spring事务失效</title>
+    <link href="https://www.cikian.cn/2023/08/05/spring-shi-wu-de-keng/"/>
+    <id>https://www.cikian.cn/2023/08/05/spring-shi-wu-de-keng/</id>
+    <published>2023-08-05T10:57:25.000Z</published>
+    <updated>2023-08-05T10:57:48.909Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在使用Spring管理事务时会遇到一些情况使事务失效，下面列举一些常见的情况：&lt;/p&gt;
+&lt;h3 id=&quot;1-数据库存储引擎不支持&quot;&gt;&lt;a href=&quot;#1-数据库存储引擎不支持&quot; class=&quot;headerlink&quot; title=&quot;1.</summary>
+        
+      
+    
+    
+    
+    <category term="Spring" scheme="https://www.cikian.cn/categories/Spring/"/>
+    
+    
+    <category term="Spring" scheme="https://www.cikian.cn/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring事务</title>
+    <link href="https://www.cikian.cn/2023/08/05/spring-shi-wu/"/>
+    <id>https://www.cikian.cn/2023/08/05/spring-shi-wu/</id>
+    <published>2023-08-05T10:25:20.000Z</published>
+    <updated>2023-08-05T10:28:25.209Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、Spring事务简介&quot;&gt;&lt;a href=&quot;#一、Spring事务简介&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Spring" scheme="https://www.cikian.cn/categories/Spring/"/>
+    
+    
+    <category term="Spring" scheme="https://www.cikian.cn/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
     <title>SpringAOP</title>
     <link href="https://www.cikian.cn/2023/08/05/springaop/"/>
     <id>https://www.cikian.cn/2023/08/05/springaop/</id>
     <published>2023-08-04T18:35:30.000Z</published>
-    <updated>2023-08-04T18:49:28.784Z</updated>
+    <updated>2023-08-05T10:28:00.208Z</updated>
     
     
       
@@ -258,7 +309,7 @@
     <link href="https://www.cikian.cn/2022/10/17/linux-chang-yong-ming-ling-ji-can-shu/"/>
     <id>https://www.cikian.cn/2022/10/17/linux-chang-yong-ming-ling-ji-can-shu/</id>
     <published>2022-10-17T07:26:30.000Z</published>
-    <updated>2022-10-17T07:39:54.000Z</updated>
+    <updated>2023-08-05T10:27:14.590Z</updated>
     
     
       
@@ -477,62 +528,6 @@ Please use a newer</summary>
     
     
     <category term="Java" scheme="https://www.cikian.cn/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java基础方法（更新中）</title>
-    <link href="https://www.cikian.cn/2022/03/27/java-ji-chu-fang-fa/"/>
-    <id>https://www.cikian.cn/2022/03/27/java-ji-chu-fang-fa/</id>
-    <published>2022-03-27T11:32:06.000Z</published>
-    <updated>2022-04-02T13:31:16.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、Scanner&quot;&gt;&lt;a href=&quot;#一、Scanner&quot; class=&quot;headerlink&quot; title=&quot;一、Scanner&quot;&gt;&lt;/a&gt;一、Scanner&lt;/h2&gt;&lt;pre class=&quot; language-java&quot;&gt;&lt;code</summary>
-        
-      
-    
-    
-    
-    <category term="Java" scheme="https://www.cikian.cn/categories/Java/"/>
-    
-    <category term="教程" scheme="https://www.cikian.cn/categories/Java/%E6%95%99%E7%A8%8B/"/>
-    
-    
-    <category term="Java" scheme="https://www.cikian.cn/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IDEA常用快捷键</title>
-    <link href="https://www.cikian.cn/2022/03/26/idea-chang-yong-kuai-jie-jian/"/>
-    <id>https://www.cikian.cn/2022/03/26/idea-chang-yong-kuai-jie-jian/</id>
-    <published>2022-03-25T16:30:15.000Z</published>
-    <updated>2022-04-02T09:35:26.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、内容辅助键&quot;&gt;&lt;a href=&quot;#一、内容辅助键&quot; class=&quot;headerlink&quot; title=&quot;一、内容辅助键&quot;&gt;&lt;/a&gt;一、内容辅助键&lt;/h2&gt;&lt;h3 id=&quot;1-快速生成语句&quot;&gt;&lt;a href=&quot;#1-快速生成语句&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="教程" scheme="https://www.cikian.cn/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-    <category term="Java" scheme="https://www.cikian.cn/tags/Java/"/>
-    
-    <category term="IDEA" scheme="https://www.cikian.cn/tags/IDEA/"/>
-    
-    <category term="快捷键" scheme="https://www.cikian.cn/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
     
   </entry>
   

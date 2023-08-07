@@ -6,7 +6,7 @@
   <link href="https://www.cikian.cn/atom.xml" rel="self"/>
   
   <link href="https://www.cikian.cn/"/>
-  <updated>2023-08-05T10:57:48.909Z</updated>
+  <updated>2023-08-07T20:56:49.007Z</updated>
   <id>https://www.cikian.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SpringMVC入门</title>
+    <link href="https://www.cikian.cn/2023/08/05/springmvc-ru-men/"/>
+    <id>https://www.cikian.cn/2023/08/05/springmvc-ru-men/</id>
+    <published>2023-08-05T10:57:25.000Z</published>
+    <updated>2023-08-07T20:56:49.007Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、SpringMVC简介&quot;&gt;&lt;a href=&quot;#一、SpringMVC简介&quot; class=&quot;headerlink&quot; title=&quot;一、SpringMVC简介&quot;&gt;&lt;/a&gt;一、SpringMVC简介&lt;/h2&gt;&lt;h3 id=&quot;1-SpringMVC概述&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Spring" scheme="https://www.cikian.cn/categories/Spring/"/>
+    
+    
+    <category term="Spring" scheme="https://www.cikian.cn/tags/Spring/"/>
+    
+  </entry>
   
   <entry>
     <title>Spring事务失效</title>
@@ -500,31 +525,6 @@ Please use a newer</summary>
     
     
     <category term="Java" scheme="https://www.cikian.cn/categories/Java/"/>
-    
-    
-    <category term="Java" scheme="https://www.cikian.cn/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java小玩意：猜数游戏</title>
-    <link href="https://www.cikian.cn/2022/04/07/java-xiao-wan-yi-cai-shu-you-xi/"/>
-    <id>https://www.cikian.cn/2022/04/07/java-xiao-wan-yi-cai-shu-you-xi/</id>
-    <published>2022-04-07T14:34:33.000Z</published>
-    <updated>2022-04-07T14:48:50.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;通过Random获取随机数实现的一个超简单的猜数游戏&quot;&gt;&lt;a href=&quot;#通过Random获取随机数实现的一个超简单的猜数游戏&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="小玩意" scheme="https://www.cikian.cn/categories/%E5%B0%8F%E7%8E%A9%E6%84%8F/"/>
     
     
     <category term="Java" scheme="https://www.cikian.cn/tags/Java/"/>

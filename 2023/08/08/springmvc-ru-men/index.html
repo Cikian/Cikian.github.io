@@ -578,7 +578,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-08-05
+                    2023-08-08
                 </div>
                 
 
@@ -814,23 +814,23 @@
 <li><p>作用：设置当前控制器方法请求访问路径，如果设置在类上统一设置当前控制器方法请求访问路径前缀</p>
 </li>
 <li><p>范例：</p>
-<pre class=" language-JAVA"><code class="language-JAVA">@RequestMapping("/user")
-@Controller
-public class UserController {
-    @RequestMapping("/save")
-    @ResponseBody
-    public String save() {
-        System.out.println("user/save执行。。。");
-        return "{'info':'usersave'};";
-    };
+<pre class=" language-java"><code class="language-java"><span class="token annotation punctuation">@RequestMapping</span><span class="token punctuation">(</span><span class="token string">"/user"</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@Controller</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">UserController</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@RequestMapping</span><span class="token punctuation">(</span><span class="token string">"/save"</span><span class="token punctuation">)</span>
+    <span class="token annotation punctuation">@ResponseBody</span>
+    <span class="token keyword">public</span> String <span class="token function">save</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"user/save执行。。。"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token string">"{'info':'usersave'};"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
 
-    @RequestMapping("/data")
-    @ResponseBody
-    public String data() {
-        System.out.println("user/data执行。。。");
-        return "{'msg':'userdata'};";
-    };
-};
+    <span class="token annotation punctuation">@RequestMapping</span><span class="token punctuation">(</span><span class="token string">"/data"</span><span class="token punctuation">)</span>
+    <span class="token annotation punctuation">@ResponseBody</span>
+    <span class="token keyword">public</span> String <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"user/data执行。。。"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token string">"{'msg':'userdata'};"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
 </li>
 <li><p>属性：</p>
@@ -1316,7 +1316,7 @@ public class UserController {
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://www.cikian.cn/2023/08/05/springmvc-ru-men/">https://www.cikian.cn/2023/08/05/springmvc-ru-men/</a>
+                    <a href="https://www.cikian.cn/2023/08/08/springmvc-ru-men/">https://www.cikian.cn/2023/08/08/springmvc-ru-men/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1808,7 +1808,7 @@ public class UserController {
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2023/08/05/springmvc-ru-men/">
+                <a href="/2023/08/08/springmvc-ru-men/">
                     <div class="card-image">
                         
                         <img src="https://img-upyun.cikian.cn/blog-cover/41.jpg" class="responsive-img" alt="SpringMVC入门">
@@ -1824,7 +1824,7 @@ public class UserController {
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-08
                             </span>
                         <span class="publish-author">
                             

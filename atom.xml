@@ -6,7 +6,7 @@
   <link href="https://www.cikian.cn/atom.xml" rel="self"/>
   
   <link href="https://www.cikian.cn/"/>
-  <updated>2023-08-10T18:27:02.130Z</updated>
+  <updated>2023-08-10T19:55:40.621Z</updated>
   <id>https://www.cikian.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SpringMVC—拦截器</title>
+    <link href="https://www.cikian.cn/2023/08/11/springmvc-lan-jie-qi/"/>
+    <id>https://www.cikian.cn/2023/08/11/springmvc-lan-jie-qi/</id>
+    <published>2023-08-10T19:54:16.000Z</published>
+    <updated>2023-08-10T19:55:40.621Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、概念&quot;&gt;&lt;a href=&quot;#一、概念&quot; class=&quot;headerlink&quot; title=&quot;一、概念&quot;&gt;&lt;/a&gt;一、概念&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;浏览器访问资源流程：&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="Spring" scheme="https://www.cikian.cn/categories/Spring/"/>
+    
+    
+    <category term="Spring" scheme="https://www.cikian.cn/tags/Spring/"/>
+    
+  </entry>
   
   <entry>
     <title>SSM整合</title>
@@ -503,31 +530,6 @@ Please use a newer</summary>
     
     
     <category term="小程序" scheme="https://www.cikian.cn/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java—包&amp;导包</title>
-    <link href="https://www.cikian.cn/2022/04/24/java-bao-dao-bao/"/>
-    <id>https://www.cikian.cn/2022/04/24/java-bao-dao-bao/</id>
-    <published>2022-04-23T17:29:20.000Z</published>
-    <updated>2022-04-23T17:32:56.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、包&quot;&gt;&lt;a href=&quot;#一、包&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Java" scheme="https://www.cikian.cn/categories/Java/"/>
-    
-    
-    <category term="Java" scheme="https://www.cikian.cn/tags/Java/"/>
     
   </entry>
   

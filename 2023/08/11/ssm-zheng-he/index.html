@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Linux部署网站（Nginx+PHP+MySQL）, Cikian,陈子健，cikian,&#39;cikian&#39;,&#39;Cikian&#39;,&#39;陈子健&#39;,czj,&#39;czj&#39;">
-    <meta name="description" content="本文从0开始详细叙述在Linux上使用Nginx、PHP、MySQL部署网站的过程">
+    <meta name="keywords" content="SSM整合, Cikian,陈子健，cikian,&#39;cikian&#39;,&#39;Cikian&#39;,&#39;陈子健&#39;,czj,&#39;czj&#39;">
+    <meta name="description" content="Spring、SpringMVC、MyBatis整合">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Linux部署网站（Nginx+PHP+MySQL） | Cikian</title>
+    <title>SSM整合 | Cikian</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -432,12 +432,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://img-upyun.cikian.cn/blog-cover/33.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://img-upyun.cikian.cn/blog-cover/42.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Linux部署网站（Nginx+PHP+MySQL）</h1>
+                    <h1 class="description center-align post-title">SSM整合</h1>
                 </div>
             </div>
         </div>
@@ -553,12 +553,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Linux/">
-                                <span class="chip bg-color">Linux</span>
-                            </a>
-                        
-                            <a href="/tags/%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99/">
-                                <span class="chip bg-color">部署网站</span>
+                            <a href="/tags/Spring/">
+                                <span class="chip bg-color">Spring</span>
                             </a>
                         
                     </div>
@@ -569,8 +565,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%95%99%E7%A8%8B/" class="post-category">
-                                教程
+                            <a href="/categories/Spring/" class="post-category">
+                                Spring
                             </a>
                         
                     </div>
@@ -582,28 +578,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-01-07
+                    2023-08-11
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-08-08
+                    2023-08-11
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.9k
+                    1.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    12 分
+                    6 分
                 </div>
                 
 
@@ -623,190 +619,316 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Linux部署网站（Nginx-PHP-MySQL）"><a href="#Linux部署网站（Nginx-PHP-MySQL）" class="headerlink" title="Linux部署网站（Nginx+PHP+MySQL）"></a>Linux部署网站（Nginx+PHP+MySQL）</h1><h2 id="一、部署思路"><a href="#一、部署思路" class="headerlink" title="一、部署思路"></a>一、部署思路</h2><p>做好网站部署前期准备，购买域名、服务器、备案等工作（如果是学习需要，可以使用虚拟机），在服务器上使用Nginx、PHP、MySQL官方网站提供的源码包进行本地编译安装。安装完成之后对各软件进行配置、修改配置文件等工作，以及对服务器安全进行配置，如打开防火墙，开放相关端口等，保证各软件、各模块之间能够互相配合，支持网站各项功能正常使用。最后进行网站源代码和编写和上传工作。</p>
-<h2 id="二、网站架构"><a href="#二、网站架构" class="headerlink" title="二、网站架构"></a>二、网站架构</h2><p>考虑到网站初期访问人数较少资源有限，所以将应用程序、文件资源和数据库都放在同一个服务器中，如果网站具有一定规模，可以考虑购买使用数据库服务器、文件服务器将给服务分开管理。</p>
-<p>本文将所有服务放在同一服务器上。</p>
-<h2 id="三、环境"><a href="#三、环境" class="headerlink" title="三、环境"></a>三、环境</h2><p>服务器系统：CentOS 7.9</p>
-<p>Nginx版本：1.22.1</p>
-<p>PHP版本：7.3.23</p>
-<p>MySQL版本：8.0.31</p>
+                <h1 id="SSM整合"><a href="#SSM整合" class="headerlink" title="SSM整合"></a>SSM整合</h1><h2 id="一、SSM整合"><a href="#一、SSM整合" class="headerlink" title="一、SSM整合"></a>一、SSM整合</h2><h3 id="1-整合流程"><a href="#1-整合流程" class="headerlink" title="1. 整合流程"></a>1. 整合流程</h3><ol>
+<li>创建工程</li>
+<li>SSM整合<ul>
+<li>Spring<ul>
+<li>SpringConfig</li>
+</ul>
+</li>
+<li>MyBatis<ul>
+<li>MybatisConfig</li>
+<li>JdbcConfig</li>
+<li>jdbc.properties</li>
+</ul>
+</li>
+<li>SpringMVC<ul>
+<li>ServletConfig</li>
+<li>SpringMvcConfig</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>功能模块<ul>
+<li>表与实体类</li>
+<li>dao（接口+自动代理）</li>
+<li>service（接口+实现类）<ul>
+<li>业务层接口测试（整合JUnit）</li>
+</ul>
+</li>
+<li>controller<ul>
+<li>表现层接口测试（PostMan）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="二、表现层数据封装"><a href="#二、表现层数据封装" class="headerlink" title="二、表现层数据封装"></a>二、表现层数据封装</h2><ul>
+<li><p>前端接收数据格式</p>
+<p><img src="https://img-upyun.cikian.cn//blog-img/2023-8/202308090350226.png"></p>
+<ul>
+<li>创建结果模型类，封装数据到data属性中</li>
+<li>封装操作结果到code属性中</li>
+<li>封装特殊消息到message(msg)属性中</li>
+</ul>
+</li>
+<li><p>案例：</p>
+<p>1.定义Result类：</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Result</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> Integer code<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> Object data<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> String msg<span class="token punctuation">;</span>
+
+
+    <span class="token keyword">public</span> <span class="token function">Result</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token function">Result</span><span class="token punctuation">(</span>Integer code<span class="token punctuation">,</span> Object data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>data <span class="token operator">=</span> data<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>code <span class="token operator">=</span> code<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token function">Result</span><span class="token punctuation">(</span>Integer code<span class="token punctuation">,</span> Object data<span class="token punctuation">,</span> String msg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>data <span class="token operator">=</span> data<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>msg <span class="token operator">=</span> msg<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>code <span class="token operator">=</span> code<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">// 省略getter和setter（大部分情况不需要）</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p>2.定义状态码：</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Code</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> Integer SAVE_SUCCESS <span class="token operator">=</span> <span class="token number">20011</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> Integer UPDATE_SUCCESS <span class="token operator">=</span> <span class="token number">20021</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> Integer DELETE_SUCCESS <span class="token operator">=</span> <span class="token number">20031</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> Integer GET_SUCCESS <span class="token operator">=</span> <span class="token number">20041</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> Integer SAVE_FAIL <span class="token operator">=</span> <span class="token number">20010</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> Integer UPDATE_FAIL <span class="token operator">=</span> <span class="token number">20020</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> Integer DELETE_FAIL <span class="token operator">=</span> <span class="token number">20030</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> Integer GET_FAIL <span class="token operator">=</span> <span class="token number">20040</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">// ......</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
 <blockquote>
-<p>RHEL（红帽）系统可完全参考本文章。</p>
+<p>Code类的常量设计不是固定的，可以根据需要自行增减，例如将查询再进行细分为GET_SUCCESS，GET_ALL_SUCCESS，GET_PAGE_SUCCESS</p>
 </blockquote>
-<h2 id="四、前期准备工作"><a href="#四、前期准备工作" class="headerlink" title="四、前期准备工作"></a>四、前期准备工作</h2><p><strong>省略购买域名、服务器、备案、安装操作系统等操作</strong></p>
-<h3 id="1-配置yum仓库"><a href="#1-配置yum仓库" class="headerlink" title="1. 配置yum仓库"></a>1. 配置yum仓库</h3><p>在安装所需软件时，我们需要非常多的依赖，所以将yum源更换为国内访问速度更快的清华镜像源</p>
-<p>在 &#x2F;etc&#x2F;yum.repos.d 目录下新建CentOS-Base.repo文件，并在文件中写入以下内容：</p>
-<pre class=" language-ini"><code class="language-ini"><span class="token selector">[base]</span>
-<span class="token constant">name</span><span class="token attr-value"><span class="token punctuation">=</span>CentOS-$releasever - Base</span>
-<span class="token constant">baseurl</span><span class="token attr-value"><span class="token punctuation">=</span>https://mirrors.tuna.tsinghua.edu.cn/centos/$releasever/os/$basearch/</span>
-<span class="token constant">#mirrorlist</span><span class="token attr-value"><span class="token punctuation">=</span>http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=os</span>
-<span class="token constant">enabled</span><span class="token attr-value"><span class="token punctuation">=</span>1</span>
-<span class="token constant">gpgcheck</span><span class="token attr-value"><span class="token punctuation">=</span>1</span>
-<span class="token constant">gpgkey</span><span class="token attr-value"><span class="token punctuation">=</span>file:///etc/pki/rpm-gpg/RPM-GPG-KEY-7</span>
+<p>3.表现层代码：</p>
+<pre class=" language-java"><code class="language-java"><span class="token annotation punctuation">@RestController</span>
+<span class="token annotation punctuation">@RequestMapping</span><span class="token punctuation">(</span><span class="token string">"/books"</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BookController</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Autowired</span>
+    <span class="token keyword">private</span> BookService bookService<span class="token punctuation">;</span>
 
-#released updates
-<span class="token selector">[updates]</span>
-<span class="token constant">name</span><span class="token attr-value"><span class="token punctuation">=</span>CentOS-$releasever - Updates</span>
-<span class="token constant">baseurl</span><span class="token attr-value"><span class="token punctuation">=</span>https://mirrors.tuna.tsinghua.edu.cn/centos/$releasever/updates/$basearch/</span>
-<span class="token constant">#mirrorlist</span><span class="token attr-value"><span class="token punctuation">=</span>http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=updates</span>
-<span class="token constant">enabled</span><span class="token attr-value"><span class="token punctuation">=</span>1</span>
-<span class="token constant">gpgcheck</span><span class="token attr-value"><span class="token punctuation">=</span>1</span>
-<span class="token constant">gpgkey</span><span class="token attr-value"><span class="token punctuation">=</span>file:///etc/pki/rpm-gpg/RPM-GPG-KEY-7</span>
+    <span class="token annotation punctuation">@PostMapping</span>
+    <span class="token keyword">public</span> Result <span class="token function">save</span><span class="token punctuation">(</span><span class="token annotation punctuation">@RequestBody</span> Book book<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">boolean</span> flag <span class="token operator">=</span> bookService<span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span>book<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Result</span><span class="token punctuation">(</span>flag <span class="token operator">?</span> Code<span class="token punctuation">.</span>SAVE_SUCCESS <span class="token operator">:</span> Code<span class="token punctuation">.</span>SAVE_FAIL<span class="token punctuation">,</span> flag<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
 
-#additional packages that may be useful
-<span class="token selector">[extras]</span>
-<span class="token constant">name</span><span class="token attr-value"><span class="token punctuation">=</span>CentOS-$releasever - Extras</span>
-<span class="token constant">baseurl</span><span class="token attr-value"><span class="token punctuation">=</span>https://mirrors.tuna.tsinghua.edu.cn/centos/$releasever/extras/$basearch/</span>
-<span class="token constant">#mirrorlist</span><span class="token attr-value"><span class="token punctuation">=</span>http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=extras</span>
-<span class="token constant">enabled</span><span class="token attr-value"><span class="token punctuation">=</span>1</span>
-<span class="token constant">gpgcheck</span><span class="token attr-value"><span class="token punctuation">=</span>1</span>
-<span class="token constant">gpgkey</span><span class="token attr-value"><span class="token punctuation">=</span>file:///etc/pki/rpm-gpg/RPM-GPG-KEY-7</span>
+    <span class="token annotation punctuation">@PutMapping</span>
+    <span class="token keyword">public</span> Result <span class="token function">update</span><span class="token punctuation">(</span><span class="token annotation punctuation">@RequestBody</span> Book book<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">boolean</span> flag <span class="token operator">=</span> bookService<span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span>book<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Result</span><span class="token punctuation">(</span>flag <span class="token operator">?</span> Code<span class="token punctuation">.</span>UPDATE_SUCCESS <span class="token operator">:</span> Code<span class="token punctuation">.</span>UPDATE_FAIL<span class="token punctuation">,</span> flag<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
 
-#additional packages that extend functionality of existing packages
-<span class="token selector">[centosplus]</span>
-<span class="token constant">name</span><span class="token attr-value"><span class="token punctuation">=</span>CentOS-$releasever - Plus</span>
-<span class="token constant">baseurl</span><span class="token attr-value"><span class="token punctuation">=</span>https://mirrors.tuna.tsinghua.edu.cn/centos/$releasever/centosplus/$basearch/</span>
-<span class="token constant">#mirrorlist</span><span class="token attr-value"><span class="token punctuation">=</span>http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=centosplus</span>
-<span class="token constant">gpgcheck</span><span class="token attr-value"><span class="token punctuation">=</span>1</span>
-<span class="token constant">enabled</span><span class="token attr-value"><span class="token punctuation">=</span>0</span>
-<span class="token constant">gpgkey</span><span class="token attr-value"><span class="token punctuation">=</span>file:///etc/pki/rpm-gpg/RPM-GPG-KEY-7</span>
+    <span class="token annotation punctuation">@DeleteMapping</span><span class="token punctuation">(</span><span class="token string">"/{id};"</span><span class="token punctuation">)</span>
+    <span class="token keyword">public</span> Result <span class="token function">delete</span><span class="token punctuation">(</span><span class="token annotation punctuation">@PathVariable</span> Integer id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">boolean</span> flag <span class="token operator">=</span> bookService<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Result</span><span class="token punctuation">(</span>flag <span class="token operator">?</span> Code<span class="token punctuation">.</span>DELETE_SUCCESS <span class="token operator">:</span> Code<span class="token punctuation">.</span>DELETE_FAIL<span class="token punctuation">,</span> flag<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@GetMapping</span><span class="token punctuation">(</span><span class="token string">"/{id};"</span><span class="token punctuation">)</span>
+    <span class="token keyword">public</span> Result <span class="token function">getById</span><span class="token punctuation">(</span><span class="token annotation punctuation">@PathVariable</span> Integer id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Book book <span class="token operator">=</span> bookService<span class="token punctuation">.</span><span class="token function">getById</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Integer code <span class="token operator">=</span> book <span class="token operator">!=</span> null <span class="token operator">?</span> Code<span class="token punctuation">.</span>GET_SUCCESS <span class="token operator">:</span> Code<span class="token punctuation">.</span>GET_FAIL<span class="token punctuation">;</span>
+        String msg <span class="token operator">=</span> book <span class="token operator">!=</span> null <span class="token operator">?</span> <span class="token string">""</span> <span class="token operator">:</span> <span class="token string">"查询失败"</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Result</span><span class="token punctuation">(</span>code<span class="token punctuation">,</span> book<span class="token punctuation">,</span> msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@GetMapping</span>
+    <span class="token keyword">public</span> Result <span class="token function">getAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        List<span class="token operator">&lt;</span>Book<span class="token operator">></span> books <span class="token operator">=</span> bookService<span class="token punctuation">.</span><span class="token function">getAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Integer code <span class="token operator">=</span> books <span class="token operator">!=</span> null <span class="token operator">?</span> Code<span class="token punctuation">.</span>GET_SUCCESS <span class="token operator">:</span> Code<span class="token punctuation">.</span>GET_FAIL<span class="token punctuation">;</span>
+        String msg <span class="token operator">=</span> books <span class="token operator">!=</span> null <span class="token operator">?</span> <span class="token string">""</span> <span class="token operator">:</span> <span class="token string">"查询失败"</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Result</span><span class="token punctuation">(</span>code<span class="token punctuation">,</span> books<span class="token punctuation">,</span> msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<p>保存文件后使用 <code>yum clean all</code>命令清除缓存，然后使用<code>yum makecache</code>生成新的缓存。</p>
-<h3 id="2-安装依赖"><a href="#2-安装依赖" class="headerlink" title="2. 安装依赖"></a>2. 安装依赖</h3><p>安装所需软件需要很多依赖，所以在开始之前我们将所需的依赖全部安装，在命令行输入以下命令，执行（tips：可以复制哟 ^o^&#x2F; ）</p>
-<pre class=" language-shell"><code class="language-shell">yum -y install apr* autoconf automake numactl bison bzip2-devel cpp curl-devel fontconfig-devel freetype-devel gcc gcc-c++ gd-devel gettex-devel kernel-headers keyutils-libs-devel krb5-devel libcom_err-devel libpng-devel libjpeg* libsepol-devel libselinux-devel libstdc++-devel libtool* libxml2-devel libXpm* libxml* libXaw-devel libXmu-devel libaio libtiff* make openssl-devel patch pcrdevel perl php-common php-gd telnet zlib-devel libtirpc-devel gtk* ntpstat na* bison* lrzsz cmake ncurses-devel libzip-devel libxslt-devel gdbm-devel readlin-devel gmp-devel
+</li>
+<li><p>设置统一数据返回结果类</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Result</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> Object data<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> Integer code<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> String msg<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<h2 id="五、安装Nginx"><a href="#五、安装Nginx" class="headerlink" title="五、安装Nginx"></a>五、安装Nginx</h2><h3 id="1-下载并解压源码包"><a href="#1-下载并解压源码包" class="headerlink" title="1. 下载并解压源码包"></a>1. 下载并解压源码包</h3><p>在工作目录（建议&#x2F;usr&#x2F;local&#x2F;src）使用<code>wget</code>命令从Nginx官方网站下载最新版本的Nginx源码包，然后使用<code>tar</code>命令加上<code>-zxvf</code>参数将下载的源码包解压到当前工作目录。</p>
-<p><code>wget http://nginx.org/download/nginx-1.22.1.tar.gz</code></p>
-<p><code>tar -zxvf nginx-1.22.1.tar.gz</code></p>
-<p>解压后会发现当前目录下多出一个，nginx-1.22.1的目录，使用<code>cd</code>命令进入此目录</p>
-<p><img src="https://img-upyun.cikian.cn//blog-img/2022-11/202301070214650.png"></p>
-<h3 id="2-对Nginx的安装进行配置"><a href="#2-对Nginx的安装进行配置" class="headerlink" title="2. 对Nginx的安装进行配置"></a>2. 对Nginx的安装进行配置</h3><p>进入之前解压好的目录执行 .&#x2F;configure 文件对Nginx的进行配置，如设置Nginx的安装目录、启用SSL模块等</p>
-<pre class=" language-shell"><code class="language-shell">./configure --prefix=/usr/local/nginx --with-http_ssl_module
+<blockquote>
+<ul>
+<li>Result类及其中的字段并不是固定的，可以根据需要自行修改</li>
+<li>提供若干个构造方法，方便操作</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<h2 id="三、异常处理器"><a href="#三、异常处理器" class="headerlink" title="三、异常处理器"></a>三、异常处理器</h2><p><strong>出现异常现象的常见位置与常见诱因如下：</strong></p>
+<ul>
+<li>框架内部抛出的异常：因使用不合规导致</li>
+<li>数据层抛出的异常：因外部服务器故障导致（例如：服务器访问超时）</li>
+<li>业务层抛出的异常：因业务逻辑书写错误导致（例如：遍历业务书写操作，导致索引异常等）</li>
+<li>表现层抛出的异常：因数据收集、校验等规则导致（例如：不匹配的数据类型间导致异常）</li>
+<li>工具类抛出的异常：因工具类书写不严谨不够健壮导致（例如：必要释放的连接长期未释放等）</li>
+</ul>
+<blockquote>
+<p> <strong>所有异常均抛出到表现层处理</strong></p>
+</blockquote>
+<h3 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h3><p>表现层处理异常，每个方法中单独书写，代码书写量大且意义不强，一般采用<strong>A0P思想</strong>处理异常</p>
+<ul>
+<li><p><strong>异常处理器：</strong><br>集中的、统一的处理项目中出现的异常</p>
+</li>
+<li><p>e.g.</p>
+<pre class=" language-java"><code class="language-java"><span class="token annotation punctuation">@RestControllerAdvice</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ProjectExceptionAdvice</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@ExceptionHandler</span><span class="token punctuation">(</span>Exception<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span>
+    <span class="token keyword">public</span> Result <span class="token function">doException</span><span class="token punctuation">(</span>Exception e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span><span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Result</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">,</span> null<span class="token punctuation">,</span> <span class="token string">"服务器异常"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<p><code>--prefix</code>参数用来设置nginx的安装目录，可自行更改，但是要注意目录的权限问题，后方参数为开启某模块，这里我们仅需开启ssl模块，以便开启后期https访问</p>
-<h3 id="3-安装及配置"><a href="#3-安装及配置" class="headerlink" title="3. 安装及配置"></a>3. 安装及配置</h3><p>在执行完 .&#x2F;configure文件后若无报错，则使用make 和 make install 命令编译并安装Nginx,安装完成之后创建Nginx软件的运行用户nginx，并设置为“不可登录”。</p>
-<pre class=" language-shell"><code class="language-shell">useradd nginx -M -s /sbin/nologin
+<blockquote>
+<ul>
+<li><p>名称：<code>@RestControllerAdvice</code></p>
+</li>
+<li><p>类型：类注解</p>
+</li>
+<li><p>位置：Rest风格开发的控制器增强类定义上方</p>
+</li>
+<li><p>作用：为Rest风格开发的控制器类做增强</p>
+</li>
+<li><p>说明：此注解自带<code>@ResponseBody</code>注解与<code>@Component</code>注解，具备对应的功能</p>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>名称：<code>@ExceptionHandler</code></li>
+<li>类型：方法注解</li>
+<li>位置：专用于异常处理的控制器方法上方</li>
+<li>作用：设置指定异常的处理方案，功能等同于控制器方法，出现异常后终止原始控制器执行，并转入当前方法执行</li>
+<li>说明：此类方法可以根据处理的异常不同，制作多个方法分别处理对应的异常</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<h2 id="四、项目异常处理方案"><a href="#四、项目异常处理方案" class="headerlink" title="四、项目异常处理方案"></a>四、项目异常处理方案</h2><h3 id="1-项目异常分类"><a href="#1-项目异常分类" class="headerlink" title="1. 项目异常分类"></a>1. 项目异常分类</h3><ul>
+<li>业务异常（BusinessException）<ul>
+<li>规范的用户行为产生的异常</li>
+<li>不规范的用户行为操作产生的异常</li>
+</ul>
+</li>
+<li>系统异常（SystemException）<ul>
+<li>项目运行过程中可预计且无法避免的异常</li>
+</ul>
+</li>
+<li>其他异常（Exception）<ul>
+<li>编程人员未预期到的异常</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-项目异常处理方案："><a href="#2-项目异常处理方案：" class="headerlink" title="2. 项目异常处理方案："></a>2. 项目异常处理方案：</h3><ul>
+<li>业务异常（BusinessException）<ul>
+<li>发送对应消息传递给用户，提醒规范操作</li>
+</ul>
+</li>
+<li>系统异常（SystemException）<ul>
+<li>发送固定消息传递给用户</li>
+<li>发送特定消息给运维人员，提醒维护</li>
+<li>记录日志</li>
+</ul>
+</li>
+<li>其他异常（Exception）<ul>
+<li>发送固定消息传递给用户</li>
+<li>发送特定消息给编程人员，提醒维护（纳入预期范围内）</li>
+<li>记录日志</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-步骤"><a href="#3-步骤" class="headerlink" title="3. 步骤"></a>3. 步骤</h3><ol>
+<li><p>自定义项目系统级异常</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SystemException</span> <span class="token keyword">extends</span> <span class="token class-name">RuntimeException</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> Integer code<span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> Integer <span class="token function">getCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> code<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token function">SystemException</span><span class="token punctuation">(</span>Integer code<span class="token punctuation">,</span> String message<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>code <span class="token operator">=</span> code<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token function">SystemException</span><span class="token punctuation">(</span>Integer code<span class="token punctuation">,</span> String message<span class="token punctuation">,</span> Throwable cause<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span>message<span class="token punctuation">,</span> cause<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>code <span class="token operator">=</span> code<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<p>进入Nginx的安装目录找到nginx.conf的配置文件，将运行用户由nobody改为nginx用户组的nginx用户。然后将http块中的server块中的server name后面的内容修改为已经正确解析到此服务器IP的域名。之后在第一个location块中将index.php增加在最前面，保证访问网站时优先返回index.php文件作为首页。将第二个location块，也就是有关PHP的配置信息部分的注释解开，并做相关修改。Nginx的监听端口使用默认的80端口，不做修改。</p>
-<p>具体请参考下方内容（无关内容已省略）：</p>
-<pre class=" language-ini"><code class="language-ini"># ---此处需要修改---
-user  nginx nginx;
-worker_processes  1;
+</li>
+<li><p>自定义项目业务级异常</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BusinessException</span> <span class="token keyword">extends</span> <span class="token class-name">RuntimeException</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> Integer code<span class="token punctuation">;</span>
 
-#error_log  logs/error.log;
-#error_log  logs/error.log  notice;
-#error_log  logs/error.log  info;
-#pid        logs/nginx.pid;
+    <span class="token keyword">public</span> Integer <span class="token function">getCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> code<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
 
-events {
-    worker_connections  1024;
-};
+    <span class="token keyword">public</span> <span class="token function">BusinessException</span><span class="token punctuation">(</span>Integer code<span class="token punctuation">,</span> String message<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>code <span class="token operator">=</span> code<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
 
-http {
-    include       mime.types;
-    default_type  application/octet-stream;
-
-    #log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
-    #                  '$status $body_bytes_sent "$http_referer" '
-    #                  '"$http_user_agent" "$http_x_forwarded_for"';
-    #access_log  logs/access.log  main;
-
-    sendfile        on;
-    #tcp_nopush     on;
-    #keepalive_timeout  0;
-    keepalive_timeout  65;
-
-    #gzip  on;
-    client_max_body_size 100M;
-    client_body_buffer_size 1024k;
-    fastcgi_intercept_errors on;
-
-    server {
-        # ---监听端口，默认80---
-        listen       80;
-        # ---此处需要修改，也可不修改，默认使用IP访问---
-        server_name  xxx.xxx.com;
-
-        #charset koi8-r;
-        #access_log  logs/host.access.log  main;
-
-        location / {
-            root   html;
-            # ---此处需要修改---
-            index  index.php index.html index.htm;
-        };
-        # ---此处可选择修改，若有404页面，需解开注释并且在后方指定404页面的路径---
-        #error_page  404              /404.html;
-        # redirect server error pages to the static page /50x.html
-        #
-        
-        # ---同404---
-        error_page   500 502 503 504  /50x.html;
-<span class="token constant">        location</span> <span class="token attr-value"><span class="token punctuation">=</span> /50x.html {</span>
-            root   html;
-        };
-        ...
-        ...
-        ...
-        # ---此处需要修改，默认是注释的，需要解开下方注释，并修改fastcgi_param  SCRIPT_FILENAME后方的内容---
-        location ~ \.php$ {
-            root           html;
-            fastcgi_pass   127.0.0.1:9000;
-            fastcgi_index  index.php;
-                                            # ---这里是网站的根目录，也可修改为$document_root---
-          # fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;                                 
-            fastcgi_param  SCRIPT_FILENAME  /usr/local/nginx/html$fastcgi_script_name;
-            include        fastcgi_params;
-        };
-        ...
-        ...
-    };
-    ...
-    ...
-    ...
-};
+    <span class="token keyword">public</span> <span class="token function">BusinessException</span><span class="token punctuation">(</span>Integer code<span class="token punctuation">,</span> String message<span class="token punctuation">,</span> Throwable cause<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span>message<span class="token punctuation">,</span> cause<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>code <span class="token operator">=</span> code<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<p>至此，Nginx的安装完成。</p>
-<h2 id="六、安装MySQL"><a href="#六、安装MySQL" class="headerlink" title="六、安装MySQL"></a>六、安装MySQL</h2><h3 id="1-下载并解压源码包-1"><a href="#1-下载并解压源码包-1" class="headerlink" title="1. 下载并解压源码包"></a>1. 下载并解压源码包</h3><p>下载MySQL源码包的方式有很多，可以使用wget命令，也可以从Windows上下载后上传到服务器中，由于MySQL源码包中有许多安装包是我们不需要的，所以我从Windows下载后删除压缩包中不需要的内容后，在上传到服务器，如果你也使用这种方式，那么我们只需要留下压缩包中的以下文件即可：</p>
-<p><img src="https://img-upyun.cikian.cn//blog-img/2022-11/202301070253608.png"></p>
-<p>你可以像我一样操作，也可以直接下载我已经修改好的压缩包，<a target="_blank" rel="noopener" href="http://files.cikian.cn/mysql/mysql-8.0.31.tar">mysql-8.0.31.tar</a>，或者直接在命令行使用<code>wget http://files.cikian.cn/mysql/mysql-8.0.31.tar</code>下载，</p>
-<p>解压步骤在此省略，同Nginx源码包的解压大同小异，不同点是下载的MySQL源码包是.tar文件而不是.tar.gz文件所以使用<code>tar</code>命令解压时不需要使用<code>-z</code>参数，只需要使用<code>-xvf</code>参数即可。</p>
-<h3 id="2-安装rpm包"><a href="#2-安装rpm包" class="headerlink" title="2. 安装rpm包"></a>2. 安装rpm包</h3><p>由于下载的源码包解压后是已经编译过的多个rpm包，所以可使用rpm命令直接安装即可，但是由于各包之间存在依赖关系，所以安装时要注意安装顺序，依次安装：mysql-community-common-8.0.31-1.rpm、mysql-community-client-plugins-8.0.31-1.rpm、mysql-community-libs-8.0.31-1.rpm 、mysql-community-client-8.0.31-1.rpm、mysql-community-icu-data-files-8.0.31-1.rpm 、mysql-community-server-8.0.31-1.rpm</p>
-<p>使用 <code>rpm -ivh mysql-community-... .rpm</code> 命令安装上方的顺序安装即可</p>
-<p><strong>（如果安装过程中出现问题，请继续往下看哟 (^&#x2F;&#x2F;&#x2F;^)  ）</strong></p>
-<h3 id="3-问题解决"><a href="#3-问题解决" class="headerlink" title="3. 问题解决"></a>3. 问题解决</h3><p>经过我多次安装，以及帮他人安装，在MySQL的安装过程中可能会出现以下问题</p>
-<h4 id="a-依赖检测失败（一般不会出现，因为我们已经安装过依赖）"><a href="#a-依赖检测失败（一般不会出现，因为我们已经安装过依赖）" class="headerlink" title="a. 依赖检测失败（一般不会出现，因为我们已经安装过依赖）"></a>a. 依赖检测失败（一般不会出现，因为我们已经安装过依赖）</h4><p>若安装过程中出现以下报错信息：</p>
-<p><img src="https://img-upyun.cikian.cn//blog-img/2022-11/202301070308768.png"></p>
-<p>使用 <code>wget http://files.cikian.cn/mysql/openssl-libs.rpm</code>下载此依赖文件，然后使用 <code>rpm -ivh openssl-libs.rpm --force</code>命令安装，<strong>注意一定要加 –force 参数！</strong></p>
-<h4 id="b-软件冲突"><a href="#b-软件冲突" class="headerlink" title="b. 软件冲突"></a>b. 软件冲突</h4><p>一般情况下，安装操作系统时，系统会自带一个叫<strong>mariadb</strong>的数据库软件</p>
-<p>使用 <code>rpm -qa | grep mariadb</code> 命令查找冲突软件mariadb所有相关的服务并使用<code>rpm -e –-nodeps ... </code>命令忽略依赖卸载，也就是强制卸载冲突软件本体以及其相关的所有服务。**(搜索到多少卸载多少，注意名字，如我这里需要卸载的是mariadb-libs，如有其他软件的冲突，也如此操作)**</p>
-<p><img src="https://img-upyun.cikian.cn//blog-img/2022-11/202301070321069.png"></p>
-<h3 id="4-初始化及启动"><a href="#4-初始化及启动" class="headerlink" title="4. 初始化及启动"></a>4. 初始化及启动</h3><p>全部安装完成后，使用 <code>mysqld –-initialize –-console</code> 命令初始化MySQL，之后使用 <code>chown -R mysql:mysql /var/lib/mysql</code> 命令设置MySQL运行用户的权限。然后使用 <code> systemstl start mysqld</code> 启动MySQL服务，并在mysqld.log文件中查看MySQL的root用户临时密码</p>
-<p><img src="https://img-upyun.cikian.cn//blog-img/2022-11/202301070325637.png"></p>
-<p>localhost后方的内容即临时密码，如我查询到的临时密码为：<code>bQUzwB-2pLG+</code></p>
-<p>然后使用 <code>mysql -u root -p</code> 命令并输入查询到的临时密码进入MySQL控制台，在MySQL控制台中使用 <code>alter user &#39;root&#39;@&#39;localhost&#39; identified by &#39;123456&#39;</code> 修改root用户的密码,<strong>123456</strong>即为我修改后的密码。</p>
-<p>至此，MySQL的安装完成。</p>
-<h2 id="七、安装PHP"><a href="#七、安装PHP" class="headerlink" title="七、安装PHP"></a>七、安装PHP</h2><h3 id="1-下载并解压源码包-2"><a href="#1-下载并解压源码包-2" class="headerlink" title="1. 下载并解压源码包"></a>1. 下载并解压源码包</h3><p>在工作目录使用 <code>wget</code> 命令从PHP官方网站下载PHP的源码包，也可使用 <code>wget http://files.cikian.cn/php/php-7.3.23.tar.gz</code> 命令下载我已经下载好的源码包，并使用tar命令解压，此步骤同安装Nginx时的下载和解压几乎一致（除了文件名），所以在此不再赘述。</p>
-<h3 id="2-对PHP的安装进行配置以及安装"><a href="#2-对PHP的安装进行配置以及安装" class="headerlink" title="2. 对PHP的安装进行配置以及安装"></a>2. 对PHP的安装进行配置以及安装</h3><p>进入解压后的PHP源码包，运行 .&#x2F;configure 文件加上相关参数对PHP的安装进行配置，如设置PHP的安装目录、启用php-fpm、开启mysqli拓展、开启gd拓展等，可根据需求自行增加或删除拓展，但是建议不要删除，可增加。</p>
-<pre class=" language-shell"><code class="language-shell">./configure --prefix=/usr/local/php --enable-fpm --with-mysqli --with-curl --with-pdo_mysql --with-pdo_sqlite --enable-mysqlnd --enable-mbstring --with-gd --with-jpeg-dir --with-png-dir --with-openssl --with-zlib
+</li>
+<li><p>自定义异常编码（可选，自定义）</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ErrorCode</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> Integer SYSTEM_ERR <span class="token operator">=</span> <span class="token number">50001</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> Integer BUSINESS_ERR <span class="token operator">=</span> <span class="token number">50002</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> Integer UNKNOW_ERR <span class="token operator">=</span> <span class="token number">59999</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<p>执行完上述步骤后，使用 <code>make</code> 和 <code>make install</code> 命令进行编译并安装</p>
-<h3 id="3-生成配置文件"><a href="#3-生成配置文件" class="headerlink" title="3. 生成配置文件"></a>3. 生成配置文件</h3><p>待安装完成之后，将PHP提供的配置文件模板复制到相应的目录，一是源码包根目录下的 <code>php.ini.development</code>，需要将它复制或者移动到PHP安装目录的etc目录（下方简称etc目录）中，并且重命名为 <code>php.ini</code>；二是etc目录下的 <code>php-fpm.conf.default</code> 文件，需要将它原地重命名为 <code>php-fpm.conf</code> ；三是etc目录中的php-fpm.d目录下的 <code>www.confapl.default</code> 文件，需要将他原地重命名为 <code>www.conf</code>。</p>
-<p>至此，PHP的安装完成。</p>
-<h2 id="八、启动服务并测试"><a href="#八、启动服务并测试" class="headerlink" title="八、启动服务并测试"></a>八、启动服务并测试</h2><p>直接在命令行运行 <code>/usr/local/nginx/sbin/nginx</code> 和 <code>/usr/local/php/sbin/php-fpm</code> 启动nginx和php服务</p>
-<p>在网站根目录也就是 &#x2F;usr&#x2F;local&#x2F;nginx&#x2F;html 目录下新建一个文件名为 index.php 在其中写入以下内容：</p>
-<pre class=" language-php"><code class="language-php"><span class="token delimiter">&lt;?php</span>
-<span class="token function">phpinfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token delimiter">?></span>
+</li>
+<li><p>触发自定义异常</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> Book <span class="token function">getById</span><span class="token punctuation">(</span>Integer id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// 将可能出现的异常进行包装，转换成自定义异常</span>
+    <span class="token comment" spellcheck="true">// 模拟异常</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>id <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">BusinessException</span><span class="token punctuation">(</span>ErrorCode<span class="token punctuation">.</span>BUSINESS_ERR<span class="token punctuation">,</span> <span class="token string">"id不能为1"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">/</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">SystemException</span><span class="token punctuation">(</span>ErrorCode<span class="token punctuation">.</span>SYSTEM_ERR<span class="token punctuation">,</span> <span class="token string">"访问超时，请稍后再试"</span><span class="token punctuation">,</span> e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> bookDao<span class="token punctuation">.</span><span class="token function">getById</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<p>保存后访问域名，未配置域名则直接访问IP，虚拟机访问127.0.0.1，出现PHP信息，则配置成功，<strong>若是使用虚拟机，还需要使用 <code>firewall-cmd --zone=public --add-port=80/tcp --permanent</code> 和 <code>firewall-cmd --reload</code> 开放80端口并重启防火墙，云服务器使用控制台的安全组放行端口即可</strong></p>
-<p><img src="https://img-upyun.cikian.cn//blog-img/2022-11/202301070418280.png"></p>
-</hr>
+</li>
+<li><p>拦截并处理异常</p>
+<pre class=" language-java"><code class="language-java"><span class="token annotation punctuation">@RestControllerAdvice</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ProjectExceptionAdvice</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@ExceptionHandler</span><span class="token punctuation">(</span>SystemException<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span>
+    <span class="token keyword">public</span> Result <span class="token function">doSystemException</span><span class="token punctuation">(</span>SystemException e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Result</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span><span class="token function">getCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> null<span class="token punctuation">,</span> e<span class="token punctuation">.</span><span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
 
-<p>至此，Linux使用Nginx、PHP、MySQL部署网站的全部工作完成。</p>
-<p><strong>如有问题，欢迎留言讨论</strong></p>
-<p><strong>原创不易，转发即使用请标明出处，万分感谢！</strong></p>
-<p><strong>感谢阅读！</strong></p>
+    <span class="token annotation punctuation">@ExceptionHandler</span><span class="token punctuation">(</span>BusinessException<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span>
+    <span class="token keyword">public</span> Result <span class="token function">doBusinessException</span><span class="token punctuation">(</span>BusinessException e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Result</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span><span class="token function">getCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> null<span class="token punctuation">,</span> e<span class="token punctuation">.</span><span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@ExceptionHandler</span><span class="token punctuation">(</span>Exception<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span>
+    <span class="token keyword">public</span> Result <span class="token function">doException</span><span class="token punctuation">(</span>Exception e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span><span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Result</span><span class="token punctuation">(</span>ErrorCode<span class="token punctuation">.</span>UNKNOW_ERR<span class="token punctuation">,</span> null<span class="token punctuation">,</span> <span class="token string">"发生未知异常"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+</ol>
+<h2 id="五、案例"><a href="#五、案例" class="headerlink" title="五、案例"></a>五、案例</h2><p>Github仓库：<a target="_blank" rel="noopener" href="https://github.com/Cikian/books_manager.git">SSM图书管理</a></p>
 
                 
             </div>
@@ -833,7 +955,7 @@ http {
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://www.cikian.cn/2023/01/07/linux-bu-shu-wang-zhan-nginx-php-mysql/">https://www.cikian.cn/2023/01/07/linux-bu-shu-wang-zhan-nginx-php-mysql/</a>
+                    <a href="https://www.cikian.cn/2023/08/11/ssm-zheng-he/">https://www.cikian.cn/2023/08/11/ssm-zheng-he/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -871,12 +993,8 @@ http {
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Linux/">
-                                    <span class="chip bg-color">Linux</span>
-                                </a>
-                            
-                                <a href="/tags/%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99/">
-                                    <span class="chip bg-color">部署网站</span>
+                                <a href="/tags/Spring/">
+                                    <span class="chip bg-color">Spring</span>
                                 </a>
                             
                         </div>
@@ -1324,49 +1442,47 @@ http {
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023/02/08/mybatis-zi-dong-feng-zhuang-wen-ti/">
+                <a href="/2023/08/11/ssm-zheng-he/">
                     <div class="card-image">
                         
-                        <img src="https://img-upyun.cikian.cn/blog-cover/34.jpg" class="responsive-img" alt="MyBatis自动封装问题">
+                        <img src="https://img-upyun.cikian.cn/blog-cover/42.jpg" class="responsive-img" alt="SSM整合">
                         
-                        <span class="card-title">MyBatis自动封装问题</span>
+                        <span class="card-title">SSM整合</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            解决MyBatis查询字段含下划线的自动封装问题
+                            Spring、SpringMVC、MyBatis整合
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-02-08
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" class="post-category">
-                                    问题解决
+                            <a href="/categories/Spring/" class="post-category">
+                                    Spring
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">
-                        <span class="chip bg-color">问题解决</span>
-                    </a>
-                    
-                    <a href="/tags/MyBatis/">
-                        <span class="chip bg-color">MyBatis</span>
+                    <a href="/tags/Spring/">
+                        <span class="chip bg-color">Spring</span>
                     </a>
                     
                 </div>
@@ -1380,30 +1496,30 @@ http {
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/12/21/mybatis-kuai-su-ru-men/">
+                <a href="/2023/08/08/springmvc-ru-men/">
                     <div class="card-image">
                         
-                        <img src="https://img-upyun.cikian.cn/blog-cover/31.jpg" class="responsive-img" alt="MyBatis快速入门">
+                        <img src="https://img-upyun.cikian.cn/blog-cover/41.jpg" class="responsive-img" alt="SpringMVC入门">
                         
-                        <span class="card-title">MyBatis快速入门</span>
+                        <span class="card-title">SpringMVC入门</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            MyBatis核心配置文件及快速入门
+                            SpringMVC简介与入门
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-21
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-08
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%95%99%E7%A8%8B/" class="post-category">
-                                    教程
+                            <a href="/categories/Spring/" class="post-category">
+                                    Spring
                                 </a>
                             
                             
@@ -1413,8 +1529,8 @@ http {
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/MyBatis/">
-                        <span class="chip bg-color">MyBatis</span>
+                    <a href="/tags/Spring/">
+                        <span class="chip bg-color">Spring</span>
                     </a>
                     
                 </div>

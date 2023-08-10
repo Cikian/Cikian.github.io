@@ -6,7 +6,7 @@
   <link href="https://www.cikian.cn/atom.xml" rel="self"/>
   
   <link href="https://www.cikian.cn/"/>
-  <updated>2023-08-08T06:35:19.405Z</updated>
+  <updated>2023-08-10T18:27:02.130Z</updated>
   <id>https://www.cikian.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SSM整合</title>
+    <link href="https://www.cikian.cn/2023/08/11/ssm-zheng-he/"/>
+    <id>https://www.cikian.cn/2023/08/11/ssm-zheng-he/</id>
+    <published>2023-08-10T18:26:10.000Z</published>
+    <updated>2023-08-10T18:27:02.130Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;SSM整合&quot;&gt;&lt;a href=&quot;#SSM整合&quot; class=&quot;headerlink&quot; title=&quot;SSM整合&quot;&gt;&lt;/a&gt;SSM整合&lt;/h1&gt;&lt;h2 id=&quot;一、SSM整合&quot;&gt;&lt;a href=&quot;#一、SSM整合&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Spring" scheme="https://www.cikian.cn/categories/Spring/"/>
+    
+    
+    <category term="Spring" scheme="https://www.cikian.cn/tags/Spring/"/>
+    
+  </entry>
   
   <entry>
     <title>SpringMVC入门</title>
@@ -494,31 +519,6 @@ Please use a newer</summary>
         
         
     <summary type="html">&lt;h2 id=&quot;一、包&quot;&gt;&lt;a href=&quot;#一、包&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Java" scheme="https://www.cikian.cn/categories/Java/"/>
-    
-    
-    <category term="Java" scheme="https://www.cikian.cn/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java—继承</title>
-    <link href="https://www.cikian.cn/2022/04/24/java-ji-cheng/"/>
-    <id>https://www.cikian.cn/2022/04/24/java-ji-cheng/</id>
-    <published>2022-04-23T16:56:31.000Z</published>
-    <updated>2022-04-29T01:30:16.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;继承&quot;&gt;&lt;a href=&quot;#继承&quot; class=&quot;headerlink&quot; title=&quot;继承&quot;&gt;&lt;/a&gt;继承&lt;/h1&gt;&lt;h2 id=&quot;一、概述&quot;&gt;&lt;a href=&quot;#一、概述&quot; class=&quot;headerlink&quot;</summary>
         
       
     

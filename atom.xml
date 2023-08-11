@@ -6,7 +6,7 @@
   <link href="https://www.cikian.cn/atom.xml" rel="self"/>
   
   <link href="https://www.cikian.cn/"/>
-  <updated>2023-08-10T19:55:40.621Z</updated>
+  <updated>2023-08-11T20:57:59.371Z</updated>
   <id>https://www.cikian.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SpringBoot入门</title>
+    <link href="https://www.cikian.cn/2023/08/12/springboot-ru-men/"/>
+    <id>https://www.cikian.cn/2023/08/12/springboot-ru-men/</id>
+    <published>2023-08-11T20:55:15.000Z</published>
+    <updated>2023-08-11T20:57:59.371Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、简介&quot;&gt;&lt;a href=&quot;#一、简介&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Spring" scheme="https://www.cikian.cn/categories/Spring/"/>
+    
+    
+    <category term="Spring" scheme="https://www.cikian.cn/tags/Spring/"/>
+    
+  </entry>
   
   <entry>
     <title>SpringMVC—拦截器</title>
@@ -505,31 +530,6 @@ Please use a newer</summary>
     
     
     <category term="Java" scheme="https://www.cikian.cn/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微信小程序—url带参传值</title>
-    <link href="https://www.cikian.cn/2022/05/04/wei-xin-xiao-cheng-xu-url-dai-can-chuan-zhi/"/>
-    <id>https://www.cikian.cn/2022/05/04/wei-xin-xiao-cheng-xu-url-dai-can-chuan-zhi/</id>
-    <published>2022-05-04T09:15:00.000Z</published>
-    <updated>2022-05-04T09:19:06.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;微信小程序不同页面间url带参传递数据&quot;&gt;&lt;a href=&quot;#微信小程序不同页面间url带参传递数据&quot; class=&quot;headerlink&quot; title=&quot;微信小程序不同页面间url带参传递数据&quot;&gt;&lt;/a&gt;微信小程序不同页面间url带参传递数据&lt;/h1&gt;&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="小程序" scheme="https://www.cikian.cn/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-    
-    <category term="小程序" scheme="https://www.cikian.cn/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
   </entry>
   
